@@ -1,9 +1,8 @@
 services:
   - type: web
-    name: audio-analysis-service
+    name: packs-audio-analysis
     runtime: docker
-    dockerfilePath: ./Dockerfile
-    dockerContext: .
+    plan: starter
     healthCheckPath: /healthz
     envVars:
       - key: AUDIO_ANALYSIS_BASIC_AUTH_USERNAME
