@@ -1,0 +1,14 @@
+.git
+.gitignore
+.dockerignore
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage*
+tests/
+music_in/
+data/
+tmp/
+README.md
