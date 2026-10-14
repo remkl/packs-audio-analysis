@@ -1,0 +1,26 @@
+{
+  "sourceVersion": "5.1.9-0+deb12u1",
+  "sourceArchiveSha256": {
+    "ffmpeg.tar.xz": "d9b593bb2ba93d4b50f74177e0cdcd41747e708596367deed0c30348a71dd176",
+    "ffmpeg-debian.tar.xz": "71b20472ecd2764bc98e3229d34c0f7c8dcfe4a6cbacc23fd5604c23bac04632"
+  },
+  "excludedAdvisories": [
+    "CVE-2026-58049",
+    "CVE-2026-64830",
+    "CVE-2026-64832",
+    "CVE-2026-64833",
+    "CVE-2026-64834",
+    "CVE-2026-64835",
+    "CVE-2026-66036",
+    "CVE-2026-66039",
+    "CVE-2026-66040",
+    "CVE-2026-70628",
+    "CVE-2026-70632",
+    "CVE-2026-75142",
+    "CVE-2026-75143",
+    "CVE-2026-75144",
+    "CVE-2026-75146",
+    "CVE-2026-8461"
+  ],
+  "scope": "Build exclusions for the 16 reviewed FFmpeg advisories; not a complete vulnerability scan."
+}

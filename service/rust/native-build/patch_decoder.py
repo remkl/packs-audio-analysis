@@ -26,8 +26,10 @@ new = '''// Match the shared accepted codecs, including the explicit Zork exclus
         _audioCtx = 0;
         throw EssentiaException("AudioLoader: Unsupported codec!");
     }
-    // Its older AAC decoder retains the encoder's leading samples.
-    if (_audioCtx->codec_id == AV_CODEC_ID_AAC) {
+    // The wheel retains AAC leading samples and Ogg Vorbis packet tails.
+    // FFmpeg 5 added Ogg tail trimming; Matroska DiscardPadding stays active.
+    if (_audioCtx->codec_id == AV_CODEC_ID_AAC ||
+        (_audioCtx->codec_id == AV_CODEC_ID_VORBIS && string(_demuxCtx->iformat->name) == "ogg")) {
         _audioCtx->flags2 |= AV_CODEC_FLAG2_SKIP_MANUAL;
     }
     _audioCodec = _audioCtx->codec_id == AV_CODEC_ID_MP3 ? avcodec_find_decoder_by_name("mp3") : avcodec_find_decoder(_audioCtx->codec_id);'''

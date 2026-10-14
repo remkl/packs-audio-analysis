@@ -1,0 +1,5246 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "ef69b73640d5cb3872ae00fb34f2d27a28f65f29",
+  "images": {
+    "cli": "sha256:688f2231c819761656f75d87f9ae87cef3423be6ee686c4da949347d3ff99c19",
+    "nativeSource": "sha256:a7b1829450bd7d3e8161471a9a535c5dd49dc12b130be3e120985bdbc71cd5f2",
+    "nativeBundle": "sha256:a03d7feec71e1a2c7a2263ffaab4d01c918ec5855ed4e7a692a4bd9079c1a458",
+    "runtime": "sha256:025f0afb91e9efd421747ed68d44390bc611db143b9ac2098a8c7a04dfc9bb5b"
+  },
+  "finalRuntimeCoverage": true,
+  "status": "canonical-commit-and-standalone-gate-bound",
+  "components": {
+    "cli": {
+      "image": "sha256:688f2231c819761656f75d87f9ae87cef3423be6ee686c4da949347d3ff99c19",
+      "packages": [
+        {
+          "binaryPackage": "adduser",
+          "binaryVersion": "3.134",
+          "sourcePackage": "adduser",
+          "sourceVersion": "3.134"
+        },
+        {
+          "binaryPackage": "apt",
+          "binaryVersion": "2.6.1",
+          "sourcePackage": "apt",
+          "sourceVersion": "2.6.1"
+        },
+        {
+          "binaryPackage": "autoconf",
+          "binaryVersion": "2.71-3",
+          "sourcePackage": "autoconf",
+          "sourceVersion": "2.71-3"
+        },
+        {
+          "binaryPackage": "automake",
+          "binaryVersion": "1:1.16.5-1.3",
+          "sourcePackage": "automake-1.16",
+          "sourceVersion": "1:1.16.5-1.3"
+        },
+        {
+          "binaryPackage": "autotools-dev",
+          "binaryVersion": "20220109.1",
+          "sourcePackage": "autotools-dev",
+          "sourceVersion": "20220109.1"
+        },
+        {
+          "binaryPackage": "base-files",
+          "binaryVersion": "12.4+deb12u15",
+          "sourcePackage": "base-files",
+          "sourceVersion": "12.4+deb12u15"
+        },
+        {
+          "binaryPackage": "base-passwd",
+          "binaryVersion": "3.6.1",
+          "sourcePackage": "base-passwd",
+          "sourceVersion": "3.6.1"
+        },
+        {
+          "binaryPackage": "bash",
+          "binaryVersion": "5.2.15-2+b13",
+          "sourcePackage": "bash",
+          "sourceVersion": "5.2.15-2"
+        },
+        {
+          "binaryPackage": "binutils",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "binutils-common:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "binutils-x86-64-linux-gnu",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "bsdutils",
+          "binaryVersion": "1:2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "build-essential",
+          "binaryVersion": "12.9",
+          "sourcePackage": "build-essential",
+          "sourceVersion": "12.9"
+        },
+        {
+          "binaryPackage": "bzip2",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "ca-certificates",
+          "binaryVersion": "20250419~deb12u1",
+          "sourcePackage": "ca-certificates",
+          "sourceVersion": "20250419~deb12u1"
+        },
+        {
+          "binaryPackage": "coreutils",
+          "binaryVersion": "9.1-1",
+          "sourcePackage": "coreutils",
+          "sourceVersion": "9.1-1"
+        },
+        {
+          "binaryPackage": "cpp",
+          "binaryVersion": "4:12.2.0-3",
+          "sourcePackage": "gcc-defaults",
+          "sourceVersion": "1.203"
+        },
+        {
+          "binaryPackage": "cpp-12",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "curl",
+          "binaryVersion": "7.88.1-10+deb12u15",
+          "sourcePackage": "curl",
+          "sourceVersion": "7.88.1-10+deb12u15"
+        },
+        {
+          "binaryPackage": "dash",
+          "binaryVersion": "0.5.12-2",
+          "sourcePackage": "dash",
+          "sourceVersion": "0.5.12-2"
+        },
+        {
+          "binaryPackage": "debconf",
+          "binaryVersion": "1.5.82",
+          "sourcePackage": "debconf",
+          "sourceVersion": "1.5.82"
+        },
+        {
+          "binaryPackage": "debian-archive-keyring",
+          "binaryVersion": "2023.3+deb12u2",
+          "sourcePackage": "debian-archive-keyring",
+          "sourceVersion": "2023.3+deb12u2"
+        },
+        {
+          "binaryPackage": "debianutils",
+          "binaryVersion": "5.7-0.5~deb12u1",
+          "sourcePackage": "debianutils",
+          "sourceVersion": "5.7-0.5~deb12u1"
+        },
+        {
+          "binaryPackage": "diffutils",
+          "binaryVersion": "1:3.8-4",
+          "sourcePackage": "diffutils",
+          "sourceVersion": "1:3.8-4"
+        },
+        {
+          "binaryPackage": "dpkg",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "dpkg-dev",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "e2fsprogs",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "file",
+          "binaryVersion": "1:5.44-3",
+          "sourcePackage": "file",
+          "sourceVersion": "1:5.44-3"
+        },
+        {
+          "binaryPackage": "findutils",
+          "binaryVersion": "4.9.0-4",
+          "sourcePackage": "findutils",
+          "sourceVersion": "4.9.0-4"
+        },
+        {
+          "binaryPackage": "g++",
+          "binaryVersion": "4:12.2.0-3",
+          "sourcePackage": "gcc-defaults",
+          "sourceVersion": "1.203"
+        },
+        {
+          "binaryPackage": "g++-12",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gcc",
+          "binaryVersion": "4:12.2.0-3",
+          "sourcePackage": "gcc-defaults",
+          "sourceVersion": "1.203"
+        },
+        {
+          "binaryPackage": "gcc-12",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gcc-12-base:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gpgv",
+          "binaryVersion": "2.2.40-1.1+deb12u2",
+          "sourcePackage": "gnupg2",
+          "sourceVersion": "2.2.40-1.1+deb12u2"
+        },
+        {
+          "binaryPackage": "grep",
+          "binaryVersion": "3.8-5",
+          "sourcePackage": "grep",
+          "sourceVersion": "3.8-5"
+        },
+        {
+          "binaryPackage": "gzip",
+          "binaryVersion": "1.12-1",
+          "sourcePackage": "gzip",
+          "sourceVersion": "1.12-1"
+        },
+        {
+          "binaryPackage": "hostname",
+          "binaryVersion": "3.23+nmu1",
+          "sourcePackage": "hostname",
+          "sourceVersion": "3.23+nmu1"
+        },
+        {
+          "binaryPackage": "init-system-helpers",
+          "binaryVersion": "1.65.2+deb12u1",
+          "sourcePackage": "init-system-helpers",
+          "sourceVersion": "1.65.2+deb12u1"
+        },
+        {
+          "binaryPackage": "libacl1:amd64",
+          "binaryVersion": "2.3.1-3",
+          "sourcePackage": "acl",
+          "sourceVersion": "2.3.1-3"
+        },
+        {
+          "binaryPackage": "libapt-pkg6.0:amd64",
+          "binaryVersion": "2.6.1",
+          "sourcePackage": "apt",
+          "sourceVersion": "2.6.1"
+        },
+        {
+          "binaryPackage": "libasan8:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libatomic1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libattr1:amd64",
+          "binaryVersion": "1:2.5.1-4",
+          "sourcePackage": "attr",
+          "sourceVersion": "1:2.5.1-4"
+        },
+        {
+          "binaryPackage": "libaudit-common",
+          "binaryVersion": "1:3.0.9-1",
+          "sourcePackage": "audit",
+          "sourceVersion": "1:3.0.9-1"
+        },
+        {
+          "binaryPackage": "libaudit1:amd64",
+          "binaryVersion": "1:3.0.9-1",
+          "sourcePackage": "audit",
+          "sourceVersion": "1:3.0.9-1"
+        },
+        {
+          "binaryPackage": "libbinutils:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libblkid1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libbrotli1:amd64",
+          "binaryVersion": "1.0.9-2+b6",
+          "sourcePackage": "brotli",
+          "sourceVersion": "1.0.9-2"
+        },
+        {
+          "binaryPackage": "libbz2-1.0:amd64",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "libbz2-dev:amd64",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "libc-bin",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc-dev-bin",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc6:amd64",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc6-dev:amd64",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libcap-ng0:amd64",
+          "binaryVersion": "0.8.3-1+b3",
+          "sourcePackage": "libcap-ng",
+          "sourceVersion": "0.8.3-1"
+        },
+        {
+          "binaryPackage": "libcap2:amd64",
+          "binaryVersion": "1:2.66-4+deb12u3+b1",
+          "sourcePackage": "libcap2",
+          "sourceVersion": "1:2.66-4+deb12u3"
+        },
+        {
+          "binaryPackage": "libcc1-0:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libcom-err2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libcrypt-dev:amd64",
+          "binaryVersion": "1:4.4.33-2",
+          "sourcePackage": "libxcrypt",
+          "sourceVersion": "1:4.4.33-2"
+        },
+        {
+          "binaryPackage": "libcrypt1:amd64",
+          "binaryVersion": "1:4.4.33-2",
+          "sourcePackage": "libxcrypt",
+          "sourceVersion": "1:4.4.33-2"
+        },
+        {
+          "binaryPackage": "libctf-nobfd0:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libctf0:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libcurl4:amd64",
+          "binaryVersion": "7.88.1-10+deb12u15",
+          "sourcePackage": "curl",
+          "sourceVersion": "7.88.1-10+deb12u15"
+        },
+        {
+          "binaryPackage": "libdb5.3:amd64",
+          "binaryVersion": "5.3.28+dfsg2-1",
+          "sourcePackage": "db5.3",
+          "sourceVersion": "5.3.28+dfsg2-1"
+        },
+        {
+          "binaryPackage": "libdebconfclient0:amd64",
+          "binaryVersion": "0.270",
+          "sourcePackage": "cdebconf",
+          "sourceVersion": "0.270"
+        },
+        {
+          "binaryPackage": "libdpkg-perl",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "libexpat1:amd64",
+          "binaryVersion": "2.5.0-1+deb12u4",
+          "sourcePackage": "expat",
+          "sourceVersion": "2.5.0-1+deb12u4"
+        },
+        {
+          "binaryPackage": "libext2fs2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libffi8:amd64",
+          "binaryVersion": "3.4.4-1",
+          "sourcePackage": "libffi",
+          "sourceVersion": "3.4.4-1"
+        },
+        {
+          "binaryPackage": "libgcc-12-dev:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgcc-s1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgcrypt20:amd64",
+          "binaryVersion": "1.10.1-3+deb12u1",
+          "sourcePackage": "libgcrypt20",
+          "sourceVersion": "1.10.1-3+deb12u1"
+        },
+        {
+          "binaryPackage": "libgdbm-compat4:amd64",
+          "binaryVersion": "1.23-3",
+          "sourcePackage": "gdbm",
+          "sourceVersion": "1.23-3"
+        },
+        {
+          "binaryPackage": "libgdbm6:amd64",
+          "binaryVersion": "1.23-3",
+          "sourcePackage": "gdbm",
+          "sourceVersion": "1.23-3"
+        },
+        {
+          "binaryPackage": "libgmp10:amd64",
+          "binaryVersion": "2:6.2.1+dfsg1-1.1",
+          "sourcePackage": "gmp",
+          "sourceVersion": "2:6.2.1+dfsg1-1.1"
+        },
+        {
+          "binaryPackage": "libgnutls30:amd64",
+          "binaryVersion": "3.7.9-2+deb12u7",
+          "sourcePackage": "gnutls28",
+          "sourceVersion": "3.7.9-2+deb12u7"
+        },
+        {
+          "binaryPackage": "libgomp1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgpg-error0:amd64",
+          "binaryVersion": "1.46-1",
+          "sourcePackage": "libgpg-error",
+          "sourceVersion": "1.46-1"
+        },
+        {
+          "binaryPackage": "libgprofng0:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libgssapi-krb5-2:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libhogweed6:amd64",
+          "binaryVersion": "3.8.1-2",
+          "sourcePackage": "nettle",
+          "sourceVersion": "3.8.1-2"
+        },
+        {
+          "binaryPackage": "libidn2-0:amd64",
+          "binaryVersion": "2.3.3-1+b1",
+          "sourcePackage": "libidn2",
+          "sourceVersion": "2.3.3-1"
+        },
+        {
+          "binaryPackage": "libisl23:amd64",
+          "binaryVersion": "0.25-1.1",
+          "sourcePackage": "isl",
+          "sourceVersion": "0.25-1.1"
+        },
+        {
+          "binaryPackage": "libitm1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libjansson4:amd64",
+          "binaryVersion": "2.14-2",
+          "sourcePackage": "jansson",
+          "sourceVersion": "2.14-2"
+        },
+        {
+          "binaryPackage": "libk5crypto3:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libkeyutils1:amd64",
+          "binaryVersion": "1.6.3-2",
+          "sourcePackage": "keyutils",
+          "sourceVersion": "1.6.3-2"
+        },
+        {
+          "binaryPackage": "libkrb5-3:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libkrb5support0:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libldap-2.5-0:amd64",
+          "binaryVersion": "2.5.13+dfsg-5",
+          "sourcePackage": "openldap",
+          "sourceVersion": "2.5.13+dfsg-5"
+        },
+        {
+          "binaryPackage": "liblsan0:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "liblz4-1:amd64",
+          "binaryVersion": "1.9.4-1",
+          "sourcePackage": "lz4",
+          "sourceVersion": "1.9.4-1"
+        },
+        {
+          "binaryPackage": "liblzma5:amd64",
+          "binaryVersion": "5.4.1-1+deb12u2",
+          "sourcePackage": "xz-utils",
+          "sourceVersion": "5.4.1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "libmagic-mgc",
+          "binaryVersion": "1:5.44-3",
+          "sourcePackage": "file",
+          "sourceVersion": "1:5.44-3"
+        },
+        {
+          "binaryPackage": "libmagic1:amd64",
+          "binaryVersion": "1:5.44-3",
+          "sourcePackage": "file",
+          "sourceVersion": "1:5.44-3"
+        },
+        {
+          "binaryPackage": "libmd0:amd64",
+          "binaryVersion": "1.0.4-2",
+          "sourcePackage": "libmd",
+          "sourceVersion": "1.0.4-2"
+        },
+        {
+          "binaryPackage": "libmount1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libmp3lame-dev:amd64",
+          "binaryVersion": "3.100-6",
+          "sourcePackage": "lame",
+          "sourceVersion": "3.100-6"
+        },
+        {
+          "binaryPackage": "libmp3lame0:amd64",
+          "binaryVersion": "3.100-6",
+          "sourcePackage": "lame",
+          "sourceVersion": "3.100-6"
+        },
+        {
+          "binaryPackage": "libmpc3:amd64",
+          "binaryVersion": "1.3.1-1",
+          "sourcePackage": "mpclib3",
+          "sourceVersion": "1.3.1-1"
+        },
+        {
+          "binaryPackage": "libmpfr6:amd64",
+          "binaryVersion": "4.2.0-1",
+          "sourcePackage": "mpfr4",
+          "sourceVersion": "4.2.0-1"
+        },
+        {
+          "binaryPackage": "libncursesw6:amd64",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "libnettle8:amd64",
+          "binaryVersion": "3.8.1-2",
+          "sourcePackage": "nettle",
+          "sourceVersion": "3.8.1-2"
+        },
+        {
+          "binaryPackage": "libnghttp2-14:amd64",
+          "binaryVersion": "1.52.0-1+deb12u3",
+          "sourcePackage": "nghttp2",
+          "sourceVersion": "1.52.0-1+deb12u3"
+        },
+        {
+          "binaryPackage": "libnsl-dev:amd64",
+          "binaryVersion": "1.3.0-2",
+          "sourcePackage": "libnsl",
+          "sourceVersion": "1.3.0-2"
+        },
+        {
+          "binaryPackage": "libnsl2:amd64",
+          "binaryVersion": "1.3.0-2",
+          "sourcePackage": "libnsl",
+          "sourceVersion": "1.3.0-2"
+        },
+        {
+          "binaryPackage": "libp11-kit0:amd64",
+          "binaryVersion": "0.24.1-2",
+          "sourcePackage": "p11-kit",
+          "sourceVersion": "0.24.1-2"
+        },
+        {
+          "binaryPackage": "libpam-modules:amd64",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam-modules-bin",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam-runtime",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam0g:amd64",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpcre2-8-0:amd64",
+          "binaryVersion": "10.42-1+deb12u2",
+          "sourcePackage": "pcre2",
+          "sourceVersion": "10.42-1+deb12u2"
+        },
+        {
+          "binaryPackage": "libperl5.36:amd64",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "libpkgconf3:amd64",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "libpsl5:amd64",
+          "binaryVersion": "0.21.2-1",
+          "sourcePackage": "libpsl",
+          "sourceVersion": "0.21.2-1"
+        },
+        {
+          "binaryPackage": "libpython3-stdlib:amd64",
+          "binaryVersion": "3.11.2-1+b1",
+          "sourcePackage": "python3-defaults",
+          "sourceVersion": "3.11.2-1"
+        },
+        {
+          "binaryPackage": "libpython3.11-minimal:amd64",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "libpython3.11-stdlib:amd64",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "libquadmath0:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libreadline8:amd64",
+          "binaryVersion": "8.2-1.3",
+          "sourcePackage": "readline",
+          "sourceVersion": "8.2-1.3"
+        },
+        {
+          "binaryPackage": "librtmp1:amd64",
+          "binaryVersion": "2.4+20151223.gitfa8646d.1-2+b2",
+          "sourcePackage": "rtmpdump",
+          "sourceVersion": "2.4+20151223.gitfa8646d.1-2"
+        },
+        {
+          "binaryPackage": "libsasl2-2:amd64",
+          "binaryVersion": "2.1.28+dfsg-10",
+          "sourcePackage": "cyrus-sasl2",
+          "sourceVersion": "2.1.28+dfsg-10"
+        },
+        {
+          "binaryPackage": "libsasl2-modules-db:amd64",
+          "binaryVersion": "2.1.28+dfsg-10",
+          "sourcePackage": "cyrus-sasl2",
+          "sourceVersion": "2.1.28+dfsg-10"
+        },
+        {
+          "binaryPackage": "libseccomp2:amd64",
+          "binaryVersion": "2.5.4-1+deb12u1",
+          "sourcePackage": "libseccomp",
+          "sourceVersion": "2.5.4-1+deb12u1"
+        },
+        {
+          "binaryPackage": "libselinux1:amd64",
+          "binaryVersion": "3.4-1+b6",
+          "sourcePackage": "libselinux",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsemanage-common",
+          "binaryVersion": "3.4-1",
+          "sourcePackage": "libsemanage",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsemanage2:amd64",
+          "binaryVersion": "3.4-1+b5",
+          "sourcePackage": "libsemanage",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsepol2:amd64",
+          "binaryVersion": "3.4-2.1",
+          "sourcePackage": "libsepol",
+          "sourceVersion": "3.4-2.1"
+        },
+        {
+          "binaryPackage": "libsmartcols1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libsqlite3-0:amd64",
+          "binaryVersion": "3.40.1-2+deb12u2",
+          "sourcePackage": "sqlite3",
+          "sourceVersion": "3.40.1-2+deb12u2"
+        },
+        {
+          "binaryPackage": "libss2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libssh2-1:amd64",
+          "binaryVersion": "1.10.0-3+deb12u1",
+          "sourcePackage": "libssh2",
+          "sourceVersion": "1.10.0-3+deb12u1"
+        },
+        {
+          "binaryPackage": "libssl3:amd64",
+          "binaryVersion": "3.0.22-1~deb12u1",
+          "sourcePackage": "openssl",
+          "sourceVersion": "3.0.22-1~deb12u1"
+        },
+        {
+          "binaryPackage": "libstdc++-12-dev:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libstdc++6:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libsystemd0:amd64",
+          "binaryVersion": "252.39-1~deb12u2",
+          "sourcePackage": "systemd",
+          "sourceVersion": "252.39-1~deb12u2"
+        },
+        {
+          "binaryPackage": "libtasn1-6:amd64",
+          "binaryVersion": "4.19.0-2+deb12u1",
+          "sourcePackage": "libtasn1-6",
+          "sourceVersion": "4.19.0-2+deb12u1"
+        },
+        {
+          "binaryPackage": "libtinfo6:amd64",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "libtirpc-common",
+          "binaryVersion": "1.3.3+ds-1",
+          "sourcePackage": "libtirpc",
+          "sourceVersion": "1.3.3+ds-1"
+        },
+        {
+          "binaryPackage": "libtirpc-dev:amd64",
+          "binaryVersion": "1.3.3+ds-1",
+          "sourcePackage": "libtirpc",
+          "sourceVersion": "1.3.3+ds-1"
+        },
+        {
+          "binaryPackage": "libtirpc3:amd64",
+          "binaryVersion": "1.3.3+ds-1",
+          "sourcePackage": "libtirpc",
+          "sourceVersion": "1.3.3+ds-1"
+        },
+        {
+          "binaryPackage": "libtool",
+          "binaryVersion": "2.4.7-7~deb12u1",
+          "sourcePackage": "libtool",
+          "sourceVersion": "2.4.7-7~deb12u1"
+        },
+        {
+          "binaryPackage": "libtsan2:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libubsan1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libudev1:amd64",
+          "binaryVersion": "252.39-1~deb12u2",
+          "sourcePackage": "systemd",
+          "sourceVersion": "252.39-1~deb12u2"
+        },
+        {
+          "binaryPackage": "libunistring2:amd64",
+          "binaryVersion": "1.0-2",
+          "sourcePackage": "libunistring",
+          "sourceVersion": "1.0-2"
+        },
+        {
+          "binaryPackage": "libuuid1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libxxhash0:amd64",
+          "binaryVersion": "0.8.1-1",
+          "sourcePackage": "xxhash",
+          "sourceVersion": "0.8.1-1"
+        },
+        {
+          "binaryPackage": "libzstd1:amd64",
+          "binaryVersion": "1.5.4+dfsg2-5",
+          "sourcePackage": "libzstd",
+          "sourceVersion": "1.5.4+dfsg2-5"
+        },
+        {
+          "binaryPackage": "linux-libc-dev:amd64",
+          "binaryVersion": "6.1.187-1",
+          "sourcePackage": "linux",
+          "sourceVersion": "6.1.187-1"
+        },
+        {
+          "binaryPackage": "login",
+          "binaryVersion": "1:4.13+dfsg1-1+deb12u2",
+          "sourcePackage": "shadow",
+          "sourceVersion": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "logsave",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "m4",
+          "binaryVersion": "1.4.19-3",
+          "sourcePackage": "m4",
+          "sourceVersion": "1.4.19-3"
+        },
+        {
+          "binaryPackage": "make",
+          "binaryVersion": "4.3-4.1",
+          "sourcePackage": "make-dfsg",
+          "sourceVersion": "4.3-4.1"
+        },
+        {
+          "binaryPackage": "mawk",
+          "binaryVersion": "1.3.4.20200120-3.1",
+          "sourcePackage": "mawk",
+          "sourceVersion": "1.3.4.20200120-3.1"
+        },
+        {
+          "binaryPackage": "media-types",
+          "binaryVersion": "10.0.0",
+          "sourcePackage": "media-types",
+          "sourceVersion": "10.0.0"
+        },
+        {
+          "binaryPackage": "mount",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "nasm",
+          "binaryVersion": "2.16.01-1",
+          "sourcePackage": "nasm",
+          "sourceVersion": "2.16.01-1"
+        },
+        {
+          "binaryPackage": "ncurses-base",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "ncurses-bin",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "openssl",
+          "binaryVersion": "3.0.22-1~deb12u1",
+          "sourcePackage": "openssl",
+          "sourceVersion": "3.0.22-1~deb12u1"
+        },
+        {
+          "binaryPackage": "passwd",
+          "binaryVersion": "1:4.13+dfsg1-1+deb12u2",
+          "sourcePackage": "shadow",
+          "sourceVersion": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "patch",
+          "binaryVersion": "2.7.6-7",
+          "sourcePackage": "patch",
+          "sourceVersion": "2.7.6-7"
+        },
+        {
+          "binaryPackage": "patchelf",
+          "binaryVersion": "0.14.3-1+b1",
+          "sourcePackage": "patchelf",
+          "sourceVersion": "0.14.3-1"
+        },
+        {
+          "binaryPackage": "perl",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "perl-base",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "perl-modules-5.36",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "pkg-config:amd64",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "pkgconf:amd64",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "pkgconf-bin",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "python3",
+          "binaryVersion": "3.11.2-1+b1",
+          "sourcePackage": "python3-defaults",
+          "sourceVersion": "3.11.2-1"
+        },
+        {
+          "binaryPackage": "python3-minimal",
+          "binaryVersion": "3.11.2-1+b1",
+          "sourcePackage": "python3-defaults",
+          "sourceVersion": "3.11.2-1"
+        },
+        {
+          "binaryPackage": "python3.11",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "python3.11-minimal",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "readline-common",
+          "binaryVersion": "8.2-1.3",
+          "sourcePackage": "readline",
+          "sourceVersion": "8.2-1.3"
+        },
+        {
+          "binaryPackage": "rpcsvc-proto",
+          "binaryVersion": "1.4.3-1",
+          "sourcePackage": "rpcsvc-proto",
+          "sourceVersion": "1.4.3-1"
+        },
+        {
+          "binaryPackage": "sed",
+          "binaryVersion": "4.9-1+deb12u1",
+          "sourcePackage": "sed",
+          "sourceVersion": "4.9-1+deb12u1"
+        },
+        {
+          "binaryPackage": "sysvinit-utils",
+          "binaryVersion": "3.06-4",
+          "sourcePackage": "sysvinit",
+          "sourceVersion": "3.06-4"
+        },
+        {
+          "binaryPackage": "tar",
+          "binaryVersion": "1.34+dfsg-1.2+deb12u1",
+          "sourcePackage": "tar",
+          "sourceVersion": "1.34+dfsg-1.2+deb12u1"
+        },
+        {
+          "binaryPackage": "tzdata",
+          "binaryVersion": "2026c-0+deb12u1",
+          "sourcePackage": "tzdata",
+          "sourceVersion": "2026c-0+deb12u1"
+        },
+        {
+          "binaryPackage": "usr-is-merged",
+          "binaryVersion": "37~deb12u1",
+          "sourcePackage": "usrmerge",
+          "sourceVersion": "37~deb12u1"
+        },
+        {
+          "binaryPackage": "util-linux",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "util-linux-extra",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "wget",
+          "binaryVersion": "1.21.3-1+deb12u1",
+          "sourcePackage": "wget",
+          "sourceVersion": "1.21.3-1+deb12u1"
+        },
+        {
+          "binaryPackage": "xz-utils",
+          "binaryVersion": "5.4.1-1+deb12u2",
+          "sourcePackage": "xz-utils",
+          "sourceVersion": "5.4.1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "zlib1g:amd64",
+          "binaryVersion": "1:1.2.13.dfsg-1",
+          "sourcePackage": "zlib",
+          "sourceVersion": "1:1.2.13.dfsg-1"
+        },
+        {
+          "binaryPackage": "zlib1g-dev:amd64",
+          "binaryVersion": "1:1.2.13.dfsg-1",
+          "sourcePackage": "zlib",
+          "sourceVersion": "1:1.2.13.dfsg-1"
+        }
+      ],
+      "evidenceFiles": [
+        {
+          "path": "/opt/pax-cli/share/pax-build/config.h",
+          "sha256": "1b2acd7f0986c1d767ea3a86f01072544d0550999677beec026cea0906e4a5f1",
+          "bytes": 22070,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/config.h"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/config_components.h",
+          "sha256": "73b8df54f2007a9ed45f0a419ff98268d6a129a38962ef719576dcdbd47e6622",
+          "bytes": 68687,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/config_components.h"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/config.mak",
+          "sha256": "913be6b1ef314e75bde9206fe5471f71b31d7cf661cc72f68c28085fdec0590c",
+          "bytes": 80291,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/config.mak"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/ffmpeg-policy.json",
+          "sha256": "c118f52b6a2a31242f7cc26aa2c426d53088abb1f5ad217470ae6bb836c25c0f",
+          "bytes": 3449,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/ffmpeg-policy.json"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/decoder-registry.tsv",
+          "sha256": "ddbe274dc03852846bc4b36171f5b02c3fc9a3d9dc7793e78912ef24e5592e13",
+          "bytes": 1146,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/decoder-registry.tsv"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/source-inputs.json",
+          "sha256": "fe120ad225e0b2a7b36ed33591f88d54df1b7b148849c3894df3599722be2273",
+          "bytes": 743,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/source-inputs.json"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/library-paths.txt",
+          "sha256": "2c0f724603de502722e9053b39a2ea84aa86f79ce6588e5ac76405c87e819a84",
+          "bytes": 1578,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/library-paths.txt"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/debian/libbz2-1.0/copyright",
+          "sha256": "832ed535ff3c3d025a8d2348eb1b697b89addcf2eaadbc17650262040b9145e2",
+          "bytes": 2228,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/debian/libbz2-1.0/copyright"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/debian/libmp3lame0/copyright",
+          "sha256": "f0e4c5098ffedad31473eec38810c26409223858fb8d63dd7685bf225f96bc5d",
+          "bytes": 7026,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/debian/libmp3lame0/copyright"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/debian/zlib1g/copyright",
+          "sha256": "9e5b96d63773a5d177ba264254390f792be07e41748ebd94730981c6cac31cc6",
+          "bytes": 2927,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/debian/zlib1g/copyright"
+        },
+        {
+          "path": "/opt/pax-cli/share/pax-build/copied-packages.tsv",
+          "sha256": "6c705d76330b37a34e347a3f6552827d0f3ffa9f968ad23fe0d87be685e8a4bc",
+          "bytes": 131,
+          "evidencePath": "evidence/cli/opt/pax-cli/share/pax-build/copied-packages.tsv"
+        }
+      ],
+      "files": [
+        {
+          "path": "/opt/pax-cli/bin/ffmpeg",
+          "sha256": "289064f64975dad231940705abef0eadbe6ce1b1028935068a8fea6f34f980aa"
+        },
+        {
+          "path": "/opt/pax-cli/bin/ffprobe",
+          "sha256": "5eb01cadeeabe4e509cfd6cf10920cd17b2dc2bf41db8ffc785916c6b48fc61b"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libavfilter.so.8.44.100",
+          "sha256": "cfa25731ba69b12343e905456495b46e86a314f11b9222a84741bdbf319e556c"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libavformat.so.59.27.100",
+          "sha256": "8b4b5a41799b4333196e5d117356dc91ac646783253391b45cc6bf97cb2fb2a0"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libavcodec.so.59.37.100",
+          "sha256": "f0b9106f5867b0ab0b4dbbcd040f0a8d1bb2e10ad526ea022bd1820aa22be98a"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libswresample.so.4.7.100",
+          "sha256": "c1b8a81162b24de2525f957d3356fc8c1027b31c30b36f85935d420194d3d5cd"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libavutil.so.57.28.100",
+          "sha256": "8a5103eddb2bd9de0acdc6170ce15eeb0b6ae22687446bf3cdb3ac4ce0d5cdbb"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libbz2.so.1.0",
+          "sha256": "69ade5c4f8accf8f01b6825bdcccc31412ed6948c8cb572dadc9ed1c0e72b14c"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libmp3lame.so.0",
+          "sha256": "5d3684a6a52c21c18847f25427dbc62c964492e0941b9368f3a56988bd7ce153"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libz.so.1",
+          "sha256": "106095f235fff41740b98b9a37cb7a9fab003a6e4d070c4a91de0117d93fbf62"
+        }
+      ],
+      "copiedPackages": [
+        {
+          "binaryPackage": "libbz2-1.0:amd64",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "libmp3lame0:amd64",
+          "binaryVersion": "3.100-6",
+          "sourcePackage": "lame",
+          "sourceVersion": "3.100-6"
+        },
+        {
+          "binaryPackage": "zlib1g:amd64",
+          "binaryVersion": "1:1.2.13.dfsg-1",
+          "sourcePackage": "zlib",
+          "sourceVersion": "1:1.2.13.dfsg-1"
+        }
+      ]
+    },
+    "nativeSource": {
+      "image": "sha256:a7b1829450bd7d3e8161471a9a535c5dd49dc12b130be3e120985bdbc71cd5f2",
+      "packages": [
+        {
+          "binaryPackage": "adduser",
+          "binaryVersion": "3.134",
+          "sourcePackage": "adduser",
+          "sourceVersion": "3.134"
+        },
+        {
+          "binaryPackage": "apt",
+          "binaryVersion": "2.6.1",
+          "sourcePackage": "apt",
+          "sourceVersion": "2.6.1"
+        },
+        {
+          "binaryPackage": "autoconf",
+          "binaryVersion": "2.71-3",
+          "sourcePackage": "autoconf",
+          "sourceVersion": "2.71-3"
+        },
+        {
+          "binaryPackage": "automake",
+          "binaryVersion": "1:1.16.5-1.3",
+          "sourcePackage": "automake-1.16",
+          "sourceVersion": "1:1.16.5-1.3"
+        },
+        {
+          "binaryPackage": "autotools-dev",
+          "binaryVersion": "20220109.1",
+          "sourcePackage": "autotools-dev",
+          "sourceVersion": "20220109.1"
+        },
+        {
+          "binaryPackage": "base-files",
+          "binaryVersion": "12.4+deb12u15",
+          "sourcePackage": "base-files",
+          "sourceVersion": "12.4+deb12u15"
+        },
+        {
+          "binaryPackage": "base-passwd",
+          "binaryVersion": "3.6.1",
+          "sourcePackage": "base-passwd",
+          "sourceVersion": "3.6.1"
+        },
+        {
+          "binaryPackage": "bash",
+          "binaryVersion": "5.2.15-2+b13",
+          "sourcePackage": "bash",
+          "sourceVersion": "5.2.15-2"
+        },
+        {
+          "binaryPackage": "binutils",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "binutils-common:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "binutils-x86-64-linux-gnu",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "bsdutils",
+          "binaryVersion": "1:2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "build-essential",
+          "binaryVersion": "12.9",
+          "sourcePackage": "build-essential",
+          "sourceVersion": "12.9"
+        },
+        {
+          "binaryPackage": "bzip2",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "ca-certificates",
+          "binaryVersion": "20250419~deb12u1",
+          "sourcePackage": "ca-certificates",
+          "sourceVersion": "20250419~deb12u1"
+        },
+        {
+          "binaryPackage": "coreutils",
+          "binaryVersion": "9.1-1",
+          "sourcePackage": "coreutils",
+          "sourceVersion": "9.1-1"
+        },
+        {
+          "binaryPackage": "cpp",
+          "binaryVersion": "4:12.2.0-3",
+          "sourcePackage": "gcc-defaults",
+          "sourceVersion": "1.203"
+        },
+        {
+          "binaryPackage": "cpp-12",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "curl",
+          "binaryVersion": "7.88.1-10+deb12u15",
+          "sourcePackage": "curl",
+          "sourceVersion": "7.88.1-10+deb12u15"
+        },
+        {
+          "binaryPackage": "dash",
+          "binaryVersion": "0.5.12-2",
+          "sourcePackage": "dash",
+          "sourceVersion": "0.5.12-2"
+        },
+        {
+          "binaryPackage": "debconf",
+          "binaryVersion": "1.5.82",
+          "sourcePackage": "debconf",
+          "sourceVersion": "1.5.82"
+        },
+        {
+          "binaryPackage": "debian-archive-keyring",
+          "binaryVersion": "2023.3+deb12u2",
+          "sourcePackage": "debian-archive-keyring",
+          "sourceVersion": "2023.3+deb12u2"
+        },
+        {
+          "binaryPackage": "debianutils",
+          "binaryVersion": "5.7-0.5~deb12u1",
+          "sourcePackage": "debianutils",
+          "sourceVersion": "5.7-0.5~deb12u1"
+        },
+        {
+          "binaryPackage": "diffutils",
+          "binaryVersion": "1:3.8-4",
+          "sourcePackage": "diffutils",
+          "sourceVersion": "1:3.8-4"
+        },
+        {
+          "binaryPackage": "dpkg",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "dpkg-dev",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "e2fsprogs",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "file",
+          "binaryVersion": "1:5.44-3",
+          "sourcePackage": "file",
+          "sourceVersion": "1:5.44-3"
+        },
+        {
+          "binaryPackage": "findutils",
+          "binaryVersion": "4.9.0-4",
+          "sourcePackage": "findutils",
+          "sourceVersion": "4.9.0-4"
+        },
+        {
+          "binaryPackage": "g++",
+          "binaryVersion": "4:12.2.0-3",
+          "sourcePackage": "gcc-defaults",
+          "sourceVersion": "1.203"
+        },
+        {
+          "binaryPackage": "g++-12",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gcc",
+          "binaryVersion": "4:12.2.0-3",
+          "sourcePackage": "gcc-defaults",
+          "sourceVersion": "1.203"
+        },
+        {
+          "binaryPackage": "gcc-12",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gcc-12-base:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gpgv",
+          "binaryVersion": "2.2.40-1.1+deb12u2",
+          "sourcePackage": "gnupg2",
+          "sourceVersion": "2.2.40-1.1+deb12u2"
+        },
+        {
+          "binaryPackage": "grep",
+          "binaryVersion": "3.8-5",
+          "sourcePackage": "grep",
+          "sourceVersion": "3.8-5"
+        },
+        {
+          "binaryPackage": "gzip",
+          "binaryVersion": "1.12-1",
+          "sourcePackage": "gzip",
+          "sourceVersion": "1.12-1"
+        },
+        {
+          "binaryPackage": "hostname",
+          "binaryVersion": "3.23+nmu1",
+          "sourcePackage": "hostname",
+          "sourceVersion": "3.23+nmu1"
+        },
+        {
+          "binaryPackage": "init-system-helpers",
+          "binaryVersion": "1.65.2+deb12u1",
+          "sourcePackage": "init-system-helpers",
+          "sourceVersion": "1.65.2+deb12u1"
+        },
+        {
+          "binaryPackage": "libacl1:amd64",
+          "binaryVersion": "2.3.1-3",
+          "sourcePackage": "acl",
+          "sourceVersion": "2.3.1-3"
+        },
+        {
+          "binaryPackage": "libapt-pkg6.0:amd64",
+          "binaryVersion": "2.6.1",
+          "sourcePackage": "apt",
+          "sourceVersion": "2.6.1"
+        },
+        {
+          "binaryPackage": "libasan8:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libatomic1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libattr1:amd64",
+          "binaryVersion": "1:2.5.1-4",
+          "sourcePackage": "attr",
+          "sourceVersion": "1:2.5.1-4"
+        },
+        {
+          "binaryPackage": "libaudit-common",
+          "binaryVersion": "1:3.0.9-1",
+          "sourcePackage": "audit",
+          "sourceVersion": "1:3.0.9-1"
+        },
+        {
+          "binaryPackage": "libaudit1:amd64",
+          "binaryVersion": "1:3.0.9-1",
+          "sourcePackage": "audit",
+          "sourceVersion": "1:3.0.9-1"
+        },
+        {
+          "binaryPackage": "libbinutils:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libblkid1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libbrotli1:amd64",
+          "binaryVersion": "1.0.9-2+b6",
+          "sourcePackage": "brotli",
+          "sourceVersion": "1.0.9-2"
+        },
+        {
+          "binaryPackage": "libbz2-1.0:amd64",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "libbz2-dev:amd64",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "libc-bin",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc-dev-bin",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc6:amd64",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc6-dev:amd64",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libcap-ng0:amd64",
+          "binaryVersion": "0.8.3-1+b3",
+          "sourcePackage": "libcap-ng",
+          "sourceVersion": "0.8.3-1"
+        },
+        {
+          "binaryPackage": "libcap2:amd64",
+          "binaryVersion": "1:2.66-4+deb12u3+b1",
+          "sourcePackage": "libcap2",
+          "sourceVersion": "1:2.66-4+deb12u3"
+        },
+        {
+          "binaryPackage": "libcc1-0:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libcom-err2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libcrypt-dev:amd64",
+          "binaryVersion": "1:4.4.33-2",
+          "sourcePackage": "libxcrypt",
+          "sourceVersion": "1:4.4.33-2"
+        },
+        {
+          "binaryPackage": "libcrypt1:amd64",
+          "binaryVersion": "1:4.4.33-2",
+          "sourcePackage": "libxcrypt",
+          "sourceVersion": "1:4.4.33-2"
+        },
+        {
+          "binaryPackage": "libctf-nobfd0:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libctf0:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libcurl4:amd64",
+          "binaryVersion": "7.88.1-10+deb12u15",
+          "sourcePackage": "curl",
+          "sourceVersion": "7.88.1-10+deb12u15"
+        },
+        {
+          "binaryPackage": "libdb5.3:amd64",
+          "binaryVersion": "5.3.28+dfsg2-1",
+          "sourcePackage": "db5.3",
+          "sourceVersion": "5.3.28+dfsg2-1"
+        },
+        {
+          "binaryPackage": "libdebconfclient0:amd64",
+          "binaryVersion": "0.270",
+          "sourcePackage": "cdebconf",
+          "sourceVersion": "0.270"
+        },
+        {
+          "binaryPackage": "libdpkg-perl",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "libexpat1:amd64",
+          "binaryVersion": "2.5.0-1+deb12u4",
+          "sourcePackage": "expat",
+          "sourceVersion": "2.5.0-1+deb12u4"
+        },
+        {
+          "binaryPackage": "libext2fs2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libffi8:amd64",
+          "binaryVersion": "3.4.4-1",
+          "sourcePackage": "libffi",
+          "sourceVersion": "3.4.4-1"
+        },
+        {
+          "binaryPackage": "libgcc-12-dev:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgcc-s1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgcrypt20:amd64",
+          "binaryVersion": "1.10.1-3+deb12u1",
+          "sourcePackage": "libgcrypt20",
+          "sourceVersion": "1.10.1-3+deb12u1"
+        },
+        {
+          "binaryPackage": "libgdbm-compat4:amd64",
+          "binaryVersion": "1.23-3",
+          "sourcePackage": "gdbm",
+          "sourceVersion": "1.23-3"
+        },
+        {
+          "binaryPackage": "libgdbm6:amd64",
+          "binaryVersion": "1.23-3",
+          "sourcePackage": "gdbm",
+          "sourceVersion": "1.23-3"
+        },
+        {
+          "binaryPackage": "libgmp10:amd64",
+          "binaryVersion": "2:6.2.1+dfsg1-1.1",
+          "sourcePackage": "gmp",
+          "sourceVersion": "2:6.2.1+dfsg1-1.1"
+        },
+        {
+          "binaryPackage": "libgnutls30:amd64",
+          "binaryVersion": "3.7.9-2+deb12u7",
+          "sourcePackage": "gnutls28",
+          "sourceVersion": "3.7.9-2+deb12u7"
+        },
+        {
+          "binaryPackage": "libgomp1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgpg-error0:amd64",
+          "binaryVersion": "1.46-1",
+          "sourcePackage": "libgpg-error",
+          "sourceVersion": "1.46-1"
+        },
+        {
+          "binaryPackage": "libgprofng0:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libgssapi-krb5-2:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libhogweed6:amd64",
+          "binaryVersion": "3.8.1-2",
+          "sourcePackage": "nettle",
+          "sourceVersion": "3.8.1-2"
+        },
+        {
+          "binaryPackage": "libidn2-0:amd64",
+          "binaryVersion": "2.3.3-1+b1",
+          "sourcePackage": "libidn2",
+          "sourceVersion": "2.3.3-1"
+        },
+        {
+          "binaryPackage": "libisl23:amd64",
+          "binaryVersion": "0.25-1.1",
+          "sourcePackage": "isl",
+          "sourceVersion": "0.25-1.1"
+        },
+        {
+          "binaryPackage": "libitm1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libjansson4:amd64",
+          "binaryVersion": "2.14-2",
+          "sourcePackage": "jansson",
+          "sourceVersion": "2.14-2"
+        },
+        {
+          "binaryPackage": "libk5crypto3:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libkeyutils1:amd64",
+          "binaryVersion": "1.6.3-2",
+          "sourcePackage": "keyutils",
+          "sourceVersion": "1.6.3-2"
+        },
+        {
+          "binaryPackage": "libkrb5-3:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libkrb5support0:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libldap-2.5-0:amd64",
+          "binaryVersion": "2.5.13+dfsg-5",
+          "sourcePackage": "openldap",
+          "sourceVersion": "2.5.13+dfsg-5"
+        },
+        {
+          "binaryPackage": "liblsan0:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "liblz4-1:amd64",
+          "binaryVersion": "1.9.4-1",
+          "sourcePackage": "lz4",
+          "sourceVersion": "1.9.4-1"
+        },
+        {
+          "binaryPackage": "liblzma5:amd64",
+          "binaryVersion": "5.4.1-1+deb12u2",
+          "sourcePackage": "xz-utils",
+          "sourceVersion": "5.4.1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "libmagic-mgc",
+          "binaryVersion": "1:5.44-3",
+          "sourcePackage": "file",
+          "sourceVersion": "1:5.44-3"
+        },
+        {
+          "binaryPackage": "libmagic1:amd64",
+          "binaryVersion": "1:5.44-3",
+          "sourcePackage": "file",
+          "sourceVersion": "1:5.44-3"
+        },
+        {
+          "binaryPackage": "libmd0:amd64",
+          "binaryVersion": "1.0.4-2",
+          "sourcePackage": "libmd",
+          "sourceVersion": "1.0.4-2"
+        },
+        {
+          "binaryPackage": "libmount1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libmpc3:amd64",
+          "binaryVersion": "1.3.1-1",
+          "sourcePackage": "mpclib3",
+          "sourceVersion": "1.3.1-1"
+        },
+        {
+          "binaryPackage": "libmpfr6:amd64",
+          "binaryVersion": "4.2.0-1",
+          "sourcePackage": "mpfr4",
+          "sourceVersion": "4.2.0-1"
+        },
+        {
+          "binaryPackage": "libncursesw6:amd64",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "libnettle8:amd64",
+          "binaryVersion": "3.8.1-2",
+          "sourcePackage": "nettle",
+          "sourceVersion": "3.8.1-2"
+        },
+        {
+          "binaryPackage": "libnghttp2-14:amd64",
+          "binaryVersion": "1.52.0-1+deb12u3",
+          "sourcePackage": "nghttp2",
+          "sourceVersion": "1.52.0-1+deb12u3"
+        },
+        {
+          "binaryPackage": "libnsl-dev:amd64",
+          "binaryVersion": "1.3.0-2",
+          "sourcePackage": "libnsl",
+          "sourceVersion": "1.3.0-2"
+        },
+        {
+          "binaryPackage": "libnsl2:amd64",
+          "binaryVersion": "1.3.0-2",
+          "sourcePackage": "libnsl",
+          "sourceVersion": "1.3.0-2"
+        },
+        {
+          "binaryPackage": "libp11-kit0:amd64",
+          "binaryVersion": "0.24.1-2",
+          "sourcePackage": "p11-kit",
+          "sourceVersion": "0.24.1-2"
+        },
+        {
+          "binaryPackage": "libpam-modules:amd64",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam-modules-bin",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam-runtime",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam0g:amd64",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpcre2-8-0:amd64",
+          "binaryVersion": "10.42-1+deb12u2",
+          "sourcePackage": "pcre2",
+          "sourceVersion": "10.42-1+deb12u2"
+        },
+        {
+          "binaryPackage": "libperl5.36:amd64",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "libpkgconf3:amd64",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "libpsl5:amd64",
+          "binaryVersion": "0.21.2-1",
+          "sourcePackage": "libpsl",
+          "sourceVersion": "0.21.2-1"
+        },
+        {
+          "binaryPackage": "libpython3-stdlib:amd64",
+          "binaryVersion": "3.11.2-1+b1",
+          "sourcePackage": "python3-defaults",
+          "sourceVersion": "3.11.2-1"
+        },
+        {
+          "binaryPackage": "libpython3.11-minimal:amd64",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "libpython3.11-stdlib:amd64",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "libquadmath0:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libreadline8:amd64",
+          "binaryVersion": "8.2-1.3",
+          "sourcePackage": "readline",
+          "sourceVersion": "8.2-1.3"
+        },
+        {
+          "binaryPackage": "librtmp1:amd64",
+          "binaryVersion": "2.4+20151223.gitfa8646d.1-2+b2",
+          "sourcePackage": "rtmpdump",
+          "sourceVersion": "2.4+20151223.gitfa8646d.1-2"
+        },
+        {
+          "binaryPackage": "libsasl2-2:amd64",
+          "binaryVersion": "2.1.28+dfsg-10",
+          "sourcePackage": "cyrus-sasl2",
+          "sourceVersion": "2.1.28+dfsg-10"
+        },
+        {
+          "binaryPackage": "libsasl2-modules-db:amd64",
+          "binaryVersion": "2.1.28+dfsg-10",
+          "sourcePackage": "cyrus-sasl2",
+          "sourceVersion": "2.1.28+dfsg-10"
+        },
+        {
+          "binaryPackage": "libseccomp2:amd64",
+          "binaryVersion": "2.5.4-1+deb12u1",
+          "sourcePackage": "libseccomp",
+          "sourceVersion": "2.5.4-1+deb12u1"
+        },
+        {
+          "binaryPackage": "libselinux1:amd64",
+          "binaryVersion": "3.4-1+b6",
+          "sourcePackage": "libselinux",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsemanage-common",
+          "binaryVersion": "3.4-1",
+          "sourcePackage": "libsemanage",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsemanage2:amd64",
+          "binaryVersion": "3.4-1+b5",
+          "sourcePackage": "libsemanage",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsepol2:amd64",
+          "binaryVersion": "3.4-2.1",
+          "sourcePackage": "libsepol",
+          "sourceVersion": "3.4-2.1"
+        },
+        {
+          "binaryPackage": "libsmartcols1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libsqlite3-0:amd64",
+          "binaryVersion": "3.40.1-2+deb12u2",
+          "sourcePackage": "sqlite3",
+          "sourceVersion": "3.40.1-2+deb12u2"
+        },
+        {
+          "binaryPackage": "libss2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libssh2-1:amd64",
+          "binaryVersion": "1.10.0-3+deb12u1",
+          "sourcePackage": "libssh2",
+          "sourceVersion": "1.10.0-3+deb12u1"
+        },
+        {
+          "binaryPackage": "libssl3:amd64",
+          "binaryVersion": "3.0.22-1~deb12u1",
+          "sourcePackage": "openssl",
+          "sourceVersion": "3.0.22-1~deb12u1"
+        },
+        {
+          "binaryPackage": "libstdc++-12-dev:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libstdc++6:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libsystemd0:amd64",
+          "binaryVersion": "252.39-1~deb12u2",
+          "sourcePackage": "systemd",
+          "sourceVersion": "252.39-1~deb12u2"
+        },
+        {
+          "binaryPackage": "libtasn1-6:amd64",
+          "binaryVersion": "4.19.0-2+deb12u1",
+          "sourcePackage": "libtasn1-6",
+          "sourceVersion": "4.19.0-2+deb12u1"
+        },
+        {
+          "binaryPackage": "libtinfo6:amd64",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "libtirpc-common",
+          "binaryVersion": "1.3.3+ds-1",
+          "sourcePackage": "libtirpc",
+          "sourceVersion": "1.3.3+ds-1"
+        },
+        {
+          "binaryPackage": "libtirpc-dev:amd64",
+          "binaryVersion": "1.3.3+ds-1",
+          "sourcePackage": "libtirpc",
+          "sourceVersion": "1.3.3+ds-1"
+        },
+        {
+          "binaryPackage": "libtirpc3:amd64",
+          "binaryVersion": "1.3.3+ds-1",
+          "sourcePackage": "libtirpc",
+          "sourceVersion": "1.3.3+ds-1"
+        },
+        {
+          "binaryPackage": "libtool",
+          "binaryVersion": "2.4.7-7~deb12u1",
+          "sourcePackage": "libtool",
+          "sourceVersion": "2.4.7-7~deb12u1"
+        },
+        {
+          "binaryPackage": "libtsan2:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libubsan1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libudev1:amd64",
+          "binaryVersion": "252.39-1~deb12u2",
+          "sourcePackage": "systemd",
+          "sourceVersion": "252.39-1~deb12u2"
+        },
+        {
+          "binaryPackage": "libunistring2:amd64",
+          "binaryVersion": "1.0-2",
+          "sourcePackage": "libunistring",
+          "sourceVersion": "1.0-2"
+        },
+        {
+          "binaryPackage": "libuuid1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libxxhash0:amd64",
+          "binaryVersion": "0.8.1-1",
+          "sourcePackage": "xxhash",
+          "sourceVersion": "0.8.1-1"
+        },
+        {
+          "binaryPackage": "libzstd1:amd64",
+          "binaryVersion": "1.5.4+dfsg2-5",
+          "sourcePackage": "libzstd",
+          "sourceVersion": "1.5.4+dfsg2-5"
+        },
+        {
+          "binaryPackage": "linux-libc-dev:amd64",
+          "binaryVersion": "6.1.187-1",
+          "sourcePackage": "linux",
+          "sourceVersion": "6.1.187-1"
+        },
+        {
+          "binaryPackage": "login",
+          "binaryVersion": "1:4.13+dfsg1-1+deb12u2",
+          "sourcePackage": "shadow",
+          "sourceVersion": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "logsave",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "m4",
+          "binaryVersion": "1.4.19-3",
+          "sourcePackage": "m4",
+          "sourceVersion": "1.4.19-3"
+        },
+        {
+          "binaryPackage": "make",
+          "binaryVersion": "4.3-4.1",
+          "sourcePackage": "make-dfsg",
+          "sourceVersion": "4.3-4.1"
+        },
+        {
+          "binaryPackage": "mawk",
+          "binaryVersion": "1.3.4.20200120-3.1",
+          "sourcePackage": "mawk",
+          "sourceVersion": "1.3.4.20200120-3.1"
+        },
+        {
+          "binaryPackage": "media-types",
+          "binaryVersion": "10.0.0",
+          "sourcePackage": "media-types",
+          "sourceVersion": "10.0.0"
+        },
+        {
+          "binaryPackage": "mount",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "nasm",
+          "binaryVersion": "2.16.01-1",
+          "sourcePackage": "nasm",
+          "sourceVersion": "2.16.01-1"
+        },
+        {
+          "binaryPackage": "ncurses-base",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "ncurses-bin",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "openssl",
+          "binaryVersion": "3.0.22-1~deb12u1",
+          "sourcePackage": "openssl",
+          "sourceVersion": "3.0.22-1~deb12u1"
+        },
+        {
+          "binaryPackage": "passwd",
+          "binaryVersion": "1:4.13+dfsg1-1+deb12u2",
+          "sourcePackage": "shadow",
+          "sourceVersion": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "patch",
+          "binaryVersion": "2.7.6-7",
+          "sourcePackage": "patch",
+          "sourceVersion": "2.7.6-7"
+        },
+        {
+          "binaryPackage": "perl",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "perl-base",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "perl-modules-5.36",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "pkg-config:amd64",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "pkgconf:amd64",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "pkgconf-bin",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "python3",
+          "binaryVersion": "3.11.2-1+b1",
+          "sourcePackage": "python3-defaults",
+          "sourceVersion": "3.11.2-1"
+        },
+        {
+          "binaryPackage": "python3-minimal",
+          "binaryVersion": "3.11.2-1+b1",
+          "sourcePackage": "python3-defaults",
+          "sourceVersion": "3.11.2-1"
+        },
+        {
+          "binaryPackage": "python3.11",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "python3.11-minimal",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "readline-common",
+          "binaryVersion": "8.2-1.3",
+          "sourcePackage": "readline",
+          "sourceVersion": "8.2-1.3"
+        },
+        {
+          "binaryPackage": "rpcsvc-proto",
+          "binaryVersion": "1.4.3-1",
+          "sourcePackage": "rpcsvc-proto",
+          "sourceVersion": "1.4.3-1"
+        },
+        {
+          "binaryPackage": "sed",
+          "binaryVersion": "4.9-1+deb12u1",
+          "sourcePackage": "sed",
+          "sourceVersion": "4.9-1+deb12u1"
+        },
+        {
+          "binaryPackage": "sysvinit-utils",
+          "binaryVersion": "3.06-4",
+          "sourcePackage": "sysvinit",
+          "sourceVersion": "3.06-4"
+        },
+        {
+          "binaryPackage": "tar",
+          "binaryVersion": "1.34+dfsg-1.2+deb12u1",
+          "sourcePackage": "tar",
+          "sourceVersion": "1.34+dfsg-1.2+deb12u1"
+        },
+        {
+          "binaryPackage": "tzdata",
+          "binaryVersion": "2026c-0+deb12u1",
+          "sourcePackage": "tzdata",
+          "sourceVersion": "2026c-0+deb12u1"
+        },
+        {
+          "binaryPackage": "usr-is-merged",
+          "binaryVersion": "37~deb12u1",
+          "sourcePackage": "usrmerge",
+          "sourceVersion": "37~deb12u1"
+        },
+        {
+          "binaryPackage": "util-linux",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "util-linux-extra",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "wget",
+          "binaryVersion": "1.21.3-1+deb12u1",
+          "sourcePackage": "wget",
+          "sourceVersion": "1.21.3-1+deb12u1"
+        },
+        {
+          "binaryPackage": "xz-utils",
+          "binaryVersion": "5.4.1-1+deb12u2",
+          "sourcePackage": "xz-utils",
+          "sourceVersion": "5.4.1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "zlib1g:amd64",
+          "binaryVersion": "1:1.2.13.dfsg-1",
+          "sourcePackage": "zlib",
+          "sourceVersion": "1:1.2.13.dfsg-1"
+        },
+        {
+          "binaryPackage": "zlib1g-dev:amd64",
+          "binaryVersion": "1:1.2.13.dfsg-1",
+          "sourcePackage": "zlib",
+          "sourceVersion": "1:1.2.13.dfsg-1"
+        }
+      ],
+      "evidenceFiles": [
+        {
+          "path": "/opt/pax-ffmpeg/share/pax-build/config.h",
+          "sha256": "0a31c8147e498aa4d12c909a5f792d3ea9b3c2e68c581ea42ae0b918bf8751ca",
+          "bytes": 21938,
+          "evidencePath": "evidence/nativeSource/opt/pax-ffmpeg/share/pax-build/config.h"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/share/pax-build/config_components.h",
+          "sha256": "04fe9d3c41ccbf72e45f91bf2a4d922ab32e1718e252c63beb3901d68bef76b2",
+          "bytes": 68687,
+          "evidencePath": "evidence/nativeSource/opt/pax-ffmpeg/share/pax-build/config_components.h"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/share/pax-build/config.mak",
+          "sha256": "6db29fa5f849b7db043ce8c55fb9e9e42e334a8c7566a9c888b5809720a88817",
+          "bytes": 80156,
+          "evidencePath": "evidence/nativeSource/opt/pax-ffmpeg/share/pax-build/config.mak"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/share/pax-build/ffmpeg-policy.json",
+          "sha256": "c118f52b6a2a31242f7cc26aa2c426d53088abb1f5ad217470ae6bb836c25c0f",
+          "bytes": 3449,
+          "evidencePath": "evidence/nativeSource/opt/pax-ffmpeg/share/pax-build/ffmpeg-policy.json"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/share/pax-build/decoder-registry.tsv",
+          "sha256": "ddbe274dc03852846bc4b36171f5b02c3fc9a3d9dc7793e78912ef24e5592e13",
+          "bytes": 1146,
+          "evidencePath": "evidence/nativeSource/opt/pax-ffmpeg/share/pax-build/decoder-registry.tsv"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/share/pax-build/source-inputs.json",
+          "sha256": "fe120ad225e0b2a7b36ed33591f88d54df1b7b148849c3894df3599722be2273",
+          "bytes": 743,
+          "evidencePath": "evidence/nativeSource/opt/pax-ffmpeg/share/pax-build/source-inputs.json"
+        },
+        {
+          "path": "/samplerate/COPYING",
+          "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+          "bytes": 17992,
+          "evidencePath": "evidence/nativeSource/samplerate/COPYING"
+        },
+        {
+          "path": "/samplerate/Cfg/config.guess",
+          "sha256": "cf610daf8afdedbf2110abd79bdd4121d59080cab5ec46deaf67f97273bb6bda",
+          "bytes": 49482,
+          "evidencePath": "evidence/nativeSource/samplerate/Cfg/config.guess"
+        },
+        {
+          "path": "/samplerate/Cfg/config.sub",
+          "sha256": "deb02c26f43b2ea64276c9ede77ec0f53d08e6256710f3c0a12275712085c348",
+          "bytes": 35406,
+          "evidencePath": "evidence/nativeSource/samplerate/Cfg/config.sub"
+        },
+        {
+          "path": "/samplerate/src/src_sinc.c",
+          "sha256": "3529e5a39386bfc1106b8bd57de89e0f03490a33693713b59845a02ba60175a6",
+          "bytes": 39794,
+          "evidencePath": "evidence/nativeSource/samplerate/src/src_sinc.c"
+        },
+        {
+          "path": "/fftw/COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c",
+          "bytes": 18002,
+          "evidencePath": "evidence/nativeSource/fftw/COPYING"
+        },
+        {
+          "path": "/fftw/config.log",
+          "sha256": "399901719a260d9aa30f6d127165730f4096132feab27dd6e6f9d4a4ebc44a2f",
+          "bytes": 116412,
+          "evidencePath": "evidence/nativeSource/fftw/config.log"
+        },
+        {
+          "path": "/ffmpeg/COPYING.LGPLv2.1",
+          "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30",
+          "bytes": 26517,
+          "evidencePath": "evidence/nativeSource/ffmpeg/COPYING.LGPLv2.1"
+        },
+        {
+          "path": "/essentia/COPYING.txt",
+          "sha256": "857d4e8afe59718161905db0295c7e09d00674e0be844c2a0500465afbe06521",
+          "bytes": 31773,
+          "evidencePath": "evidence/nativeSource/essentia/COPYING.txt"
+        },
+        {
+          "path": "/essentia/ACKNOWLEDGEMENTS",
+          "sha256": "c68bf20f1623ba22307f385466f2eb46bfed3c3b382c0c56683ffbf9696f032e",
+          "bytes": 733,
+          "evidencePath": "evidence/nativeSource/essentia/ACKNOWLEDGEMENTS"
+        },
+        {
+          "path": "/essentia/src/algorithms/io/audioloader.cpp",
+          "sha256": "f0267b370aeef6aa2ecca82caa7d4484692d170e41d9c33b79d9bd04a1bef9ed",
+          "bytes": 17995,
+          "evidencePath": "evidence/nativeSource/essentia/src/algorithms/io/audioloader.cpp"
+        },
+        {
+          "path": "/eigen/COPYING.MPL2",
+          "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+          "bytes": 16726,
+          "evidencePath": "evidence/nativeSource/eigen/COPYING.MPL2"
+        },
+        {
+          "path": "/usr/share/doc/autotools-dev/copyright",
+          "sha256": "36a496cc3b061be451c51a7373b567664eda2695703b6546fa7fd3d2d59e5c74",
+          "bytes": 1605,
+          "evidencePath": "evidence/nativeSource/usr/share/doc/autotools-dev/copyright"
+        }
+      ],
+      "files": [
+        {
+          "path": "/opt/pax-samplerate/lib/libsamplerate.so.0.1.8",
+          "sha256": "cb1a13a7eefd50f87e8d0a3ca538fe88552e3b9b4bd032db7986ad95fdb18500"
+        },
+        {
+          "path": "/opt/pax-samplerate/lib/libsamplerate.la",
+          "sha256": "c1d9ca6f999e16ce0a6a728ddcff32bc88edcd7bc19d2ace2b1a124afd655d0b"
+        },
+        {
+          "path": "/opt/pax-samplerate/lib/pkgconfig/samplerate.pc",
+          "sha256": "730996aa0616a5061ec96ed7c7d29ed6cdc150e097a5d8d1c9e24acb03688906"
+        },
+        {
+          "path": "/opt/pax-fftw/lib/libfftw3f.so.3.5.8",
+          "sha256": "c70a6b3b69e8baff2bb3787bea38ca6184ccb0cc6b63ac93084f5b2ddb75fe6e"
+        },
+        {
+          "path": "/opt/pax-fftw/lib/libfftw3f.la",
+          "sha256": "f62a3db079ab92bb80d71bd0659a469bcbbbce84459aa709d1d5bd751af05fce"
+        },
+        {
+          "path": "/opt/pax-fftw/lib/cmake/fftw3/FFTW3fConfig.cmake",
+          "sha256": "158567c0ef2ad945249a4c39feb5149da1839b608efa7f818813137f25446d30"
+        },
+        {
+          "path": "/opt/pax-fftw/lib/cmake/fftw3/FFTW3fConfigVersion.cmake",
+          "sha256": "2df4b7fa4fb0e7c97543a8dd38cd922accc397235a08f6269b1094b832f865f7"
+        },
+        {
+          "path": "/opt/pax-fftw/lib/pkgconfig/fftw3f.pc",
+          "sha256": "e6ce61eeb5ca068343536c1aa9ec9a8c107b414ca0f490088ae568fc04efb637"
+        },
+        {
+          "path": "/opt/pax-fftw/lib/libfftw3f_threads.so.3.5.8",
+          "sha256": "f2d613d06488f5a7f1a98a8bf1256bf1666a45107d4a231a8ba78f3db3a70e6e"
+        },
+        {
+          "path": "/opt/pax-fftw/lib/libfftw3f_threads.la",
+          "sha256": "fb00bda397532f27f205ef36c49471b0bedfd9cfcde93a0a747292ac9bf0b5fe"
+        },
+        {
+          "path": "/opt/pax-fftw/lib/libfftw3f_omp.so.3.5.8",
+          "sha256": "94d767cda0736dbe74b7e8bdafc183d58697ab51b08e5de6b2d9ed6039cf9464"
+        },
+        {
+          "path": "/opt/pax-fftw/lib/libfftw3f_omp.la",
+          "sha256": "cfa447b1422c42bdfbbd7627aa33ee813b94db769bad9a8fdb052e1926c5f545"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/lib/libavformat.so.59.27.100",
+          "sha256": "fd39864e0fc693bed1935f8f38850cbf7861fff93c8b5c1ce4ff612b355f5ade"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/lib/libavcodec.so.59.37.100",
+          "sha256": "930f4b7cf56de6b1085b4869c4ee2bf126eee7b62570d9d6902d2dd7bbb4fa0a"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/lib/libswresample.so.4.7.100",
+          "sha256": "05baef8573380bca7c996fe03db05bb09c64a1fff07fd29fcf24973bd5e958be"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/lib/libavutil.so.57.28.100",
+          "sha256": "dcbe76fe4cdcf3bab6cfbfe302ca66c16231a78b8cc072f040058a824493b6f8"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/lib/pkgconfig/libavformat.pc",
+          "sha256": "abe27b39a3358d146d116ccfb8afed668e8404f660ed795d95cdfa43d7bbf8ed"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/lib/pkgconfig/libavcodec.pc",
+          "sha256": "d581ad0e4d1f2ddd73d666a2d51ad1c07c1a45275ceb4e6f36d5749795054aee"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/lib/pkgconfig/libswresample.pc",
+          "sha256": "017ab48176f461c19af06137ea4dba911a7d8860b1e5f2366c9e3bdf3e6cb015"
+        },
+        {
+          "path": "/opt/pax-ffmpeg/lib/pkgconfig/libavutil.pc",
+          "sha256": "59b47214864f4afeecd303865a6e3f30387024bfa00ca4fb7b0ff94825d03f1b"
+        }
+      ]
+    },
+    "nativeBundle": {
+      "image": "sha256:a03d7feec71e1a2c7a2263ffaab4d01c918ec5855ed4e7a692a4bd9079c1a458",
+      "packages": [
+        {
+          "binaryPackage": "adduser",
+          "binaryVersion": "3.134",
+          "sourcePackage": "adduser",
+          "sourceVersion": "3.134"
+        },
+        {
+          "binaryPackage": "apt",
+          "binaryVersion": "2.6.1",
+          "sourcePackage": "apt",
+          "sourceVersion": "2.6.1"
+        },
+        {
+          "binaryPackage": "autoconf",
+          "binaryVersion": "2.71-3",
+          "sourcePackage": "autoconf",
+          "sourceVersion": "2.71-3"
+        },
+        {
+          "binaryPackage": "automake",
+          "binaryVersion": "1:1.16.5-1.3",
+          "sourcePackage": "automake-1.16",
+          "sourceVersion": "1:1.16.5-1.3"
+        },
+        {
+          "binaryPackage": "autotools-dev",
+          "binaryVersion": "20220109.1",
+          "sourcePackage": "autotools-dev",
+          "sourceVersion": "20220109.1"
+        },
+        {
+          "binaryPackage": "base-files",
+          "binaryVersion": "12.4+deb12u15",
+          "sourcePackage": "base-files",
+          "sourceVersion": "12.4+deb12u15"
+        },
+        {
+          "binaryPackage": "base-passwd",
+          "binaryVersion": "3.6.1",
+          "sourcePackage": "base-passwd",
+          "sourceVersion": "3.6.1"
+        },
+        {
+          "binaryPackage": "bash",
+          "binaryVersion": "5.2.15-2+b13",
+          "sourcePackage": "bash",
+          "sourceVersion": "5.2.15-2"
+        },
+        {
+          "binaryPackage": "binutils",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "binutils-common:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "binutils-x86-64-linux-gnu",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "bsdutils",
+          "binaryVersion": "1:2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "build-essential",
+          "binaryVersion": "12.9",
+          "sourcePackage": "build-essential",
+          "sourceVersion": "12.9"
+        },
+        {
+          "binaryPackage": "bzip2",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "ca-certificates",
+          "binaryVersion": "20250419~deb12u1",
+          "sourcePackage": "ca-certificates",
+          "sourceVersion": "20250419~deb12u1"
+        },
+        {
+          "binaryPackage": "coreutils",
+          "binaryVersion": "9.1-1",
+          "sourcePackage": "coreutils",
+          "sourceVersion": "9.1-1"
+        },
+        {
+          "binaryPackage": "cpp",
+          "binaryVersion": "4:12.2.0-3",
+          "sourcePackage": "gcc-defaults",
+          "sourceVersion": "1.203"
+        },
+        {
+          "binaryPackage": "cpp-12",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "curl",
+          "binaryVersion": "7.88.1-10+deb12u15",
+          "sourcePackage": "curl",
+          "sourceVersion": "7.88.1-10+deb12u15"
+        },
+        {
+          "binaryPackage": "dash",
+          "binaryVersion": "0.5.12-2",
+          "sourcePackage": "dash",
+          "sourceVersion": "0.5.12-2"
+        },
+        {
+          "binaryPackage": "debconf",
+          "binaryVersion": "1.5.82",
+          "sourcePackage": "debconf",
+          "sourceVersion": "1.5.82"
+        },
+        {
+          "binaryPackage": "debian-archive-keyring",
+          "binaryVersion": "2023.3+deb12u2",
+          "sourcePackage": "debian-archive-keyring",
+          "sourceVersion": "2023.3+deb12u2"
+        },
+        {
+          "binaryPackage": "debianutils",
+          "binaryVersion": "5.7-0.5~deb12u1",
+          "sourcePackage": "debianutils",
+          "sourceVersion": "5.7-0.5~deb12u1"
+        },
+        {
+          "binaryPackage": "diffutils",
+          "binaryVersion": "1:3.8-4",
+          "sourcePackage": "diffutils",
+          "sourceVersion": "1:3.8-4"
+        },
+        {
+          "binaryPackage": "dpkg",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "dpkg-dev",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "e2fsprogs",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "file",
+          "binaryVersion": "1:5.44-3",
+          "sourcePackage": "file",
+          "sourceVersion": "1:5.44-3"
+        },
+        {
+          "binaryPackage": "findutils",
+          "binaryVersion": "4.9.0-4",
+          "sourcePackage": "findutils",
+          "sourceVersion": "4.9.0-4"
+        },
+        {
+          "binaryPackage": "g++",
+          "binaryVersion": "4:12.2.0-3",
+          "sourcePackage": "gcc-defaults",
+          "sourceVersion": "1.203"
+        },
+        {
+          "binaryPackage": "g++-12",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gcc",
+          "binaryVersion": "4:12.2.0-3",
+          "sourcePackage": "gcc-defaults",
+          "sourceVersion": "1.203"
+        },
+        {
+          "binaryPackage": "gcc-12",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gcc-12-base:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gpgv",
+          "binaryVersion": "2.2.40-1.1+deb12u2",
+          "sourcePackage": "gnupg2",
+          "sourceVersion": "2.2.40-1.1+deb12u2"
+        },
+        {
+          "binaryPackage": "grep",
+          "binaryVersion": "3.8-5",
+          "sourcePackage": "grep",
+          "sourceVersion": "3.8-5"
+        },
+        {
+          "binaryPackage": "gzip",
+          "binaryVersion": "1.12-1",
+          "sourcePackage": "gzip",
+          "sourceVersion": "1.12-1"
+        },
+        {
+          "binaryPackage": "hostname",
+          "binaryVersion": "3.23+nmu1",
+          "sourcePackage": "hostname",
+          "sourceVersion": "3.23+nmu1"
+        },
+        {
+          "binaryPackage": "init-system-helpers",
+          "binaryVersion": "1.65.2+deb12u1",
+          "sourcePackage": "init-system-helpers",
+          "sourceVersion": "1.65.2+deb12u1"
+        },
+        {
+          "binaryPackage": "libacl1:amd64",
+          "binaryVersion": "2.3.1-3",
+          "sourcePackage": "acl",
+          "sourceVersion": "2.3.1-3"
+        },
+        {
+          "binaryPackage": "libapt-pkg6.0:amd64",
+          "binaryVersion": "2.6.1",
+          "sourcePackage": "apt",
+          "sourceVersion": "2.6.1"
+        },
+        {
+          "binaryPackage": "libasan8:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libatomic1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libattr1:amd64",
+          "binaryVersion": "1:2.5.1-4",
+          "sourcePackage": "attr",
+          "sourceVersion": "1:2.5.1-4"
+        },
+        {
+          "binaryPackage": "libaudit-common",
+          "binaryVersion": "1:3.0.9-1",
+          "sourcePackage": "audit",
+          "sourceVersion": "1:3.0.9-1"
+        },
+        {
+          "binaryPackage": "libaudit1:amd64",
+          "binaryVersion": "1:3.0.9-1",
+          "sourcePackage": "audit",
+          "sourceVersion": "1:3.0.9-1"
+        },
+        {
+          "binaryPackage": "libbinutils:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libblkid1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libbrotli1:amd64",
+          "binaryVersion": "1.0.9-2+b6",
+          "sourcePackage": "brotli",
+          "sourceVersion": "1.0.9-2"
+        },
+        {
+          "binaryPackage": "libbz2-1.0:amd64",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "libbz2-dev:amd64",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "libc-bin",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc-dev-bin",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc6:amd64",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc6-dev:amd64",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libcap-ng0:amd64",
+          "binaryVersion": "0.8.3-1+b3",
+          "sourcePackage": "libcap-ng",
+          "sourceVersion": "0.8.3-1"
+        },
+        {
+          "binaryPackage": "libcap2:amd64",
+          "binaryVersion": "1:2.66-4+deb12u3+b1",
+          "sourcePackage": "libcap2",
+          "sourceVersion": "1:2.66-4+deb12u3"
+        },
+        {
+          "binaryPackage": "libcc1-0:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libcom-err2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libcrypt-dev:amd64",
+          "binaryVersion": "1:4.4.33-2",
+          "sourcePackage": "libxcrypt",
+          "sourceVersion": "1:4.4.33-2"
+        },
+        {
+          "binaryPackage": "libcrypt1:amd64",
+          "binaryVersion": "1:4.4.33-2",
+          "sourcePackage": "libxcrypt",
+          "sourceVersion": "1:4.4.33-2"
+        },
+        {
+          "binaryPackage": "libctf-nobfd0:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libctf0:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libcurl4:amd64",
+          "binaryVersion": "7.88.1-10+deb12u15",
+          "sourcePackage": "curl",
+          "sourceVersion": "7.88.1-10+deb12u15"
+        },
+        {
+          "binaryPackage": "libdb5.3:amd64",
+          "binaryVersion": "5.3.28+dfsg2-1",
+          "sourcePackage": "db5.3",
+          "sourceVersion": "5.3.28+dfsg2-1"
+        },
+        {
+          "binaryPackage": "libdebconfclient0:amd64",
+          "binaryVersion": "0.270",
+          "sourcePackage": "cdebconf",
+          "sourceVersion": "0.270"
+        },
+        {
+          "binaryPackage": "libdpkg-perl",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "libexpat1:amd64",
+          "binaryVersion": "2.5.0-1+deb12u4",
+          "sourcePackage": "expat",
+          "sourceVersion": "2.5.0-1+deb12u4"
+        },
+        {
+          "binaryPackage": "libext2fs2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libffi8:amd64",
+          "binaryVersion": "3.4.4-1",
+          "sourcePackage": "libffi",
+          "sourceVersion": "3.4.4-1"
+        },
+        {
+          "binaryPackage": "libgcc-12-dev:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgcc-s1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgcrypt20:amd64",
+          "binaryVersion": "1.10.1-3+deb12u1",
+          "sourcePackage": "libgcrypt20",
+          "sourceVersion": "1.10.1-3+deb12u1"
+        },
+        {
+          "binaryPackage": "libgdbm-compat4:amd64",
+          "binaryVersion": "1.23-3",
+          "sourcePackage": "gdbm",
+          "sourceVersion": "1.23-3"
+        },
+        {
+          "binaryPackage": "libgdbm6:amd64",
+          "binaryVersion": "1.23-3",
+          "sourcePackage": "gdbm",
+          "sourceVersion": "1.23-3"
+        },
+        {
+          "binaryPackage": "libgmp10:amd64",
+          "binaryVersion": "2:6.2.1+dfsg1-1.1",
+          "sourcePackage": "gmp",
+          "sourceVersion": "2:6.2.1+dfsg1-1.1"
+        },
+        {
+          "binaryPackage": "libgnutls30:amd64",
+          "binaryVersion": "3.7.9-2+deb12u7",
+          "sourcePackage": "gnutls28",
+          "sourceVersion": "3.7.9-2+deb12u7"
+        },
+        {
+          "binaryPackage": "libgomp1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgpg-error0:amd64",
+          "binaryVersion": "1.46-1",
+          "sourcePackage": "libgpg-error",
+          "sourceVersion": "1.46-1"
+        },
+        {
+          "binaryPackage": "libgprofng0:amd64",
+          "binaryVersion": "2.40-2",
+          "sourcePackage": "binutils",
+          "sourceVersion": "2.40-2"
+        },
+        {
+          "binaryPackage": "libgssapi-krb5-2:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libhogweed6:amd64",
+          "binaryVersion": "3.8.1-2",
+          "sourcePackage": "nettle",
+          "sourceVersion": "3.8.1-2"
+        },
+        {
+          "binaryPackage": "libidn2-0:amd64",
+          "binaryVersion": "2.3.3-1+b1",
+          "sourcePackage": "libidn2",
+          "sourceVersion": "2.3.3-1"
+        },
+        {
+          "binaryPackage": "libisl23:amd64",
+          "binaryVersion": "0.25-1.1",
+          "sourcePackage": "isl",
+          "sourceVersion": "0.25-1.1"
+        },
+        {
+          "binaryPackage": "libitm1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libjansson4:amd64",
+          "binaryVersion": "2.14-2",
+          "sourcePackage": "jansson",
+          "sourceVersion": "2.14-2"
+        },
+        {
+          "binaryPackage": "libk5crypto3:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libkeyutils1:amd64",
+          "binaryVersion": "1.6.3-2",
+          "sourcePackage": "keyutils",
+          "sourceVersion": "1.6.3-2"
+        },
+        {
+          "binaryPackage": "libkrb5-3:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libkrb5support0:amd64",
+          "binaryVersion": "1.20.1-2+deb12u5",
+          "sourcePackage": "krb5",
+          "sourceVersion": "1.20.1-2+deb12u5"
+        },
+        {
+          "binaryPackage": "libldap-2.5-0:amd64",
+          "binaryVersion": "2.5.13+dfsg-5",
+          "sourcePackage": "openldap",
+          "sourceVersion": "2.5.13+dfsg-5"
+        },
+        {
+          "binaryPackage": "liblsan0:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "liblz4-1:amd64",
+          "binaryVersion": "1.9.4-1",
+          "sourcePackage": "lz4",
+          "sourceVersion": "1.9.4-1"
+        },
+        {
+          "binaryPackage": "liblzma5:amd64",
+          "binaryVersion": "5.4.1-1+deb12u2",
+          "sourcePackage": "xz-utils",
+          "sourceVersion": "5.4.1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "libmagic-mgc",
+          "binaryVersion": "1:5.44-3",
+          "sourcePackage": "file",
+          "sourceVersion": "1:5.44-3"
+        },
+        {
+          "binaryPackage": "libmagic1:amd64",
+          "binaryVersion": "1:5.44-3",
+          "sourcePackage": "file",
+          "sourceVersion": "1:5.44-3"
+        },
+        {
+          "binaryPackage": "libmd0:amd64",
+          "binaryVersion": "1.0.4-2",
+          "sourcePackage": "libmd",
+          "sourceVersion": "1.0.4-2"
+        },
+        {
+          "binaryPackage": "libmount1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libmpc3:amd64",
+          "binaryVersion": "1.3.1-1",
+          "sourcePackage": "mpclib3",
+          "sourceVersion": "1.3.1-1"
+        },
+        {
+          "binaryPackage": "libmpfr6:amd64",
+          "binaryVersion": "4.2.0-1",
+          "sourcePackage": "mpfr4",
+          "sourceVersion": "4.2.0-1"
+        },
+        {
+          "binaryPackage": "libncursesw6:amd64",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "libnettle8:amd64",
+          "binaryVersion": "3.8.1-2",
+          "sourcePackage": "nettle",
+          "sourceVersion": "3.8.1-2"
+        },
+        {
+          "binaryPackage": "libnghttp2-14:amd64",
+          "binaryVersion": "1.52.0-1+deb12u3",
+          "sourcePackage": "nghttp2",
+          "sourceVersion": "1.52.0-1+deb12u3"
+        },
+        {
+          "binaryPackage": "libnsl-dev:amd64",
+          "binaryVersion": "1.3.0-2",
+          "sourcePackage": "libnsl",
+          "sourceVersion": "1.3.0-2"
+        },
+        {
+          "binaryPackage": "libnsl2:amd64",
+          "binaryVersion": "1.3.0-2",
+          "sourcePackage": "libnsl",
+          "sourceVersion": "1.3.0-2"
+        },
+        {
+          "binaryPackage": "libp11-kit0:amd64",
+          "binaryVersion": "0.24.1-2",
+          "sourcePackage": "p11-kit",
+          "sourceVersion": "0.24.1-2"
+        },
+        {
+          "binaryPackage": "libpam-modules:amd64",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam-modules-bin",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam-runtime",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam0g:amd64",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpcre2-8-0:amd64",
+          "binaryVersion": "10.42-1+deb12u2",
+          "sourcePackage": "pcre2",
+          "sourceVersion": "10.42-1+deb12u2"
+        },
+        {
+          "binaryPackage": "libperl5.36:amd64",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "libpkgconf3:amd64",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "libpsl5:amd64",
+          "binaryVersion": "0.21.2-1",
+          "sourcePackage": "libpsl",
+          "sourceVersion": "0.21.2-1"
+        },
+        {
+          "binaryPackage": "libpython3-stdlib:amd64",
+          "binaryVersion": "3.11.2-1+b1",
+          "sourcePackage": "python3-defaults",
+          "sourceVersion": "3.11.2-1"
+        },
+        {
+          "binaryPackage": "libpython3.11-minimal:amd64",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "libpython3.11-stdlib:amd64",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "libquadmath0:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libreadline8:amd64",
+          "binaryVersion": "8.2-1.3",
+          "sourcePackage": "readline",
+          "sourceVersion": "8.2-1.3"
+        },
+        {
+          "binaryPackage": "librtmp1:amd64",
+          "binaryVersion": "2.4+20151223.gitfa8646d.1-2+b2",
+          "sourcePackage": "rtmpdump",
+          "sourceVersion": "2.4+20151223.gitfa8646d.1-2"
+        },
+        {
+          "binaryPackage": "libsasl2-2:amd64",
+          "binaryVersion": "2.1.28+dfsg-10",
+          "sourcePackage": "cyrus-sasl2",
+          "sourceVersion": "2.1.28+dfsg-10"
+        },
+        {
+          "binaryPackage": "libsasl2-modules-db:amd64",
+          "binaryVersion": "2.1.28+dfsg-10",
+          "sourcePackage": "cyrus-sasl2",
+          "sourceVersion": "2.1.28+dfsg-10"
+        },
+        {
+          "binaryPackage": "libseccomp2:amd64",
+          "binaryVersion": "2.5.4-1+deb12u1",
+          "sourcePackage": "libseccomp",
+          "sourceVersion": "2.5.4-1+deb12u1"
+        },
+        {
+          "binaryPackage": "libselinux1:amd64",
+          "binaryVersion": "3.4-1+b6",
+          "sourcePackage": "libselinux",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsemanage-common",
+          "binaryVersion": "3.4-1",
+          "sourcePackage": "libsemanage",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsemanage2:amd64",
+          "binaryVersion": "3.4-1+b5",
+          "sourcePackage": "libsemanage",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsepol2:amd64",
+          "binaryVersion": "3.4-2.1",
+          "sourcePackage": "libsepol",
+          "sourceVersion": "3.4-2.1"
+        },
+        {
+          "binaryPackage": "libsmartcols1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libsqlite3-0:amd64",
+          "binaryVersion": "3.40.1-2+deb12u2",
+          "sourcePackage": "sqlite3",
+          "sourceVersion": "3.40.1-2+deb12u2"
+        },
+        {
+          "binaryPackage": "libss2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libssh2-1:amd64",
+          "binaryVersion": "1.10.0-3+deb12u1",
+          "sourcePackage": "libssh2",
+          "sourceVersion": "1.10.0-3+deb12u1"
+        },
+        {
+          "binaryPackage": "libssl3:amd64",
+          "binaryVersion": "3.0.22-1~deb12u1",
+          "sourcePackage": "openssl",
+          "sourceVersion": "3.0.22-1~deb12u1"
+        },
+        {
+          "binaryPackage": "libstdc++-12-dev:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libstdc++6:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libsystemd0:amd64",
+          "binaryVersion": "252.39-1~deb12u2",
+          "sourcePackage": "systemd",
+          "sourceVersion": "252.39-1~deb12u2"
+        },
+        {
+          "binaryPackage": "libtasn1-6:amd64",
+          "binaryVersion": "4.19.0-2+deb12u1",
+          "sourcePackage": "libtasn1-6",
+          "sourceVersion": "4.19.0-2+deb12u1"
+        },
+        {
+          "binaryPackage": "libtinfo6:amd64",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "libtirpc-common",
+          "binaryVersion": "1.3.3+ds-1",
+          "sourcePackage": "libtirpc",
+          "sourceVersion": "1.3.3+ds-1"
+        },
+        {
+          "binaryPackage": "libtirpc-dev:amd64",
+          "binaryVersion": "1.3.3+ds-1",
+          "sourcePackage": "libtirpc",
+          "sourceVersion": "1.3.3+ds-1"
+        },
+        {
+          "binaryPackage": "libtirpc3:amd64",
+          "binaryVersion": "1.3.3+ds-1",
+          "sourcePackage": "libtirpc",
+          "sourceVersion": "1.3.3+ds-1"
+        },
+        {
+          "binaryPackage": "libtool",
+          "binaryVersion": "2.4.7-7~deb12u1",
+          "sourcePackage": "libtool",
+          "sourceVersion": "2.4.7-7~deb12u1"
+        },
+        {
+          "binaryPackage": "libtsan2:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libubsan1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libudev1:amd64",
+          "binaryVersion": "252.39-1~deb12u2",
+          "sourcePackage": "systemd",
+          "sourceVersion": "252.39-1~deb12u2"
+        },
+        {
+          "binaryPackage": "libunistring2:amd64",
+          "binaryVersion": "1.0-2",
+          "sourcePackage": "libunistring",
+          "sourceVersion": "1.0-2"
+        },
+        {
+          "binaryPackage": "libuuid1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libxxhash0:amd64",
+          "binaryVersion": "0.8.1-1",
+          "sourcePackage": "xxhash",
+          "sourceVersion": "0.8.1-1"
+        },
+        {
+          "binaryPackage": "libzstd1:amd64",
+          "binaryVersion": "1.5.4+dfsg2-5",
+          "sourcePackage": "libzstd",
+          "sourceVersion": "1.5.4+dfsg2-5"
+        },
+        {
+          "binaryPackage": "linux-libc-dev:amd64",
+          "binaryVersion": "6.1.187-1",
+          "sourcePackage": "linux",
+          "sourceVersion": "6.1.187-1"
+        },
+        {
+          "binaryPackage": "login",
+          "binaryVersion": "1:4.13+dfsg1-1+deb12u2",
+          "sourcePackage": "shadow",
+          "sourceVersion": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "logsave",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "m4",
+          "binaryVersion": "1.4.19-3",
+          "sourcePackage": "m4",
+          "sourceVersion": "1.4.19-3"
+        },
+        {
+          "binaryPackage": "make",
+          "binaryVersion": "4.3-4.1",
+          "sourcePackage": "make-dfsg",
+          "sourceVersion": "4.3-4.1"
+        },
+        {
+          "binaryPackage": "mawk",
+          "binaryVersion": "1.3.4.20200120-3.1",
+          "sourcePackage": "mawk",
+          "sourceVersion": "1.3.4.20200120-3.1"
+        },
+        {
+          "binaryPackage": "media-types",
+          "binaryVersion": "10.0.0",
+          "sourcePackage": "media-types",
+          "sourceVersion": "10.0.0"
+        },
+        {
+          "binaryPackage": "mount",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "nasm",
+          "binaryVersion": "2.16.01-1",
+          "sourcePackage": "nasm",
+          "sourceVersion": "2.16.01-1"
+        },
+        {
+          "binaryPackage": "ncurses-base",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "ncurses-bin",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "openssl",
+          "binaryVersion": "3.0.22-1~deb12u1",
+          "sourcePackage": "openssl",
+          "sourceVersion": "3.0.22-1~deb12u1"
+        },
+        {
+          "binaryPackage": "passwd",
+          "binaryVersion": "1:4.13+dfsg1-1+deb12u2",
+          "sourcePackage": "shadow",
+          "sourceVersion": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "patch",
+          "binaryVersion": "2.7.6-7",
+          "sourcePackage": "patch",
+          "sourceVersion": "2.7.6-7"
+        },
+        {
+          "binaryPackage": "patchelf",
+          "binaryVersion": "0.14.3-1+b1",
+          "sourcePackage": "patchelf",
+          "sourceVersion": "0.14.3-1"
+        },
+        {
+          "binaryPackage": "perl",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "perl-base",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "perl-modules-5.36",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "pkg-config:amd64",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "pkgconf:amd64",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "pkgconf-bin",
+          "binaryVersion": "1.8.1-1",
+          "sourcePackage": "pkgconf",
+          "sourceVersion": "1.8.1-1"
+        },
+        {
+          "binaryPackage": "python3",
+          "binaryVersion": "3.11.2-1+b1",
+          "sourcePackage": "python3-defaults",
+          "sourceVersion": "3.11.2-1"
+        },
+        {
+          "binaryPackage": "python3-minimal",
+          "binaryVersion": "3.11.2-1+b1",
+          "sourcePackage": "python3-defaults",
+          "sourceVersion": "3.11.2-1"
+        },
+        {
+          "binaryPackage": "python3.11",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "python3.11-minimal",
+          "binaryVersion": "3.11.2-6+deb12u9",
+          "sourcePackage": "python3.11",
+          "sourceVersion": "3.11.2-6+deb12u9"
+        },
+        {
+          "binaryPackage": "readline-common",
+          "binaryVersion": "8.2-1.3",
+          "sourcePackage": "readline",
+          "sourceVersion": "8.2-1.3"
+        },
+        {
+          "binaryPackage": "rpcsvc-proto",
+          "binaryVersion": "1.4.3-1",
+          "sourcePackage": "rpcsvc-proto",
+          "sourceVersion": "1.4.3-1"
+        },
+        {
+          "binaryPackage": "sed",
+          "binaryVersion": "4.9-1+deb12u1",
+          "sourcePackage": "sed",
+          "sourceVersion": "4.9-1+deb12u1"
+        },
+        {
+          "binaryPackage": "sysvinit-utils",
+          "binaryVersion": "3.06-4",
+          "sourcePackage": "sysvinit",
+          "sourceVersion": "3.06-4"
+        },
+        {
+          "binaryPackage": "tar",
+          "binaryVersion": "1.34+dfsg-1.2+deb12u1",
+          "sourcePackage": "tar",
+          "sourceVersion": "1.34+dfsg-1.2+deb12u1"
+        },
+        {
+          "binaryPackage": "tzdata",
+          "binaryVersion": "2026c-0+deb12u1",
+          "sourcePackage": "tzdata",
+          "sourceVersion": "2026c-0+deb12u1"
+        },
+        {
+          "binaryPackage": "usr-is-merged",
+          "binaryVersion": "37~deb12u1",
+          "sourcePackage": "usrmerge",
+          "sourceVersion": "37~deb12u1"
+        },
+        {
+          "binaryPackage": "util-linux",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "util-linux-extra",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "wget",
+          "binaryVersion": "1.21.3-1+deb12u1",
+          "sourcePackage": "wget",
+          "sourceVersion": "1.21.3-1+deb12u1"
+        },
+        {
+          "binaryPackage": "xz-utils",
+          "binaryVersion": "5.4.1-1+deb12u2",
+          "sourcePackage": "xz-utils",
+          "sourceVersion": "5.4.1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "zlib1g:amd64",
+          "binaryVersion": "1:1.2.13.dfsg-1",
+          "sourcePackage": "zlib",
+          "sourceVersion": "1:1.2.13.dfsg-1"
+        },
+        {
+          "binaryPackage": "zlib1g-dev:amd64",
+          "binaryVersion": "1:1.2.13.dfsg-1",
+          "sourcePackage": "zlib",
+          "sourceVersion": "1:1.2.13.dfsg-1"
+        }
+      ],
+      "evidenceFiles": [
+        {
+          "path": "/native-runtime-notices/debian/libbz2-1.0/copyright",
+          "sha256": "832ed535ff3c3d025a8d2348eb1b697b89addcf2eaadbc17650262040b9145e2",
+          "bytes": 2228,
+          "evidencePath": "evidence/nativeBundle/native-runtime-notices/debian/libbz2-1.0/copyright"
+        },
+        {
+          "path": "/native-runtime-notices/debian/zlib1g/copyright",
+          "sha256": "9e5b96d63773a5d177ba264254390f792be07e41748ebd94730981c6cac31cc6",
+          "bytes": 2927,
+          "evidencePath": "evidence/nativeBundle/native-runtime-notices/debian/zlib1g/copyright"
+        },
+        {
+          "path": "/native-runtime-notices/native-library-paths.txt",
+          "sha256": "1eb87c00aa914aa65efef31ed29baa3809aa2245d90d75be64afe4241761f08f",
+          "bytes": 958,
+          "evidencePath": "evidence/nativeBundle/native-runtime-notices/native-library-paths.txt"
+        },
+        {
+          "path": "/native-runtime-notices/builder-packages.txt",
+          "sha256": "82b8d65c6cd403b95239931b28f8b944730f47d40b9b64c87e3a3ab466b019d6",
+          "bytes": 4996,
+          "evidencePath": "evidence/nativeBundle/native-runtime-notices/builder-packages.txt"
+        }
+      ],
+      "files": [
+        {
+          "path": "/native-runtime/lib/x86_64-linux-gnu/libbz2.so.1.0",
+          "sha256": "e6e8534de1c38ed5e9554d0fd38a4a731fd78815556f96c29418b5dcdd6f7a2e"
+        },
+        {
+          "path": "/native-runtime/lib/x86_64-linux-gnu/libz.so.1",
+          "sha256": "f5c0f7704a7430daef3dcc2a7fe01be311aa2dbe1aeea68ade1dee32ff0792dc"
+        },
+        {
+          "path": "/usr/local/lib/libessentia.so",
+          "sha256": "d3b622fe836ae21fd7c3ca9ee12e7b810627764575545bf218d82d71d207f40d"
+        }
+      ]
+    },
+    "runtime": {
+      "image": "sha256:025f0afb91e9efd421747ed68d44390bc611db143b9ac2098a8c7a04dfc9bb5b",
+      "packages": [
+        {
+          "binaryPackage": "adduser",
+          "binaryVersion": "3.134",
+          "sourcePackage": "adduser",
+          "sourceVersion": "3.134"
+        },
+        {
+          "binaryPackage": "apt",
+          "binaryVersion": "2.6.1",
+          "sourcePackage": "apt",
+          "sourceVersion": "2.6.1"
+        },
+        {
+          "binaryPackage": "base-files",
+          "binaryVersion": "12.4+deb12u15",
+          "sourcePackage": "base-files",
+          "sourceVersion": "12.4+deb12u15"
+        },
+        {
+          "binaryPackage": "base-passwd",
+          "binaryVersion": "3.6.1",
+          "sourcePackage": "base-passwd",
+          "sourceVersion": "3.6.1"
+        },
+        {
+          "binaryPackage": "bash",
+          "binaryVersion": "5.2.15-2+b13",
+          "sourcePackage": "bash",
+          "sourceVersion": "5.2.15-2"
+        },
+        {
+          "binaryPackage": "bsdutils",
+          "binaryVersion": "1:2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "ca-certificates",
+          "binaryVersion": "20250419~deb12u1",
+          "sourcePackage": "ca-certificates",
+          "sourceVersion": "20250419~deb12u1"
+        },
+        {
+          "binaryPackage": "coreutils",
+          "binaryVersion": "9.1-1",
+          "sourcePackage": "coreutils",
+          "sourceVersion": "9.1-1"
+        },
+        {
+          "binaryPackage": "dash",
+          "binaryVersion": "0.5.12-2",
+          "sourcePackage": "dash",
+          "sourceVersion": "0.5.12-2"
+        },
+        {
+          "binaryPackage": "debconf",
+          "binaryVersion": "1.5.82",
+          "sourcePackage": "debconf",
+          "sourceVersion": "1.5.82"
+        },
+        {
+          "binaryPackage": "debian-archive-keyring",
+          "binaryVersion": "2023.3+deb12u2",
+          "sourcePackage": "debian-archive-keyring",
+          "sourceVersion": "2023.3+deb12u2"
+        },
+        {
+          "binaryPackage": "debianutils",
+          "binaryVersion": "5.7-0.5~deb12u1",
+          "sourcePackage": "debianutils",
+          "sourceVersion": "5.7-0.5~deb12u1"
+        },
+        {
+          "binaryPackage": "diffutils",
+          "binaryVersion": "1:3.8-4",
+          "sourcePackage": "diffutils",
+          "sourceVersion": "1:3.8-4"
+        },
+        {
+          "binaryPackage": "dpkg",
+          "binaryVersion": "1.21.23",
+          "sourcePackage": "dpkg",
+          "sourceVersion": "1.21.23"
+        },
+        {
+          "binaryPackage": "e2fsprogs",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "findutils",
+          "binaryVersion": "4.9.0-4",
+          "sourcePackage": "findutils",
+          "sourceVersion": "4.9.0-4"
+        },
+        {
+          "binaryPackage": "gcc-12-base:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "gpgv",
+          "binaryVersion": "2.2.40-1.1+deb12u2",
+          "sourcePackage": "gnupg2",
+          "sourceVersion": "2.2.40-1.1+deb12u2"
+        },
+        {
+          "binaryPackage": "grep",
+          "binaryVersion": "3.8-5",
+          "sourcePackage": "grep",
+          "sourceVersion": "3.8-5"
+        },
+        {
+          "binaryPackage": "gzip",
+          "binaryVersion": "1.12-1",
+          "sourcePackage": "gzip",
+          "sourceVersion": "1.12-1"
+        },
+        {
+          "binaryPackage": "hostname",
+          "binaryVersion": "3.23+nmu1",
+          "sourcePackage": "hostname",
+          "sourceVersion": "3.23+nmu1"
+        },
+        {
+          "binaryPackage": "init-system-helpers",
+          "binaryVersion": "1.65.2+deb12u1",
+          "sourcePackage": "init-system-helpers",
+          "sourceVersion": "1.65.2+deb12u1"
+        },
+        {
+          "binaryPackage": "libacl1:amd64",
+          "binaryVersion": "2.3.1-3",
+          "sourcePackage": "acl",
+          "sourceVersion": "2.3.1-3"
+        },
+        {
+          "binaryPackage": "libapt-pkg6.0:amd64",
+          "binaryVersion": "2.6.1",
+          "sourcePackage": "apt",
+          "sourceVersion": "2.6.1"
+        },
+        {
+          "binaryPackage": "libattr1:amd64",
+          "binaryVersion": "1:2.5.1-4",
+          "sourcePackage": "attr",
+          "sourceVersion": "1:2.5.1-4"
+        },
+        {
+          "binaryPackage": "libaudit-common",
+          "binaryVersion": "1:3.0.9-1",
+          "sourcePackage": "audit",
+          "sourceVersion": "1:3.0.9-1"
+        },
+        {
+          "binaryPackage": "libaudit1:amd64",
+          "binaryVersion": "1:3.0.9-1",
+          "sourcePackage": "audit",
+          "sourceVersion": "1:3.0.9-1"
+        },
+        {
+          "binaryPackage": "libblkid1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libbz2-1.0:amd64",
+          "binaryVersion": "1.0.8-5+b1",
+          "sourcePackage": "bzip2",
+          "sourceVersion": "1.0.8-5"
+        },
+        {
+          "binaryPackage": "libc-bin",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libc6:amd64",
+          "binaryVersion": "2.36-9+deb12u14",
+          "sourcePackage": "glibc",
+          "sourceVersion": "2.36-9+deb12u14"
+        },
+        {
+          "binaryPackage": "libcap-ng0:amd64",
+          "binaryVersion": "0.8.3-1+b3",
+          "sourcePackage": "libcap-ng",
+          "sourceVersion": "0.8.3-1"
+        },
+        {
+          "binaryPackage": "libcap2:amd64",
+          "binaryVersion": "1:2.66-4+deb12u3+b1",
+          "sourcePackage": "libcap2",
+          "sourceVersion": "1:2.66-4+deb12u3"
+        },
+        {
+          "binaryPackage": "libcap2-bin",
+          "binaryVersion": "1:2.66-4+deb12u3+b1",
+          "sourcePackage": "libcap2",
+          "sourceVersion": "1:2.66-4+deb12u3"
+        },
+        {
+          "binaryPackage": "libcom-err2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libcrypt1:amd64",
+          "binaryVersion": "1:4.4.33-2",
+          "sourcePackage": "libxcrypt",
+          "sourceVersion": "1:4.4.33-2"
+        },
+        {
+          "binaryPackage": "libdb5.3:amd64",
+          "binaryVersion": "5.3.28+dfsg2-1",
+          "sourcePackage": "db5.3",
+          "sourceVersion": "5.3.28+dfsg2-1"
+        },
+        {
+          "binaryPackage": "libdebconfclient0:amd64",
+          "binaryVersion": "0.270",
+          "sourcePackage": "cdebconf",
+          "sourceVersion": "0.270"
+        },
+        {
+          "binaryPackage": "libext2fs2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libffi8:amd64",
+          "binaryVersion": "3.4.4-1",
+          "sourcePackage": "libffi",
+          "sourceVersion": "3.4.4-1"
+        },
+        {
+          "binaryPackage": "libgcc-s1:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libgcrypt20:amd64",
+          "binaryVersion": "1.10.1-3+deb12u1",
+          "sourcePackage": "libgcrypt20",
+          "sourceVersion": "1.10.1-3+deb12u1"
+        },
+        {
+          "binaryPackage": "libgmp10:amd64",
+          "binaryVersion": "2:6.2.1+dfsg1-1.1",
+          "sourcePackage": "gmp",
+          "sourceVersion": "2:6.2.1+dfsg1-1.1"
+        },
+        {
+          "binaryPackage": "libgnutls30:amd64",
+          "binaryVersion": "3.7.9-2+deb12u7",
+          "sourcePackage": "gnutls28",
+          "sourceVersion": "3.7.9-2+deb12u7"
+        },
+        {
+          "binaryPackage": "libgpg-error0:amd64",
+          "binaryVersion": "1.46-1",
+          "sourcePackage": "libgpg-error",
+          "sourceVersion": "1.46-1"
+        },
+        {
+          "binaryPackage": "libhogweed6:amd64",
+          "binaryVersion": "3.8.1-2",
+          "sourcePackage": "nettle",
+          "sourceVersion": "3.8.1-2"
+        },
+        {
+          "binaryPackage": "libidn2-0:amd64",
+          "binaryVersion": "2.3.3-1+b1",
+          "sourcePackage": "libidn2",
+          "sourceVersion": "2.3.3-1"
+        },
+        {
+          "binaryPackage": "liblz4-1:amd64",
+          "binaryVersion": "1.9.4-1",
+          "sourcePackage": "lz4",
+          "sourceVersion": "1.9.4-1"
+        },
+        {
+          "binaryPackage": "liblzma5:amd64",
+          "binaryVersion": "5.4.1-1+deb12u2",
+          "sourcePackage": "xz-utils",
+          "sourceVersion": "5.4.1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "libmd0:amd64",
+          "binaryVersion": "1.0.4-2",
+          "sourcePackage": "libmd",
+          "sourceVersion": "1.0.4-2"
+        },
+        {
+          "binaryPackage": "libmount1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libnettle8:amd64",
+          "binaryVersion": "3.8.1-2",
+          "sourcePackage": "nettle",
+          "sourceVersion": "3.8.1-2"
+        },
+        {
+          "binaryPackage": "libp11-kit0:amd64",
+          "binaryVersion": "0.24.1-2",
+          "sourcePackage": "p11-kit",
+          "sourceVersion": "0.24.1-2"
+        },
+        {
+          "binaryPackage": "libpam-modules:amd64",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam-modules-bin",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam-runtime",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpam0g:amd64",
+          "binaryVersion": "1.5.2-6+deb12u2",
+          "sourcePackage": "pam",
+          "sourceVersion": "1.5.2-6+deb12u2"
+        },
+        {
+          "binaryPackage": "libpcre2-8-0:amd64",
+          "binaryVersion": "10.42-1+deb12u2",
+          "sourcePackage": "pcre2",
+          "sourceVersion": "10.42-1+deb12u2"
+        },
+        {
+          "binaryPackage": "libseccomp2:amd64",
+          "binaryVersion": "2.5.4-1+deb12u1",
+          "sourcePackage": "libseccomp",
+          "sourceVersion": "2.5.4-1+deb12u1"
+        },
+        {
+          "binaryPackage": "libselinux1:amd64",
+          "binaryVersion": "3.4-1+b6",
+          "sourcePackage": "libselinux",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsemanage-common",
+          "binaryVersion": "3.4-1",
+          "sourcePackage": "libsemanage",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsemanage2:amd64",
+          "binaryVersion": "3.4-1+b5",
+          "sourcePackage": "libsemanage",
+          "sourceVersion": "3.4-1"
+        },
+        {
+          "binaryPackage": "libsepol2:amd64",
+          "binaryVersion": "3.4-2.1",
+          "sourcePackage": "libsepol",
+          "sourceVersion": "3.4-2.1"
+        },
+        {
+          "binaryPackage": "libsmartcols1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libss2:amd64",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "libssl3:amd64",
+          "binaryVersion": "3.0.22-1~deb12u1",
+          "sourcePackage": "openssl",
+          "sourceVersion": "3.0.22-1~deb12u1"
+        },
+        {
+          "binaryPackage": "libstdc++6:amd64",
+          "binaryVersion": "12.2.0-14+deb12u1",
+          "sourcePackage": "gcc-12",
+          "sourceVersion": "12.2.0-14+deb12u1"
+        },
+        {
+          "binaryPackage": "libsystemd0:amd64",
+          "binaryVersion": "252.39-1~deb12u2",
+          "sourcePackage": "systemd",
+          "sourceVersion": "252.39-1~deb12u2"
+        },
+        {
+          "binaryPackage": "libtasn1-6:amd64",
+          "binaryVersion": "4.19.0-2+deb12u1",
+          "sourcePackage": "libtasn1-6",
+          "sourceVersion": "4.19.0-2+deb12u1"
+        },
+        {
+          "binaryPackage": "libtinfo6:amd64",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "libudev1:amd64",
+          "binaryVersion": "252.39-1~deb12u2",
+          "sourcePackage": "systemd",
+          "sourceVersion": "252.39-1~deb12u2"
+        },
+        {
+          "binaryPackage": "libunistring2:amd64",
+          "binaryVersion": "1.0-2",
+          "sourcePackage": "libunistring",
+          "sourceVersion": "1.0-2"
+        },
+        {
+          "binaryPackage": "libuuid1:amd64",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "libxxhash0:amd64",
+          "binaryVersion": "0.8.1-1",
+          "sourcePackage": "xxhash",
+          "sourceVersion": "0.8.1-1"
+        },
+        {
+          "binaryPackage": "libzstd1:amd64",
+          "binaryVersion": "1.5.4+dfsg2-5",
+          "sourcePackage": "libzstd",
+          "sourceVersion": "1.5.4+dfsg2-5"
+        },
+        {
+          "binaryPackage": "login",
+          "binaryVersion": "1:4.13+dfsg1-1+deb12u2",
+          "sourcePackage": "shadow",
+          "sourceVersion": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "logsave",
+          "binaryVersion": "1.47.0-2+b2",
+          "sourcePackage": "e2fsprogs",
+          "sourceVersion": "1.47.0-2"
+        },
+        {
+          "binaryPackage": "mawk",
+          "binaryVersion": "1.3.4.20200120-3.1",
+          "sourcePackage": "mawk",
+          "sourceVersion": "1.3.4.20200120-3.1"
+        },
+        {
+          "binaryPackage": "mount",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "ncurses-base",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "ncurses-bin",
+          "binaryVersion": "6.4-4",
+          "sourcePackage": "ncurses",
+          "sourceVersion": "6.4-4"
+        },
+        {
+          "binaryPackage": "openssl",
+          "binaryVersion": "3.0.22-1~deb12u1",
+          "sourcePackage": "openssl",
+          "sourceVersion": "3.0.22-1~deb12u1"
+        },
+        {
+          "binaryPackage": "passwd",
+          "binaryVersion": "1:4.13+dfsg1-1+deb12u2",
+          "sourcePackage": "shadow",
+          "sourceVersion": "1:4.13+dfsg1-1+deb12u2"
+        },
+        {
+          "binaryPackage": "perl-base",
+          "binaryVersion": "5.36.0-7+deb12u4",
+          "sourcePackage": "perl",
+          "sourceVersion": "5.36.0-7+deb12u4"
+        },
+        {
+          "binaryPackage": "sed",
+          "binaryVersion": "4.9-1+deb12u1",
+          "sourcePackage": "sed",
+          "sourceVersion": "4.9-1+deb12u1"
+        },
+        {
+          "binaryPackage": "sysvinit-utils",
+          "binaryVersion": "3.06-4",
+          "sourcePackage": "sysvinit",
+          "sourceVersion": "3.06-4"
+        },
+        {
+          "binaryPackage": "tar",
+          "binaryVersion": "1.34+dfsg-1.2+deb12u1",
+          "sourcePackage": "tar",
+          "sourceVersion": "1.34+dfsg-1.2+deb12u1"
+        },
+        {
+          "binaryPackage": "tzdata",
+          "binaryVersion": "2026c-0+deb12u1",
+          "sourcePackage": "tzdata",
+          "sourceVersion": "2026c-0+deb12u1"
+        },
+        {
+          "binaryPackage": "usr-is-merged",
+          "binaryVersion": "37~deb12u1",
+          "sourcePackage": "usrmerge",
+          "sourceVersion": "37~deb12u1"
+        },
+        {
+          "binaryPackage": "util-linux",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "util-linux-extra",
+          "binaryVersion": "2.38.1-5+deb12u3",
+          "sourcePackage": "util-linux",
+          "sourceVersion": "2.38.1-5+deb12u3"
+        },
+        {
+          "binaryPackage": "zlib1g:amd64",
+          "binaryVersion": "1:1.2.13.dfsg-1",
+          "sourcePackage": "zlib",
+          "sourceVersion": "1:1.2.13.dfsg-1"
+        }
+      ],
+      "evidenceFiles": [
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/config.h",
+          "sha256": "1b2acd7f0986c1d767ea3a86f01072544d0550999677beec026cea0906e4a5f1",
+          "bytes": 22070,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/config.h"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/config.mak",
+          "sha256": "913be6b1ef314e75bde9206fe5471f71b31d7cf661cc72f68c28085fdec0590c",
+          "bytes": 80291,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/config.mak"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/config_components.h",
+          "sha256": "73b8df54f2007a9ed45f0a419ff98268d6a129a38962ef719576dcdbd47e6622",
+          "bytes": 68687,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/config_components.h"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/copied-packages.tsv",
+          "sha256": "6c705d76330b37a34e347a3f6552827d0f3ffa9f968ad23fe0d87be685e8a4bc",
+          "bytes": 131,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/copied-packages.tsv"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/debian/libbz2-1.0/copyright",
+          "sha256": "832ed535ff3c3d025a8d2348eb1b697b89addcf2eaadbc17650262040b9145e2",
+          "bytes": 2228,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/debian/libbz2-1.0/copyright"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/debian/libmp3lame0/copyright",
+          "sha256": "f0e4c5098ffedad31473eec38810c26409223858fb8d63dd7685bf225f96bc5d",
+          "bytes": 7026,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/debian/libmp3lame0/copyright"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/debian/zlib1g/copyright",
+          "sha256": "9e5b96d63773a5d177ba264254390f792be07e41748ebd94730981c6cac31cc6",
+          "bytes": 2927,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/debian/zlib1g/copyright"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/decoder-registry.tsv",
+          "sha256": "ddbe274dc03852846bc4b36171f5b02c3fc9a3d9dc7793e78912ef24e5592e13",
+          "bytes": 1146,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/decoder-registry.tsv"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/ffmpeg-policy.json",
+          "sha256": "c118f52b6a2a31242f7cc26aa2c426d53088abb1f5ad217470ae6bb836c25c0f",
+          "bytes": 3449,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/ffmpeg-policy.json"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/library-paths.txt",
+          "sha256": "2c0f724603de502722e9053b39a2ea84aa86f79ce6588e5ac76405c87e819a84",
+          "bytes": 1578,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/library-paths.txt"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/source-inputs.json",
+          "sha256": "fe120ad225e0b2a7b36ed33591f88d54df1b7b148849c3894df3599722be2273",
+          "bytes": 743,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli/source-inputs.json"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/builder-packages.txt",
+          "sha256": "82b8d65c6cd403b95239931b28f8b944730f47d40b9b64c87e3a3ab466b019d6",
+          "bytes": 4996,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/builder-packages.txt"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/debian/libbz2-1.0/copyright",
+          "sha256": "832ed535ff3c3d025a8d2348eb1b697b89addcf2eaadbc17650262040b9145e2",
+          "bytes": 2228,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/debian/libbz2-1.0/copyright"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/debian/zlib1g/copyright",
+          "sha256": "9e5b96d63773a5d177ba264254390f792be07e41748ebd94730981c6cac31cc6",
+          "bytes": 2927,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/debian/zlib1g/copyright"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/native-library-paths.txt",
+          "sha256": "1eb87c00aa914aa65efef31ed29baa3809aa2245d90d75be64afe4241761f08f",
+          "bytes": 958,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/native-library-paths.txt"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/config.h",
+          "sha256": "0a31c8147e498aa4d12c909a5f792d3ea9b3c2e68c581ea42ae0b918bf8751ca",
+          "bytes": 21938,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/config.h"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/config.mak",
+          "sha256": "6db29fa5f849b7db043ce8c55fb9e9e42e334a8c7566a9c888b5809720a88817",
+          "bytes": 80156,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/config.mak"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/config_components.h",
+          "sha256": "04fe9d3c41ccbf72e45f91bf2a4d922ab32e1718e252c63beb3901d68bef76b2",
+          "bytes": 68687,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/config_components.h"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/decoder-registry.tsv",
+          "sha256": "ddbe274dc03852846bc4b36171f5b02c3fc9a3d9dc7793e78912ef24e5592e13",
+          "bytes": 1146,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/decoder-registry.tsv"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/ffmpeg-policy.json",
+          "sha256": "c118f52b6a2a31242f7cc26aa2c426d53088abb1f5ad217470ae6bb836c25c0f",
+          "bytes": 3449,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/ffmpeg-policy.json"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/source-inputs.json",
+          "sha256": "fe120ad225e0b2a7b36ed33591f88d54df1b7b148849c3894df3599722be2273",
+          "bytes": 743,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native/source-inputs.json"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/LICENSE",
+          "sha256": "857d4e8afe59718161905db0295c7e09d00674e0be844c2a0500465afbe06521",
+          "bytes": 31773,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/LICENSE"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/NOTICE.md",
+          "sha256": "7d729bfcd7309989218f2bcb2a684a7f8b759e3ce45baafae42d46a09b9bff74",
+          "bytes": 2566,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/NOTICE.md"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/essentia-ACKNOWLEDGEMENTS",
+          "sha256": "c68bf20f1623ba22307f385466f2eb46bfed3c3b382c0c56683ffbf9696f032e",
+          "bytes": 733,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/essentia-ACKNOWLEDGEMENTS"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/essentia-COPYING.txt",
+          "sha256": "857d4e8afe59718161905db0295c7e09d00674e0be844c2a0500465afbe06521",
+          "bytes": 31773,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/essentia-COPYING.txt"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/ffmpeg-COPYING.LGPLv2.1",
+          "sha256": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30",
+          "bytes": 26517,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/ffmpeg-COPYING.LGPLv2.1"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/fftw-COPYING",
+          "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c",
+          "bytes": 18002,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/fftw-COPYING"
+        },
+        {
+          "path": "/usr/share/doc/pax-audio-analysis/libsamplerate-COPYING",
+          "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+          "bytes": 17992,
+          "evidencePath": "evidence/runtime/usr/share/doc/pax-audio-analysis/libsamplerate-COPYING"
+        },
+        {
+          "path": "/usr/share/doc/libc6/copyright",
+          "sha256": "40c7e1f2118531f038ca22999bd976901254e1bc5cd1b0f0211bdd064c599987",
+          "bytes": 25467,
+          "evidencePath": "evidence/runtime/usr/share/doc/libc6/copyright"
+        },
+        {
+          "path": "/usr/share/doc/libstdc++6/copyright",
+          "sha256": "da8191658b3452ce9caf31638ba61dab31a38c619fa39df119812e050f592fd3",
+          "bytes": 68194,
+          "evidencePath": "evidence/runtime/usr/share/doc/libstdc++6/copyright"
+        },
+        {
+          "path": "/usr/share/doc/libgcc-s1/copyright",
+          "sha256": "da8191658b3452ce9caf31638ba61dab31a38c619fa39df119812e050f592fd3",
+          "bytes": 68194,
+          "evidencePath": "evidence/runtime/usr/share/doc/libgcc-s1/copyright"
+        }
+      ],
+      "files": [
+        {
+          "path": "/opt/compat-lib/libsamplerate.so",
+          "sha256": "cb1a13a7eefd50f87e8d0a3ca538fe88552e3b9b4bd032db7986ad95fdb18500"
+        },
+        {
+          "path": "/opt/compat-lib/libsamplerate.so.0",
+          "sha256": "cb1a13a7eefd50f87e8d0a3ca538fe88552e3b9b4bd032db7986ad95fdb18500"
+        },
+        {
+          "path": "/opt/compat-lib/libsamplerate.so.0.1.8",
+          "sha256": "cb1a13a7eefd50f87e8d0a3ca538fe88552e3b9b4bd032db7986ad95fdb18500"
+        },
+        {
+          "path": "/opt/compat-lib/libavcodec.so",
+          "sha256": "930f4b7cf56de6b1085b4869c4ee2bf126eee7b62570d9d6902d2dd7bbb4fa0a"
+        },
+        {
+          "path": "/opt/compat-lib/libavcodec.so.59",
+          "sha256": "930f4b7cf56de6b1085b4869c4ee2bf126eee7b62570d9d6902d2dd7bbb4fa0a"
+        },
+        {
+          "path": "/opt/compat-lib/libavcodec.so.59.37.100",
+          "sha256": "930f4b7cf56de6b1085b4869c4ee2bf126eee7b62570d9d6902d2dd7bbb4fa0a"
+        },
+        {
+          "path": "/opt/compat-lib/libavformat.so",
+          "sha256": "fd39864e0fc693bed1935f8f38850cbf7861fff93c8b5c1ce4ff612b355f5ade"
+        },
+        {
+          "path": "/opt/compat-lib/libavformat.so.59",
+          "sha256": "fd39864e0fc693bed1935f8f38850cbf7861fff93c8b5c1ce4ff612b355f5ade"
+        },
+        {
+          "path": "/opt/compat-lib/libavformat.so.59.27.100",
+          "sha256": "fd39864e0fc693bed1935f8f38850cbf7861fff93c8b5c1ce4ff612b355f5ade"
+        },
+        {
+          "path": "/opt/compat-lib/libavutil.so",
+          "sha256": "dcbe76fe4cdcf3bab6cfbfe302ca66c16231a78b8cc072f040058a824493b6f8"
+        },
+        {
+          "path": "/opt/compat-lib/libavutil.so.57",
+          "sha256": "dcbe76fe4cdcf3bab6cfbfe302ca66c16231a78b8cc072f040058a824493b6f8"
+        },
+        {
+          "path": "/opt/compat-lib/libavutil.so.57.28.100",
+          "sha256": "dcbe76fe4cdcf3bab6cfbfe302ca66c16231a78b8cc072f040058a824493b6f8"
+        },
+        {
+          "path": "/opt/compat-lib/libswresample.so",
+          "sha256": "05baef8573380bca7c996fe03db05bb09c64a1fff07fd29fcf24973bd5e958be"
+        },
+        {
+          "path": "/opt/compat-lib/libswresample.so.4",
+          "sha256": "05baef8573380bca7c996fe03db05bb09c64a1fff07fd29fcf24973bd5e958be"
+        },
+        {
+          "path": "/opt/compat-lib/libswresample.so.4.7.100",
+          "sha256": "05baef8573380bca7c996fe03db05bb09c64a1fff07fd29fcf24973bd5e958be"
+        },
+        {
+          "path": "/opt/compat-lib/libfftw3f.so",
+          "sha256": "c70a6b3b69e8baff2bb3787bea38ca6184ccb0cc6b63ac93084f5b2ddb75fe6e"
+        },
+        {
+          "path": "/opt/compat-lib/libfftw3f.so.3",
+          "sha256": "c70a6b3b69e8baff2bb3787bea38ca6184ccb0cc6b63ac93084f5b2ddb75fe6e"
+        },
+        {
+          "path": "/opt/compat-lib/libfftw3f.so.3.5.8",
+          "sha256": "c70a6b3b69e8baff2bb3787bea38ca6184ccb0cc6b63ac93084f5b2ddb75fe6e"
+        },
+        {
+          "path": "/opt/control/lib/x86_64-linux-gnu/libbz2.so.1.0",
+          "sha256": "e6e8534de1c38ed5e9554d0fd38a4a731fd78815556f96c29418b5dcdd6f7a2e"
+        },
+        {
+          "path": "/opt/control/lib/x86_64-linux-gnu/libz.so.1",
+          "sha256": "f5c0f7704a7430daef3dcc2a7fe01be311aa2dbe1aeea68ade1dee32ff0792dc"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libavcodec.so.59.37.100",
+          "sha256": "f0b9106f5867b0ab0b4dbbcd040f0a8d1bb2e10ad526ea022bd1820aa22be98a"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libavfilter.so.8.44.100",
+          "sha256": "cfa25731ba69b12343e905456495b46e86a314f11b9222a84741bdbf319e556c"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libavformat.so.59.27.100",
+          "sha256": "8b4b5a41799b4333196e5d117356dc91ac646783253391b45cc6bf97cb2fb2a0"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libavutil.so.57.28.100",
+          "sha256": "8a5103eddb2bd9de0acdc6170ce15eeb0b6ae22687446bf3cdb3ac4ce0d5cdbb"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libbz2.so.1.0",
+          "sha256": "69ade5c4f8accf8f01b6825bdcccc31412ed6948c8cb572dadc9ed1c0e72b14c"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libmp3lame.so.0",
+          "sha256": "5d3684a6a52c21c18847f25427dbc62c964492e0941b9368f3a56988bd7ce153"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libswresample.so.4.7.100",
+          "sha256": "c1b8a81162b24de2525f957d3356fc8c1027b31c30b36f85935d420194d3d5cd"
+        },
+        {
+          "path": "/opt/pax-cli/lib/libz.so.1",
+          "sha256": "106095f235fff41740b98b9a37cb7a9fab003a6e4d070c4a91de0117d93fbf62"
+        },
+        {
+          "path": "/usr/local/lib/libessentia.so",
+          "sha256": "d3b622fe836ae21fd7c3ca9ee12e7b810627764575545bf218d82d71d207f40d"
+        },
+        {
+          "path": "/usr/local/bin/ffmpeg",
+          "sha256": "289064f64975dad231940705abef0eadbe6ce1b1028935068a8fea6f34f980aa"
+        },
+        {
+          "path": "/usr/local/bin/ffprobe",
+          "sha256": "5eb01cadeeabe4e509cfd6cf10920cd17b2dc2bf41db8ffc785916c6b48fc61b"
+        },
+        {
+          "path": "/app/audio-analysis",
+          "sha256": "a2920127082474795456b785b378ca9f1a555b01f9ff54f36c49af5535fff6c0"
+        }
+      ]
+    }
+  },
+  "runtimeEvidenceCollected": true,
+  "runtimeLinkage": "\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fffff1a6000)\n\tlibessentia.so => /usr/local/lib/libessentia.so (0x00007ffffe8f5000)\n\tlibz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007ffffe8d6000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007ffffe8b6000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ffffe7d6000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ffffe5f4000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007ffffffcb000)\n\tlibfftw3f.so.3 => /opt/compat-lib/libfftw3f.so.3 (0x00007ffffe3ed000)\n\tlibavformat.so.59 => /opt/compat-lib/libavformat.so.59 (0x00007ffffe371000)\n\tlibavcodec.so.59 => /opt/compat-lib/libavcodec.so.59 (0x00007ffffde89000)\n\tlibavutil.so.57 => /opt/compat-lib/libavutil.so.57 (0x00007ffffdcc3000)\n\tlibswresample.so.4 => /opt/compat-lib/libswresample.so.4 (0x00007ffffdca2000)\n\tlibsamplerate.so.0 => /opt/compat-lib/libsamplerate.so.0 (0x00007ffffdb33000)\n\tlibbz2.so.1.0 => /opt/control/lib/x86_64-linux-gnu/libbz2.so.1.0 (0x00007ffffdb1f000)\n\tlibavfilter.so.8 => /opt/pax-cli/lib/libavfilter.so.8 (0x00007fffff754000)\n\tlibavformat.so.59 => /opt/pax-cli/lib/libavformat.so.59 (0x00007fffff6d3000)\n\tlibavcodec.so.59 => /opt/pax-cli/lib/libavcodec.so.59 (0x00007fffff1e4000)\n\tlibswresample.so.4 => /opt/pax-cli/lib/libswresample.so.4 (0x00007fffff1c2000)\n\tlibavutil.so.57 => /opt/pax-cli/lib/libavutil.so.57 (0x00007ffffeff7000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ffffef15000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ffffed31000)\n\tlibbz2.so.1.0 => /opt/pax-cli/lib/libbz2.so.1.0 (0x00007ffffed1d000)\n\tlibz.so.1 => /opt/pax-cli/lib/libz.so.1 (0x00007ffffecfd000)\n\tlibmp3lame.so.0 => /opt/pax-cli/lib/libmp3lame.so.0 (0x00007ffffec84000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007ffffffcb000)\n\tlibavfilter.so.8 => /opt/pax-cli/lib/libavfilter.so.8 (0x00007fffff76f000)\n\tlibavformat.so.59 => /opt/pax-cli/lib/libavformat.so.59 (0x00007fffff6ee000)\n\tlibavcodec.so.59 => /opt/pax-cli/lib/libavcodec.so.59 (0x00007fffff1ff000)\n\tlibswresample.so.4 => /opt/pax-cli/lib/libswresample.so.4 (0x00007fffff1dd000)\n\tlibavutil.so.57 => /opt/pax-cli/lib/libavutil.so.57 (0x00007fffff012000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007ffffef30000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007ffffed4c000)\n\tlibbz2.so.1.0 => /opt/pax-cli/lib/libbz2.so.1.0 (0x00007ffffed38000)\n\tlibz.so.1 => /opt/pax-cli/lib/libz.so.1 (0x00007ffffed18000)\n\tlibmp3lame.so.0 => /opt/pax-cli/lib/libmp3lame.so.0 (0x00007ffffec9f000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007ffffffcb000)\n",
+  "notes": [
+    "Package presence in a builder is not proof of runtime inclusion.",
+    "Source/library scope must be reconciled with this file map before a coverage claim.",
+    "No image environment or credential files were read.",
+    "Runtime audio-analysis also directly resolves Debian base zlib1g; its exact source version is included, not excluded as a standard library.",
+    "All31 custom runtime copied-file hashes match the canonical source/bundle/CLI images.",
+    "The committed service source hashes match the passed canonical and standalone gates. Both builds resolve to the same immutable runtime, probe and Python image IDs.",
+    "Source export preparation checks do not publish or deploy this service. Scanner results do not establish source-level scanner coverage of manually compiled native code."
+  ],
+  "runtimeFilesMatchedToBuilderImages": true,
+  "runtimeCopyProof": [
+    {
+      "runtimePath": "/opt/compat-lib/libsamplerate.so",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-samplerate/lib/libsamplerate.so.0.1.8",
+      "sha256": "cb1a13a7eefd50f87e8d0a3ca538fe88552e3b9b4bd032db7986ad95fdb18500",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libsamplerate.so.0",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-samplerate/lib/libsamplerate.so.0.1.8",
+      "sha256": "cb1a13a7eefd50f87e8d0a3ca538fe88552e3b9b4bd032db7986ad95fdb18500",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libsamplerate.so.0.1.8",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-samplerate/lib/libsamplerate.so.0.1.8",
+      "sha256": "cb1a13a7eefd50f87e8d0a3ca538fe88552e3b9b4bd032db7986ad95fdb18500",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libavcodec.so",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libavcodec.so.59.37.100",
+      "sha256": "930f4b7cf56de6b1085b4869c4ee2bf126eee7b62570d9d6902d2dd7bbb4fa0a",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libavcodec.so.59",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libavcodec.so.59.37.100",
+      "sha256": "930f4b7cf56de6b1085b4869c4ee2bf126eee7b62570d9d6902d2dd7bbb4fa0a",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libavcodec.so.59.37.100",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libavcodec.so.59.37.100",
+      "sha256": "930f4b7cf56de6b1085b4869c4ee2bf126eee7b62570d9d6902d2dd7bbb4fa0a",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libavformat.so",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libavformat.so.59.27.100",
+      "sha256": "fd39864e0fc693bed1935f8f38850cbf7861fff93c8b5c1ce4ff612b355f5ade",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libavformat.so.59",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libavformat.so.59.27.100",
+      "sha256": "fd39864e0fc693bed1935f8f38850cbf7861fff93c8b5c1ce4ff612b355f5ade",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libavformat.so.59.27.100",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libavformat.so.59.27.100",
+      "sha256": "fd39864e0fc693bed1935f8f38850cbf7861fff93c8b5c1ce4ff612b355f5ade",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libavutil.so",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libavutil.so.57.28.100",
+      "sha256": "dcbe76fe4cdcf3bab6cfbfe302ca66c16231a78b8cc072f040058a824493b6f8",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libavutil.so.57",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libavutil.so.57.28.100",
+      "sha256": "dcbe76fe4cdcf3bab6cfbfe302ca66c16231a78b8cc072f040058a824493b6f8",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libavutil.so.57.28.100",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libavutil.so.57.28.100",
+      "sha256": "dcbe76fe4cdcf3bab6cfbfe302ca66c16231a78b8cc072f040058a824493b6f8",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libswresample.so",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libswresample.so.4.7.100",
+      "sha256": "05baef8573380bca7c996fe03db05bb09c64a1fff07fd29fcf24973bd5e958be",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libswresample.so.4",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libswresample.so.4.7.100",
+      "sha256": "05baef8573380bca7c996fe03db05bb09c64a1fff07fd29fcf24973bd5e958be",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libswresample.so.4.7.100",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-ffmpeg/lib/libswresample.so.4.7.100",
+      "sha256": "05baef8573380bca7c996fe03db05bb09c64a1fff07fd29fcf24973bd5e958be",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libfftw3f.so",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-fftw/lib/libfftw3f.so.3.5.8",
+      "sha256": "c70a6b3b69e8baff2bb3787bea38ca6184ccb0cc6b63ac93084f5b2ddb75fe6e",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libfftw3f.so.3",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-fftw/lib/libfftw3f.so.3.5.8",
+      "sha256": "c70a6b3b69e8baff2bb3787bea38ca6184ccb0cc6b63ac93084f5b2ddb75fe6e",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/compat-lib/libfftw3f.so.3.5.8",
+      "sourceImageRole": "nativeSource",
+      "sourcePath": "/opt/pax-fftw/lib/libfftw3f.so.3.5.8",
+      "sha256": "c70a6b3b69e8baff2bb3787bea38ca6184ccb0cc6b63ac93084f5b2ddb75fe6e",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/control/lib/x86_64-linux-gnu/libbz2.so.1.0",
+      "sourceImageRole": "nativeBundle",
+      "sourcePath": "/native-runtime/lib/x86_64-linux-gnu/libbz2.so.1.0",
+      "sha256": "e6e8534de1c38ed5e9554d0fd38a4a731fd78815556f96c29418b5dcdd6f7a2e",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/control/lib/x86_64-linux-gnu/libz.so.1",
+      "sourceImageRole": "nativeBundle",
+      "sourcePath": "/native-runtime/lib/x86_64-linux-gnu/libz.so.1",
+      "sha256": "f5c0f7704a7430daef3dcc2a7fe01be311aa2dbe1aeea68ade1dee32ff0792dc",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/pax-cli/lib/libavcodec.so.59.37.100",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/lib/libavcodec.so.59.37.100",
+      "sha256": "f0b9106f5867b0ab0b4dbbcd040f0a8d1bb2e10ad526ea022bd1820aa22be98a",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/pax-cli/lib/libavfilter.so.8.44.100",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/lib/libavfilter.so.8.44.100",
+      "sha256": "cfa25731ba69b12343e905456495b46e86a314f11b9222a84741bdbf319e556c",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/pax-cli/lib/libavformat.so.59.27.100",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/lib/libavformat.so.59.27.100",
+      "sha256": "8b4b5a41799b4333196e5d117356dc91ac646783253391b45cc6bf97cb2fb2a0",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/pax-cli/lib/libavutil.so.57.28.100",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/lib/libavutil.so.57.28.100",
+      "sha256": "8a5103eddb2bd9de0acdc6170ce15eeb0b6ae22687446bf3cdb3ac4ce0d5cdbb",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/pax-cli/lib/libbz2.so.1.0",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/lib/libbz2.so.1.0",
+      "sha256": "69ade5c4f8accf8f01b6825bdcccc31412ed6948c8cb572dadc9ed1c0e72b14c",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/pax-cli/lib/libmp3lame.so.0",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/lib/libmp3lame.so.0",
+      "sha256": "5d3684a6a52c21c18847f25427dbc62c964492e0941b9368f3a56988bd7ce153",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/pax-cli/lib/libswresample.so.4.7.100",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/lib/libswresample.so.4.7.100",
+      "sha256": "c1b8a81162b24de2525f957d3356fc8c1027b31c30b36f85935d420194d3d5cd",
+      "exact": true
+    },
+    {
+      "runtimePath": "/opt/pax-cli/lib/libz.so.1",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/lib/libz.so.1",
+      "sha256": "106095f235fff41740b98b9a37cb7a9fab003a6e4d070c4a91de0117d93fbf62",
+      "exact": true
+    },
+    {
+      "runtimePath": "/usr/local/lib/libessentia.so",
+      "sourceImageRole": "nativeBundle",
+      "sourcePath": "/usr/local/lib/libessentia.so",
+      "sha256": "d3b622fe836ae21fd7c3ca9ee12e7b810627764575545bf218d82d71d207f40d",
+      "exact": true
+    },
+    {
+      "runtimePath": "/usr/local/bin/ffmpeg",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/bin/ffmpeg",
+      "sha256": "289064f64975dad231940705abef0eadbe6ce1b1028935068a8fea6f34f980aa",
+      "exact": true
+    },
+    {
+      "runtimePath": "/usr/local/bin/ffprobe",
+      "sourceImageRole": "cli",
+      "sourcePath": "/opt/pax-cli/bin/ffprobe",
+      "sha256": "5eb01cadeeabe4e509cfd6cf10920cd17b2dc2bf41db8ffc785916c6b48fc61b",
+      "exact": true
+    }
+  ],
+  "runtimeSystemLinkageFiles": [
+    {
+      "path": "/lib/x86_64-linux-gnu/libc.so.6",
+      "sha256": "6b4a45352fd0c540a9c7c718f35ce8c8e46a4e482f9d3885a910c32d1a0e1421",
+      "binaryPackage": "libc6:amd64",
+      "binaryVersion": "2.36-9+deb12u14",
+      "sourcePackage": "glibc",
+      "sourceVersion": "2.36-9+deb12u14",
+      "sourceIncluded": false,
+      "scope": "ordinary-system-runtime"
+    },
+    {
+      "path": "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "sha256": "2bd1552c47799ef67e701e81d4383061fd76059868e446e63560f0dd0d5ec14e",
+      "binaryPackage": "libgcc-s1:amd64",
+      "binaryVersion": "12.2.0-14+deb12u1",
+      "sourcePackage": "gcc-12",
+      "sourceVersion": "12.2.0-14+deb12u1",
+      "sourceIncluded": false,
+      "scope": "ordinary-system-runtime"
+    },
+    {
+      "path": "/lib/x86_64-linux-gnu/libm.so.6",
+      "sha256": "7f2ca87f652f56b094462474b076749e90e689d0ecb9cb63c7679820b271b4e7",
+      "binaryPackage": "libc6:amd64",
+      "binaryVersion": "2.36-9+deb12u14",
+      "sourcePackage": "glibc",
+      "sourceVersion": "2.36-9+deb12u14",
+      "sourceIncluded": false,
+      "scope": "ordinary-system-runtime"
+    },
+    {
+      "path": "/lib/x86_64-linux-gnu/libstdc++.so.6",
+      "sha256": "e7848e32af4932840ba775169041759a2a8dd5a008af360e5c55bce506eebcf4",
+      "binaryPackage": "libstdc++6:amd64",
+      "binaryVersion": "12.2.0-14+deb12u1",
+      "sourcePackage": "gcc-12",
+      "sourceVersion": "12.2.0-14+deb12u1",
+      "sourceIncluded": false,
+      "scope": "ordinary-system-runtime"
+    },
+    {
+      "path": "/lib/x86_64-linux-gnu/libz.so.1",
+      "sha256": "7e2a72b4c4b38c61e6962de6e3f4a5e9ae692e732c68deead10a7ce2135a7f68",
+      "binaryPackage": "zlib1g:amd64",
+      "binaryVersion": "1:1.2.13.dfsg-1",
+      "sourcePackage": "zlib",
+      "sourceVersion": "1:1.2.13.dfsg-1",
+      "sourceIncluded": true,
+      "scope": "included-zlib-source"
+    },
+    {
+      "path": "/lib64/ld-linux-x86-64.so.2",
+      "sha256": "02bcda52c1a5dfc236f94d9e5255b4a0e26347d8a372a5223b650e31f291ce3c",
+      "binaryPackage": "libc6:amd64",
+      "binaryVersion": "2.36-9+deb12u14",
+      "sourcePackage": "glibc",
+      "sourceVersion": "2.36-9+deb12u14",
+      "sourceIncluded": false,
+      "scope": "ordinary-system-runtime"
+    }
+  ],
+  "additionalSources": [
+    {
+      "path": "upstream/debian-cli/bzip2_1.0.8-5.dsc",
+      "url": "https://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.8-5.dsc",
+      "sha256": "ed9c40f4de3f9e064535e15eac1c61a0f606763db98f4579dbc04067b94a8944",
+      "bytes": 2206,
+      "sourcePackage": "bzip2",
+      "sourceVersion": "1.0.8-5",
+      "sourceClass": "copied-runtime-library",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/bzip2_1.0.8.orig.tar.gz",
+      "url": "https://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz",
+      "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+      "bytes": 810029,
+      "sourcePackage": "bzip2",
+      "sourceVersion": "1.0.8-5",
+      "sourceClass": "copied-runtime-library",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/bzip2_1.0.8-5.debian.tar.bz2",
+      "url": "https://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.8-5.debian.tar.bz2",
+      "sha256": "d68c6eba11d70e14319e24ef1451880a03023b2b75364646adb117086db36039",
+      "bytes": 26787,
+      "sourcePackage": "bzip2",
+      "sourceVersion": "1.0.8-5",
+      "sourceClass": "copied-runtime-library",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/lame_3.100-6.dsc",
+      "url": "https://deb.debian.org/debian/pool/main/l/lame/lame_3.100-6.dsc",
+      "sha256": "6a402771625fa80785a2b904697ba9c7e74a1ee4fa536354e9e88f08e2a4073b",
+      "bytes": 2168,
+      "sourcePackage": "lame",
+      "sourceVersion": "3.100-6",
+      "sourceClass": "copied-runtime-library",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/lame_3.100.orig.tar.gz",
+      "url": "https://deb.debian.org/debian/pool/main/l/lame/lame_3.100.orig.tar.gz",
+      "sha256": "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e",
+      "bytes": 1524133,
+      "sourcePackage": "lame",
+      "sourceVersion": "3.100-6",
+      "sourceClass": "copied-runtime-library",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/lame_3.100-6.debian.tar.xz",
+      "url": "https://deb.debian.org/debian/pool/main/l/lame/lame_3.100-6.debian.tar.xz",
+      "sha256": "35c6af528d139737c8beede450ad99fe0c1f1764455d23321038b5c4a2b4574c",
+      "bytes": 13320,
+      "sourcePackage": "lame",
+      "sourceVersion": "3.100-6",
+      "sourceClass": "copied-runtime-library",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/zlib_1.2.13.dfsg-1.dsc",
+      "url": "https://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.13.dfsg-1.dsc",
+      "sha256": "3fa1e6b2fc525062aa88207dda52fed8e045373c809d362fe8a2bfbf7cf515a8",
+      "bytes": 2399,
+      "sourcePackage": "zlib",
+      "sourceVersion": "1:1.2.13.dfsg-1",
+      "sourceClass": "copied-runtime-library",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/zlib_1.2.13.dfsg.orig.tar.bz2",
+      "url": "https://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.13.dfsg.orig.tar.bz2",
+      "sha256": "71feb7947e3c00ef125f83b79a4e529bde31171e5babe48b391f06758d1ab0a1",
+      "bytes": 1239825,
+      "sourcePackage": "zlib",
+      "sourceVersion": "1:1.2.13.dfsg-1",
+      "sourceClass": "copied-runtime-library",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/zlib_1.2.13.dfsg-1.debian.tar.xz",
+      "url": "https://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.13.dfsg-1.debian.tar.xz",
+      "sha256": "f66cf3d4f2d7defcd4d1fd1fb0a11ee39f1e01b42ec7d059c9dc5c1695133c44",
+      "bytes": 15700,
+      "sourcePackage": "zlib",
+      "sourceVersion": "1:1.2.13.dfsg-1",
+      "sourceClass": "copied-runtime-library",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/autotools-dev_20220109.1.dsc",
+      "url": "https://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20220109.1.dsc",
+      "sha256": "f9ccc67437ff52a7882d6b91e7ca8bf0a316c0c1452093992bd5c5fc3b29c090",
+      "bytes": 1661,
+      "sourcePackage": "autotools-dev",
+      "sourceVersion": "20220109.1",
+      "sourceClass": "copied-build-input",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    },
+    {
+      "path": "upstream/debian-cli/autotools-dev_20220109.1.tar.xz",
+      "url": "https://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20220109.1.tar.xz",
+      "sha256": "8b05e5ad56cd7d9a15e9b2931eb429b6324bb89f1b46de3baf3651286dead8c1",
+      "bytes": 87340,
+      "sourcePackage": "autotools-dev",
+      "sourceVersion": "20220109.1",
+      "sourceClass": "copied-build-input",
+      "verifiedAgainst": "apt-get update verified Debian InRelease/Release signatures with image archive keyring; hashes from apt-cache showsrc"
+    }
+  ],
+  "scopeClassification": [
+    {
+      "class": "included-service-specific-source",
+      "components": [
+        "first-party service",
+        "Essentia36ec3d9",
+        "libsamplerate0.1.8",
+        "FFTW3.3.8",
+        "Eigen3.3.9",
+        "FFmpeg5.1.9-0+deb12u1",
+        "156lockedCargo crates"
+      ],
+      "treatment": "Exact source archives and committed source/patch/build files are in the release.",
+      "evidence": "fetch-sources.sh, Cargo.lock, direct source checksums, final gate hashes; final gate binding pending."
+    },
+    {
+      "class": "included-copied-runtime-library-source",
+      "components": [
+        "LAME3.100-6",
+        "zlib1:1.2.13.dfsg-1",
+        "bzip21.0.8-5"
+      ],
+      "treatment": "Include Debian .dsc, original source and Debian patches; retain package copyright files.",
+      "evidence": "CLI copied-packages.tsv and actual ldd path closure; archive SHA256 from authenticated Debian Sources metadata."
+    },
+    {
+      "class": "included-copied-build-input-source",
+      "components": [
+        "autotools-dev20220109.1: config.guess/config.sub"
+      ],
+      "treatment": "Include complete exact source package because these scripts are copied into the build source tree.",
+      "evidence": "Both copied script hashes match the authenticated source archive exactly."
+    },
+    {
+      "class": "unmodified-general-purpose-build-tools",
+      "components": [
+        "Rust1.94.1 compiler/Cargo/standard toolchain",
+        "C/C++compiler and linker",
+        "make",
+        "Python3",
+        "autoconf",
+        "automake",
+        "libtool",
+        "pkg-config",
+        "nasm",
+        "patch",
+        "patchelf",
+        "curl",
+        "tar",
+        "xz",
+        "bzip2"
+      ],
+      "treatment": "Record installed builder packages and pinned build instructions; do not add complete compiler/tool source trees to the service-source archive.",
+      "basis": "General-purpose tools or generally available free programs used unmodified are outside Corresponding Source under AGPLv3section1. Copied tool inputs are covered separately above.",
+      "scopeLimit": "No claim that all builder packages enter the runtime; actual copied-file map owns that question."
+    },
+    {
+      "class": "ordinary-system-runtime-components",
+      "components": [
+        "DebianBookworm glibc/loader/libm",
+        "GCC libgcc/libstdc++ runtime",
+        "unmodified Debian base utilities",
+        "CAcertificate data"
+      ],
+      "treatment": "Record final installed binary/source version map and runtime library paths; preserve base licence notices. These are separate from custom/native/CLI libraries above.",
+      "basis": "Standard platform facilities are considered separately under AGPLv3section1 System Libraries definition. Base utilities are general platform programs, not newly copied custom libraries.",
+      "scopeLimit": "This is technical scope for the service source publication. It does not claim a separate licence audit or source offer for redistribution of a complete container filesystem."
+    }
+  ],
+  "copiedBuildInputProof": [
+    {
+      "copiedPath": "/samplerate/Cfg/config.guess",
+      "sourceArchive": "upstream/debian-cli/autotools-dev_20220109.1.tar.xz",
+      "archiveMember": "autotools-dev-20220109.1/config.guess",
+      "sha256": "cf610daf8afdedbf2110abd79bdd4121d59080cab5ec46deaf67f97273bb6bda",
+      "exact": true
+    },
+    {
+      "copiedPath": "/samplerate/Cfg/config.sub",
+      "sourceArchive": "upstream/debian-cli/autotools-dev_20220109.1.tar.xz",
+      "archiveMember": "autotools-dev-20220109.1/config.sub",
+      "sha256": "deb02c26f43b2ea64276c9ede77ec0f53d08e6256710f3c0a12275712085c348",
+      "exact": true
+    }
+  ],
+  "verifiedSourceArchiveCount": 175,
+  "publicationReady": true,
+  "pendingChecks": [],
+  "verificationScope": {
+    "inventoryProof": "Exact copied library hashes, public source archives, package source versions, configuration and license evidence. This is a technical source inventory, not a vulnerability coverage claim.",
+    "scannerLimit": "OS and Cargo scanner findings do not establish source-level scanner coverage of manually compiled native code.",
+    "separateNativeProof": "The manual review of 16 FFmpeg advisories and the libsamplerate guard proof remain separate evidence.",
+    "parentReportedSecuritySummary": {
+      "runtimeFullOsReport": "trivy-release-runtime-full.json",
+      "runtimePackageAdvisoryRecords": 51,
+      "runtimeUniqueAdvisories": 12,
+      "runtimeFindingAreas": [
+        "system tools",
+        "DTLS",
+        "minizip"
+      ],
+      "runtimeFixableGateFindings": 0,
+      "nativeFixableGateFindings": 0,
+      "cliFixableGateFindings": 0,
+      "cargoFixableGateFindings": 0,
+      "source": "Parent canonical gate report; not rerun by inventory task."
+    }
+  },
+  "canonicalGate": {
+    "passed": true,
+    "architecture": "amd64",
+    "manifestSha256": "f6c90b18636b516fd8586a594965a8d07b8a07f42f046dc4600ee013097036e3",
+    "sourceInputCount": 68,
+    "sourceSha256": {
+      ".dockerignore": "bde0726b8d63956fcae6021ca2966d2de5682f111c895528d1c0aee80e3fd09a",
+      "Dockerfile.python": "95ba392b31325363754840a1b740b572f0df8be14599414ef21921bb1f518de1",
+      "Dockerfile.vercel": "adeaa2700efc2dc00ce2ac49818254a15c34b95eecfd6e5c8bb53524bb493424",
+      "analyzer.py": "9050bbe630e5c5ca3affb19493818723eebaf320af7eaa25fb7ad4659e9f0665",
+      "codec_compatibility.py": "f9bb6e17290e1085b8ef1d698bd9b1608602f063f0f534aa21a030aaf1e6a078",
+      "main.py": "9a4fdbfdd0dd66c8855f9f1959b6d494243cb819b25daf1a50a2712dd5612862",
+      "models.py": "a0d5ae38d5f002dea7f901b5d754a105e4814753b3278c6b4ee1c6d45e6f8a35",
+      "requirements-dev.txt": "3976ba001df818d40f74c9b77e5b1745a073d64e61aad710a9feb62e649ac7e3",
+      "requirements.lock": "f9535cbc5d7986d3c3a967c2ceb827cfc46e3a93fbeed39fccdb168619ffb1c9",
+      "rust/.gitignore": "03693476337f78f8d71dce8b82d0041633b7e99136431296f790b280e0a354bc",
+      "rust/COMPATIBILITY.md": "af57cdf7eedd1be5e7d01ff3d78ae4634f91978d718858384abcfdda8323fe9d",
+      "rust/Cargo.lock": "a2575485fa403466791f3013ea319c5013f3b18fde6de3da60617628a069e995",
+      "rust/Cargo.toml": "3d7c6de661f3324473cc284536d0384782442e84d6ab62ea6823e8f45dc2e041",
+      "rust/LICENSE": "857d4e8afe59718161905db0295c7e09d00674e0be844c2a0500465afbe06521",
+      "rust/NOTICE.md": "7d729bfcd7309989218f2bcb2a684a7f8b759e3ce45baafae42d46a09b9bff74",
+      "rust/README.md": "1f104b3d360611de09a732cb617c9b6a98c75f4589c00638e3d8d17d6b099bd2",
+      "rust/SUPPORT.md": "5f52ef23c42a414f6c3cdc32b23affd6a18f7361d1a97e4515665797a07b509a",
+      "rust/build.rs": "722feac43311cf550422c24b995b44acfc62049a3d5228c8dec6281f3cf3f40f",
+      "rust/check.py": "f61d05ed03190ddf690642ac39f80b7dff59041baf23161d194b1a1af7218ce4",
+      "rust/compat-data.json": "9a5d2ef9a560aace713130a09d5bcb22ed322f5eebdeca14144c7932f3907851",
+      "rust/compat-data.tar.xz": "863af2a8e73c8a90199ea9df7381c839b28c0593165c530dc707f1a11820d1b0",
+      "rust/decoder-parity-check.py": "cd0c00f9e06bd94f377fedfadd2a7f94dbfcd879eba2422f4b898f25099fdba2",
+      "rust/decoder_pcm.cpp": "debb423449f03dc426afa9d9feaba1ab331092cc19507a35598d2acd6b0f2fba",
+      "rust/engine_probe.cpp": "0494d094bd23d829795400b3f3a0c0be5a041bf161ff370d7ae27a28b53f3e75",
+      "rust/native-build/bounded-decode-check.cpp": "1d1726d3eeffa024fc43d5a063850d464458531b96dda38c3e6de9f7e20a7118",
+      "rust/native-build/build-dependencies.sh": "16aac0c22e4ab7a26dde33ba61dfb7ca7c81962a630ff77952dee3726f12974d",
+      "rust/native-build/build-ffmpeg.sh": "665ab4cf87f767809f611bfda589bfcfbf7969e0f18081bb21b8decef5acda59",
+      "rust/native-build/bundle-cli.sh": "dc020c212ebb9c33ebe5a115947af3ae7e617ab1bc2c5323f993f3827b0b97c7",
+      "rust/native-build/bundle-libraries.sh": "44e475bb43e212b0fa23d077f7e7960853de90c62673ba930623dfcd91dcbdc3",
+      "rust/native-build/check-decoder-registry.py": "55006f1617442f560c5f8e4b7402d258621db83ed368f7618cb62526527298fc",
+      "rust/native-build/check-ffmpeg-config.py": "37ba3e2a7ba46c24b610bd4460ca5ff94960aa65aa553da46bdb6da6679d84b9",
+      "rust/native-build/check-runtime.py": "c7c6fc52e8acf7149bb16d5824a6c36f80becfe53a9d756177b7f24ee89e3e67",
+      "rust/native-build/check-samplerate.sh": "cdbfa189943e6a3c7e67e5ab64c3296bcde30ab50cb879874293dd362b6d218d",
+      "rust/native-build/configure-decoders.py": "4477fa6cc828ebc0f3a39158d784ad2ce1b6f75c5d0b9e356035a65802671006",
+      "rust/native-build/fetch-sources.sh": "0dc07d581d3ed61ba3c8a169c4b05d22e366b5f4b7d69348cc82b2a405ea9d59",
+      "rust/native-build/ffmpeg-policy.json": "c118f52b6a2a31242f7cc26aa2c426d53088abb1f5ad217470ae6bb836c25c0f",
+      "rust/native-build/patch_decoder.py": "0c21a44b84d5f91eb9c7801b1ebdad878ad8ca18b792accbf533d65fe578c1a1",
+      "rust/native-build/patch_ffmpeg5.py": "6a79e88530602139f525f3ad74a33b5beed7c668cb48a10d6a94e6403767445b",
+      "rust/native-build/patch_samplerate.py": "297220f797023a557908e0b7e1cbf0deeaa497dcb0dc8b15f5e1f33d039093d1",
+      "rust/native-build/samplerate-endpoint-check.c": "01d57fdb07044fed8f5aa8da5c9a9fe59b55c63a087323511e69b172d5b93881",
+      "rust/native.cpp": "d4ffa98d78c147989ebafee6ff889ece794a00777250dd5971fd90d7da46d22d",
+      "rust/patch_configuration.py": "b8f3c29dc0888f8bfbb76cc9494cb8e4f3254e94fbde55f89ee251c3741d56bd",
+      "rust/patch_engine.py": "46c02cb872055b180d2e456b6ab66bdf18d9387353351c0a41278ec7bd8dada9",
+      "rust/preview-check.py": "b45ff652ba28d85af1c26c80918e7596ccdfcc731dbdc0ec0a1d663b25f7c8c7",
+      "rust/rounding-fixture.json": "38a30e364b3076f2abd947b55048ce5ae418eab35da799f9c434380801d0cf7e",
+      "rust/rounding-oracle.json": "0f2e9641f12ebd2d6add1cae3288867891e00f3b51913c59c14da54b471053af",
+      "rust/runtime-check.py": "6afc346d72770a34212ff4c9e0dcb60205d34a47ae8b96e7e9e9f4225de7be89",
+      "rust/src/config.rs": "74f088e73823a4ee79394d14c21f2ee6638f81f37ac64f591675e1e9b42f42ae",
+      "rust/src/contract.rs": "a2a4885f226ca8440fdcf6d6147e6cd836111ea5153ec05e415324adee3f7cdb",
+      "rust/src/main.rs": "415b712764f3b5907f93bfb7d39e88b72317041f1cff9e3d9ff9a82db3d855c7",
+      "rust/src/native.rs": "5053143a4a85666a19110f1c657dd056d8bdc23a93845f917b787671581e9bff",
+      "rust/src/resources.rs": "f08d1f17422b77620791c154728a924666e1206d84b78d1ded9b79f21421f57c",
+      "rust/src/rounding.rs": "36284627de00ddf9226fdedc3ef7a6fce8b29298243f26234bc49151641a9982",
+      "rust/src/server.rs": "f5d34bb318681a40d93531e3ee60301a4adbd9ea8639b6d465129423b7fbe6bd",
+      "rust/src/worker.rs": "327814db9fe930f5cd43232ebf76da85691254173bbba9c11e2efea63ac80750",
+      "rust/tests/README.md": "423c3eb94a106b59c1679208351309ba74317be33076787f9929d8eaa1acaf34",
+      "rust/tests/http_parity.py": "1263224a0bdf312df3844c526548fd40aea8929b531d64fb43a29777d1a31b6e",
+      "rust/transport-check.py": "c97f9f3005b377ae4da794c9098d2337cef159e9daaee8ec979685c29e23a43d",
+      "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tests/contract/analyze-r2.error.json": "8d72b1a0cba01ce34b217cfad87c240389aa10b9d7ef0b6ac261b9dc7e481a0b",
+      "tests/contract/analyze-r2.json": "00368d0daf7aaba16a4a5f883b61136025ff7258218e82310981053265286a43",
+      "tests/fixtures/output-baseline.json": "1423b3223807b5fe56a789930b3a2834c25dd4c1845b63f93cd1846d592d93a2",
+      "tests/fixtures/pulse-120.mp3": "72e164c5ed181c445ab00c5272bb16f29bb386477fbf66d090016862c1f0aa8c",
+      "tests/test_analyzer.py": "c69ead799b5617ab8096bd616c9828c9be7bfc977264041b62c33c69f68418ce",
+      "tests/test_api.py": "380ac1cd2813222e50ccd24ec595bfd800999a796ea3dd6e204cd623331c37f1",
+      "tests/test_config.py": "cbc8cdaef4b6425001f61cef17b94e4a9975a0939cc241d0afabbe691feef335",
+      "tests/test_input_security.py": "534f4c127b2fcbb939dce84cd0c42343b60903a2f5736c7715f5f3ae17e82082",
+      "tests/test_output_parity.py": "381e2fb18a670770cb3477f6461eb42d5e7dbe4304349b1ad285cb9e513652fe"
+    },
+    "images": {
+      "runtime": "sha256:025f0afb91e9efd421747ed68d44390bc611db143b9ac2098a8c7a04dfc9bb5b",
+      "probe": "sha256:7b061baf7c1e9bcb77d9e4374d524248931873d27f85b4453752cbda923d7e5f",
+      "python": "sha256:12f83403b5165a4c926bc84051615b469922c62ea44761576ebfd606a6b5dfc2"
+    },
+    "decoderPcmExact": true,
+    "sharedFft": false,
+    "decoderParitySha256": "1eb52cde04c2984fb5eafba33d7329ba8ccf94ad550c7b3bc241b6a5bd69d7c7"
+  },
+  "standaloneGate": {
+    "sourceCommit": "ef69b73640d5cb3872ae00fb34f2d27a28f65f29",
+    "passed": true,
+    "command": "python3 service/rust/check.py --architecture amd64 --build-python",
+    "workingDirectory": "repository root",
+    "dockerBuildTargets": [
+      "Python reference",
+      "runtime",
+      "test"
+    ],
+    "images": {
+      "runtime": "sha256:025f0afb91e9efd421747ed68d44390bc611db143b9ac2098a8c7a04dfc9bb5b",
+      "probe": "sha256:7b061baf7c1e9bcb77d9e4374d524248931873d27f85b4453752cbda923d7e5f",
+      "python": "sha256:12f83403b5165a4c926bc84051615b469922c62ea44761576ebfd606a6b5dfc2"
+    },
+    "imagesMatchCanonicalGate": true,
+    "sourceHashesMatchCanonicalCommit": true,
+    "gateInputCount": 68,
+    "decoderPcmExactCases": 24,
+    "engineChecks": 56,
+    "httpAndConfigCases": 248,
+    "runtimeChecksPassed": true,
+    "sharedFft": false,
+    "cleanCloneModes": true,
+    "buildxCacheReuse": true,
+    "independentUncachedBuildClaimed": false,
+    "execution": "Linux AMD64 containers on ARM host; emulated correctness checks, not native performance measurements",
+    "manifestSha256": "f6c90b18636b516fd8586a594965a8d07b8a07f42f046dc4600ee013097036e3"
+  }
+}

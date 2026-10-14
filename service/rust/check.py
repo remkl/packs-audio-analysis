@@ -86,6 +86,10 @@ def main():
     spec.loader.exec_module(module)
     corpus = module.extract_corpus()
     fixtures = json.loads((corpus / "goldens/amd64-wheel-golden.json").read_text())["outputs"]
+    if args.architecture == "amd64":
+        run([sys.executable, str(ROOT / "decoder-parity-check.py"), "--python-image", python_image,
+             "--candidate-image", probe, "--output", str(output / "decoder-parity.json")],
+            output / "decoder-parity.log")
     run(["docker", "run", "--rm", "--network", "none", "--platform", platform,
          "-v", str(corpus / "fixtures") + ":/fixtures:ro", "--entrypoint", "/app/bounded-decode-check",
          probe, *["/fixtures/" + name for name in fixtures]], output / "bounded-decode.log")

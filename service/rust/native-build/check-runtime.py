@@ -28,7 +28,7 @@ def check_runtime(image):
     script = '''
 if command -v python3 >/dev/null || command -v python >/dev/null || command -v rustc >/dev/null || command -v cargo >/dev/null; then exit 1; fi
 ffmpeg -version | head -1
-ldd /usr/bin/ffmpeg
+ldd /usr/local/bin/ffmpeg
 printf 'NATIVE\\n'
 ldd /app/audio-analysis
 printf 'CAPABILITY\\n'
@@ -39,16 +39,19 @@ id -g
     output = command('docker', 'run', '--rm', '--entrypoint', 'sh', immutable, '-c', script).stdout
     cli, native = output.split('NATIVE\n', 1)
     native, identity = native.split('CAPABILITY\n', 1)
-    require('ffmpeg version 5.1.9-0+deb12u1' in cli, 'Wrong FFmpeg CLI version')
+    require('ffmpeg version 5.1.9-0+deb12u1-pax1' in cli, 'Wrong FFmpeg CLI version')
     require('/opt/control' not in cli and '/opt/compat-lib' not in cli, 'CLI loaded private native dependencies')
     require('libavcodec.so.59' in cli and 'libavformat.so.59' in cli, 'Wrong CLI ABI')
+    for line in cli.splitlines():
+        if any(lib in line for lib in ('libavcodec.so.', 'libavformat.so.', 'libavfilter.so.', 'libavutil.so.', 'libswresample.so.')):
+            require('/opt/pax-cli/lib/' in line, 'CLI must use its minimal supported-source libraries')
     require('not found' not in cli + native, 'Missing runtime dependency')
     required = {
-        'libfftw3f.so.3': '/opt/control/',
-        'libavformat.so.58': '/opt/control/',
-        'libavcodec.so.58': '/opt/control/',
-        'libavutil.so.56': '/opt/control/',
-        'libswresample.so.3': '/opt/control/',
+        'libfftw3f.so.3': '/opt/compat-lib/',
+        'libavformat.so.59': '/opt/compat-lib/',
+        'libavcodec.so.59': '/opt/compat-lib/',
+        'libavutil.so.57': '/opt/compat-lib/',
+        'libswresample.so.4': '/opt/compat-lib/',
         'libsamplerate.so.0': '/opt/compat-lib/',
     }
     native_lines = native.splitlines()

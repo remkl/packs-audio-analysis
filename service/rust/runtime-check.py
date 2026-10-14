@@ -498,6 +498,19 @@ def check_extra_containers(run):
             shutil.copyfile(output / name, path)
             generated.append(path)
             reference_statuses[path.name] = reference_status
+        # An accepted container can include video. Probe the audio metadata and
+        # keep exact audio/playback results when the minimal build has no video decoder.
+        name = "container-audio-with-video.webm"
+        command("docker", "run", "--rm", "--network", "none", "--platform", "linux/amd64",
+                "-v", str(run.corpus / "fixtures") + ":/input:ro", "-v", str(output) + ":/output",
+                "--entrypoint", "ffmpeg", run.oracle, "-v", "error", "-f", "lavfi", "-i",
+                "testsrc=size=32x32:rate=5:duration=2", "-i", "/input/pulse-120-a4.wav",
+                "-t", "2", "-map_metadata", "-1", "-c:v", "magicyuv", "-pix_fmt", "yuv420p",
+                "-threads:v", "1", "-c:a", "pcm_s16le", "-f", "matroska", "/output/" + name)
+        path = run.corpus / "fixtures" / name
+        shutil.copyfile(output / name, path)
+        generated.append(path)
+        reference_statuses[path.name] = 200
         for channels, rate in [(1, 44100), (1, 22050), (2, 48000)]:
             path = run.corpus / "fixtures" / ("container-zork-%d-%d.wav" % (channels, rate))
             generated.append(path)

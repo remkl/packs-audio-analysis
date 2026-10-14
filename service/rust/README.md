@@ -63,6 +63,9 @@ The gate runs these checks:
 - Exact native float32 comparisons between the original buffer ownership and
   shared buffers, including reuse of the probe objects, reconfiguration,
   recovery after errors and unwinding of borrowed references.
+- On AMD64, byte-for-byte decoded PCM comparison with the frozen Python wheel
+  for the 14 original fixtures and ten additional container/gapless controls.
+  This checks decoder version changes separately from DSP buffer ownership.
 - Fixed audio output across repeated, reversed, shuffled and concurrent jobs.
   BPM, keys, duration, peaks, preview and playback hash/size must match exactly.
   Confidence keeps the existing absolute tolerance of `1e-6`. The current
@@ -179,7 +182,9 @@ The Dockerfile pins public base images by digest. Source archives have fixed
 SHA-256 hashes. Cargo uses its committed lockfile. The build uses Essentia
 commit `36ec3d929402d491cbbb1120c54631e8c205b0ff`, libsamplerate 0.1.8 and FFTW
 3.3.8. The decoder patch selects the integer MP3 decoder used by the pinned
-Python wheel and retains AAC leading samples. Python and the native decoder
+Python wheel and retains AAC leading samples and Ogg/Vorbis trailing samples.
+Explicit Matroska/Vorbis end padding still applies.
+Python and the native decoder
 share 62 accepted codec names in `codec_compatibility.py`. The Python tests
 verify the wheel's 63 registered names and the explicit Zork exclusion.
 Unsupported codecs, including Opus and IMA/MS ADPCM, return a decode error.
@@ -190,14 +195,25 @@ mono/stereo Zork files check that rejection. Eight more FLAC, OGG, M4A, WebM
 and ADPCM WAV controls compare full responses and playback hashes against Python,
 with explicit success/error expectations and no error uploads.
 
-Native decode uses FFmpeg 4.3.9 libraries in a private dependency directory.
-The native build applies the signed Bullseye security archive before compilation.
-The release gate scans both this bundle and the final Bookworm runtime image.
-The playback and metadata commands use Debian FFmpeg/ffprobe 5.1.9. The loader
-check verifies that these two library sets do not mix. System C/C++ libraries
-come from the final Debian image. Other signed Debian packages can change in
-the upstream repository; the build is pinned for compatibility, not a claim of
-bit-for-bit image reproducibility forever.
+Native decode uses Debian FFmpeg 5.1.9 source, rebuilt on Bookworm. The adapter
+owns each codec context and drains the send/receive API. The native build contains
+only accepted audio decoders and input containers; unused native writers are
+excluded. System C/C++ libraries come from the final Debian image. FFTW retains
+its portable Debian arithmetic flags. The resampler fixes CVE-2017-7697 with an
+endpoint guard that preserves the original buffer schedule. Its sanitizer check
+covers every interpolation path. These changes require the unchanged strict goldens.
+
+The FFmpeg and FFprobe commands use a separate minimal build of the same supported
+source. Playback keeps the existing libmp3lame encoder and MP3 output. Both builds
+retain their configuration, decoder registry and source hashes in the image.
+The build fails if a component required to be absent by `ffmpeg-policy.json`
+is enabled. This covers the reviewed advisories, not all possible vulnerabilities.
+
+The release gate scans the build and runtime OS packages. Custom source-built
+libraries also need their source inventory and advisory review: absence from
+the package database is not evidence of security. See [SUPPORT.md](SUPPORT.md).
+Signed Debian packages can change in the upstream repository; the build pins
+compatibility inputs but does not promise identical image bytes forever.
 
 See [NOTICE.md](NOTICE.md) and the parent AGPL licence. ADR 0048 and Plan 139
 OPS-11 own source publication. Publish the complete corresponding source and

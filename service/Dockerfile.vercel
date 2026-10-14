@@ -1,28 +1,52 @@
 # Build context: services/audio-analysis
 # Canonical Rust build. Dockerfile.python preserves the current Python oracle.
 # The public mirror serves Docker Official Images with the verified index digests.
-FROM mirror.gcr.io/library/rust:1.94.1-slim-bullseye@sha256:e95d62f31e39e3ed9d21452146525ee0c8d5f9991096bf02eefe2762e7c4d09b AS native-source
+FROM mirror.gcr.io/library/rust:1.94.1-slim-bookworm@sha256:cf9dd0ec73e75f827fe59123fff9dc65af1a1c8363c3c31ee8d7f8ad0b6a5fb2 AS native-dependencies
 ARG BUILD_JOBS=2
-RUN printf 'deb https://deb.debian.org/debian bullseye main\ndeb https://archive.debian.org/debian-security bullseye-security main\n' > /etc/apt/sources.list \
+RUN printf 'deb https://deb.debian.org/debian bookworm main\ndeb https://deb.debian.org/debian-security bookworm-security main\n' > /etc/apt/sources.list \
+    && rm -f /etc/apt/sources.list.d/debian.sources \
     && apt-get update \
     && apt-get upgrade -y --no-install-recommends \
     && apt-get install -y --no-install-recommends build-essential python3 pkg-config curl autotools-dev \
-       libeigen3-dev=3.3.9-2 libfftw3-dev=3.3.8-2 \
-       libavcodec-dev=7:4.3.9-0+deb11u2 libavformat-dev=7:4.3.9-0+deb11u2 \
-       libavutil-dev=7:4.3.9-0+deb11u2 libswresample-dev=7:4.3.9-0+deb11u2 \
+       autoconf automake libtool patch xz-utils bzip2 nasm \
     && rm -rf /var/lib/apt/lists/*
 COPY rust/native-build/fetch-sources.sh /tmp/fetch-sources.sh
 RUN sh /tmp/fetch-sources.sh
+COPY rust/native-build/build-dependencies.sh /tmp/build-dependencies.sh
+RUN sh /tmp/build-dependencies.sh
+RUN apt-get update && apt-get install -y --no-install-recommends zlib1g-dev libbz2-dev \
+    && rm -rf /var/lib/apt/lists/*
+COPY codec_compatibility.py rust/native-build/configure-decoders.py \
+     rust/native-build/check-decoder-registry.py rust/native-build/check-ffmpeg-config.py \
+     rust/native-build/ffmpeg-policy.json rust/native-build/build-ffmpeg.sh /tmp/
+RUN sh /tmp/build-ffmpeg.sh native
+
+FROM native-dependencies AS native-source
 WORKDIR /samplerate
-RUN cp /usr/share/misc/config.guess Cfg/config.guess \
+COPY rust/native-build/patch_samplerate.py rust/native-build/samplerate-endpoint-check.c \
+     rust/native-build/check-samplerate.sh /tmp/
+RUN cp src/src_sinc.c /tmp/src_sinc_original.c \
+    && python3 /tmp/patch_samplerate.py \
+    && cp /usr/share/misc/config.guess Cfg/config.guess \
     && cp /usr/share/misc/config.sub Cfg/config.sub \
     && CPPFLAGS=-fPIC CFLAGS='-O2 -ffp-contract=off' ./configure --prefix=/opt/pax-samplerate \
        --disable-fftw --disable-sndfile --enable-shared --disable-static \
+    && sh /tmp/check-samplerate.sh \
     && make -j${BUILD_JOBS} && make install
-COPY codec_compatibility.py rust/native-build/patch_decoder.py rust/patch_configuration.py rust/patch_engine.py /tmp/
+COPY codec_compatibility.py rust/native-build/patch_decoder.py rust/native-build/patch_ffmpeg5.py rust/patch_configuration.py rust/patch_engine.py /tmp/
 WORKDIR /essentia
-RUN python3 /tmp/patch_decoder.py && python3 /tmp/patch_configuration.py
-ENV PKG_CONFIG_PATH=/opt/pax-samplerate/lib/pkgconfig LD_LIBRARY_PATH=/opt/pax-samplerate/lib:/usr/local/lib
+RUN python3 /tmp/patch_decoder.py && python3 /tmp/patch_ffmpeg5.py && python3 /tmp/patch_configuration.py
+ENV PKG_CONFIG_PATH=/opt/pax-samplerate/lib/pkgconfig:/opt/pax-fftw/lib/pkgconfig:/opt/pax-ffmpeg/lib/pkgconfig \
+    LD_LIBRARY_PATH=/opt/pax-samplerate/lib:/opt/pax-fftw/lib:/opt/pax-ffmpeg/lib:/usr/local/lib
+
+# The command-line tools use the same source and audio policy, in an isolated
+# library directory. No system multimedia package or hardware closure is needed.
+FROM native-dependencies AS cli-build
+RUN apt-get update && apt-get install -y --no-install-recommends libmp3lame-dev=3.100-6 patchelf \
+    && rm -rf /var/lib/apt/lists/*
+RUN sh /tmp/build-ffmpeg.sh cli
+COPY rust/native-build/bundle-cli.sh /tmp/bundle-cli.sh
+RUN sh /tmp/bundle-cli.sh
 
 FROM native-source AS native-runtime-build
 RUN python3 /tmp/patch_engine.py \
@@ -50,13 +74,15 @@ COPY --from=native-source /essentia/src/algorithms/rhythm/onsetdetectionglobal.h
 RUN python3 /tmp/patch_engine.py --probe \
     && python3 waf build -j${BUILD_JOBS} && python3 waf install
 COPY rust/engine_probe.cpp /tmp/engine_probe.cpp
-COPY rust/native.cpp rust/native-build/bounded-decode-check.cpp /tmp/
+COPY rust/native.cpp rust/native-build/bounded-decode-check.cpp rust/decoder_pcm.cpp /tmp/
 RUN g++ -std=c++11 -O2 -I/usr/local/include/essentia -I/usr/include/eigen3 \
     -I/usr/local/include/essentia/streaming -I/usr/local/include/essentia/scheduler \
     -I/usr/local/include/essentia/streaming/algorithms -I/essentia/src/algorithms/rhythm \
     /tmp/engine_probe.cpp -L/usr/local/lib -lessentia -o /tmp/engine-probe \
     && g++ -std=c++11 -O2 -I/usr/local/include/essentia -I/usr/include/eigen3 \
-       /tmp/bounded-decode-check.cpp -L/usr/local/lib -lessentia -o /tmp/bounded-decode-check
+       /tmp/bounded-decode-check.cpp -L/usr/local/lib -lessentia -o /tmp/bounded-decode-check \
+    && g++ -std=c++11 -O2 -I/usr/local/include/essentia -I/usr/include/eigen3 \
+       /tmp/decoder_pcm.cpp -L/usr/local/lib -lessentia -o /tmp/decoder-pcm
 
 FROM engine-probe-build AS engine-probe-bundle
 RUN apt-get update && apt-get install -y --no-install-recommends patchelf && rm -rf /var/lib/apt/lists/*
@@ -68,13 +94,22 @@ COPY --from=native-source /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-c
 RUN printf 'deb https://deb.debian.org/debian bookworm main\ndeb https://deb.debian.org/debian-security bookworm-security main\n' > /etc/apt/sources.list \
     && rm -f /etc/apt/sources.list.d/debian.sources \
     && apt-get update \
-    && apt-get install -y --no-install-recommends ca-certificates libcap2-bin \
-       ffmpeg=7:5.1.9-0+deb12u1 perl-base=5.36.0-7+deb12u4 \
+    && apt-get upgrade -y --no-install-recommends \
+    && apt-get install -y --no-install-recommends ca-certificates libcap2-bin libstdc++6 libgcc-s1 \
+       perl-base=5.36.0-7+deb12u4 \
     && rm -rf /var/lib/apt/lists/* \
     && groupadd --system --gid 10001 app \
     && useradd --system --uid 10001 --gid app --no-create-home --home-dir /nonexistent --shell /usr/sbin/nologin app
+COPY --from=cli-build /opt/pax-cli/bin/ffmpeg /opt/pax-cli/bin/ffprobe /usr/local/bin/
+COPY --from=cli-build /opt/pax-cli/lib /opt/pax-cli/lib
+COPY --from=cli-build /opt/pax-cli/share/pax-build /usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-cli
+COPY --from=native-source /opt/pax-ffmpeg/share/pax-build /usr/share/doc/pax-audio-analysis/native-runtime/ffmpeg-native
 COPY --from=native-source /opt/pax-samplerate/lib/libsamplerate.so* /opt/compat-lib/
+COPY --from=native-source /opt/pax-fftw/lib/libfftw3f.so* /opt/compat-lib/
+COPY --from=native-source /opt/pax-ffmpeg/lib/lib*.so* /opt/compat-lib/
 COPY --from=native-source /samplerate/COPYING /usr/share/doc/pax-audio-analysis/libsamplerate-COPYING
+COPY --from=native-source /fftw/COPYING /usr/share/doc/pax-audio-analysis/fftw-COPYING
+COPY --from=native-source /ffmpeg/COPYING.LGPLv2.1 /usr/share/doc/pax-audio-analysis/ffmpeg-COPYING.LGPLv2.1
 COPY --from=native-source /essentia/COPYING.txt /usr/share/doc/pax-audio-analysis/essentia-COPYING.txt
 COPY --from=native-source /essentia/ACKNOWLEDGEMENTS /usr/share/doc/pax-audio-analysis/essentia-ACKNOWLEDGEMENTS
 ENV LD_LIBRARY_PATH=/usr/local/lib \
@@ -87,6 +122,7 @@ COPY --from=engine-probe-bundle /usr/local/lib/libessentia.so /usr/local/lib/lib
 COPY --from=engine-probe-bundle /native-runtime /opt/control
 COPY --from=engine-probe-bundle /tmp/engine-probe /app/engine-probe
 COPY --from=engine-probe-bundle /tmp/bounded-decode-check /app/bounded-decode-check
+COPY --from=engine-probe-bundle /tmp/decoder-pcm /app/decoder-pcm
 USER 10001:10001
 ENTRYPOINT ["/app/engine-probe"]
 

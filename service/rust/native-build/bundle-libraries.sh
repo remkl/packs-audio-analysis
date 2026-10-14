@@ -1,6 +1,6 @@
 #!/bin/sh
 set -eu
-# Capture the old FFmpeg/FFTW ABI; use the final Debian's libc and C++ runtime.
+# Record the minimal native closure; use the final Debian's libc/C++ runtime.
 mkdir -p /native-runtime /native-runtime-notices/debian
 ldd /usr/local/lib/libessentia.so > /tmp/essentia-ldd.txt
 if grep -q 'not found' /tmp/essentia-ldd.txt; then cat /tmp/essentia-ldd.txt; exit 1; fi
@@ -9,11 +9,16 @@ while IFS= read -r lib; do
     case "$(basename "$lib")" in
         libc.so.*|libm.so.*|libdl.so.*|libpthread.so.*|librt.so.*|libresolv.so.*|libstdc++.so.*|libgcc_s.so.*) continue ;;
     esac
-    case "$lib" in /opt/pax-samplerate/*) continue ;; esac
+    case "$lib" in /opt/pax-samplerate/*|/opt/pax-fftw/*|/opt/pax-ffmpeg/*) continue ;; esac
     cp --parents --dereference "$lib" /native-runtime/
-    package=$(dpkg-query --search "$lib" | head -n 1 | cut -d: -f1)
+    # Debian's merged-/usr aliases can differ from the package database path.
+    package=$(dpkg-query --search "$lib" 2>/dev/null | head -n 1 | cut -d: -f1)
+    if [ -z "$package" ]; then
+        package=$(dpkg-query --search "$(readlink -f "$lib")" | head -n 1 | cut -d: -f1)
+    fi
+    test -n "$package"
     if [ -d "/usr/share/doc/$package" ]; then
-        cp -a "/usr/share/doc/$package" /native-runtime-notices/debian/
+        cp -aL "/usr/share/doc/$package" /native-runtime-notices/debian/
     fi
 done < /tmp/native-libraries.txt
 triplet=$(gcc -dumpmachine)

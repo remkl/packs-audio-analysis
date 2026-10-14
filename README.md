@@ -1,68 +1,43 @@
-# PAX audio analysis
+# PAX audio analysis — V10 candidate source
 
-Source for the Rust/Axum audio-analysis candidate and its retained Python
-reference. Essentia supplies the native analysis engine. Shared FFT is off.
+Exact service source: `ef69b73640d5cb3872ae00fb34f2d27a28f65f29`. Shared FFT is off. Production
+has not been switched by this export. This source package does not switch or deploy the service.
 
-This release corresponds to PAX source commit
-`435c4b2c829300a398f2ec83d7eb7592b742bfdb`. Production has not been switched to
-this candidate. The source is published for review and reproducible comparison;
-publication is not deployment approval.
+`service/` contains all 76 tracked service files unchanged. The native
+builder now uses Bookworm and pinned FFmpeg 5.1.9 source with compatibility
+patches. FFTW 3.3.8 and Eigen 3.3.9 retain their pinned Debian patches and are
+rebuilt on Bookworm. Essentia and libsamplerate retain their pinned inputs.
 
-## Source and dependency archives
+## Build and strict checks
 
-`service/` contains all 62 tracked service files from that commit, unchanged.
-It includes the Rust server, C++ bridge, Python reference, native patches,
-Dockerfiles, tests, synthetic fixtures and licence notices.
-
-[Dependency source release](https://github.com/remkl/packs-audio-analysis/releases/tag/source-435c4b2c8293)
-contains the exact Essentia and libsamplerate sources, Debian native dependency
-sources and patches, playback FFmpeg source, build-header sources, and all 156
-locked Rust crate archives. Verify its SHA-256 with
-`DEPENDENCY-ARCHIVE-SHA256SUMS`, then extract it beside `service/`.
-The archive digest is `a35f81cff13e76d75f83e147728dd5570688138a0848152174d05646ca347eb7`.
-
-`EXPORT-PROVENANCE.json` binds every service file to the source commit.
-`DEPENDENCY-SOURCES.json` and the package inventories record source locations,
-versions and integrity checks. `SOURCE-COMPLETENESS.md` states the scope and
-remaining base/system-library review; this publication does not assert that
-all legal review is complete. No private monorepo history is included.
-
-## Build and check
-
-Use Docker Buildx and Python 3.10 or later. From this repository root:
+Use Docker Buildx and Python 3.10 or later from this repository root:
 
 ```sh
-docker buildx build --load --platform linux/amd64 --target runtime \
-  -f service/Dockerfile.vercel -t pax-audio-analysis:local service
+docker buildx build --load --platform linux/amd64 --target runtime -f service/Dockerfile.vercel -t pax-audio-analysis:local service
 python3 service/rust/check.py --architecture amd64 --build-python
 ```
 
-The check builds the Python reference and runs strict audio, request/config,
-process-lifecycle and resource-bound tests. No R2 or production credentials are
-needed. On an ARM Mac, AMD64 tests use emulation and do not measure native
-AMD64 speed. The Dockerfiles fetch public dependencies; the archive preserves
-source inputs but does not make the build fully offline or hermetic.
+The standalone build and strict gate passed from this exported tree. All 24
+decoder PCM controls, 56 engine checks and 248 HTTP/config cases passed, along
+with the runtime bounds and lifecycle checks. The runtime, probe and Python
+image IDs match the canonical gate. Docker reused its local build cache; this
+is not a claim of a fresh uncached or offline build. See STANDALONE-CHECKS.json.
 
-The manual GitHub workflow runs the same local gate. It does not deploy.
-See [service documentation](service/README.md) and
-[native build details](service/rust/README.md).
+The manual workflow runs the same gate, including exact decoder PCM controls,
+audio/HTTP/config parity, resource bounds, lifecycle, and shared-FFT exclusion.
+ARM-host AMD64 execution is emulated and is not a native performance result.
 
-## Release status
+## Source archives
 
-The frozen local compatibility gate passed. Runtime, native, Python, Cargo
-and pip checks have no fixable high/critical findings under the existing gate.
-This is not a zero-vulnerability claim: unfixed advisories and the maintenance
-path for the Debian 11 / FFmpeg 4.3 native bundle still need review before a
-production cutover. No baseline tolerance was relaxed.
+`pax-audio-analysis-ef69b73640d5-dependencies.tar.gz` contains 175 exact native, Cargo and copied
+Debian source inputs, verified against source pins, Cargo.lock and authenticated
+Debian source metadata. Its SHA-256 is
+`a7cfb7df72c81381f919a4b78a65392f0539f8d1e98d87fe37832cec8066a817`. Sources are public build inputs; builds remain networked,
+not fully offline or hermetic. Keep upstream licence files and Debian patches.
+`SOURCE-COMPLETENESS.md` and `SOURCE-IMAGE-INVENTORY.json` record runtime and build-input scope.
+No V9 binary-closure count is reused as V10 evidence.
 
-The historical root Python files, `Dockerfile` and `render.yaml` remain unchanged
-to preserve the old Render blueprint during source publication. Use the explicit
-`service/Dockerfile.vercel` build above. Source publication commits use
-`[skip render]`; do not trigger a Render or Vercel deployment from this repository
-without explicit operator approval.
-
-## Licence
-
-The service is AGPL-3.0-only. See [LICENSE](LICENSE),
-[service licence](service/LICENSE), and [native notices](service/rust/NOTICE.md).
-Dependency archives retain their upstream licence files and Debian patches.
+The root Python files, Dockerfile and Render blueprint are legacy files with
+unchanged bytes. Use `service/Dockerfile.vercel` for V10. Preserve repository
+history; publication commits must contain `[skip render]`. CI is manual only.
+The service remains AGPL-3.0-only; see LICENSE and service/rust/NOTICE.md.

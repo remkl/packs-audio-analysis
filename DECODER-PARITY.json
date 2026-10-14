@@ -1,0 +1,225 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "fixture": "control-aac-22050-1.m4a",
+      "inputSha256": "af3db71d9678bbd0f8ed7ff70c384c41e6f044668c306f659e90ef1263351632",
+      "referenceSamples": 92159,
+      "candidateSamples": 92159,
+      "referencePcmSha256": "fcfdea0d5e1b2dd7554b9e9844946e53b21c25e67a64d5873d945dc7b5f7791c",
+      "candidatePcmSha256": "fcfdea0d5e1b2dd7554b9e9844946e53b21c25e67a64d5873d945dc7b5f7791c",
+      "passed": true
+    },
+    {
+      "fixture": "control-aac-44100-2.m4a",
+      "inputSha256": "c3d3bd0522352224c40fe243d74bfe42daa075abbc5f9ccc5b0e0d6ff288800a",
+      "referenceSamples": 91136,
+      "candidateSamples": 91136,
+      "referencePcmSha256": "31c6c6ed7892a5dbe97419e5c78e5ed4e058685a820f71ee0b34660dfe9446d5",
+      "candidatePcmSha256": "31c6c6ed7892a5dbe97419e5c78e5ed4e058685a820f71ee0b34660dfe9446d5",
+      "passed": true
+    },
+    {
+      "fixture": "control-aac-48000-2.m4a",
+      "inputSha256": "41699db76d19032331877116350575503a92fe1151c2efeb64a47a251f52b52d",
+      "referenceSamples": 91257,
+      "candidateSamples": 91257,
+      "referencePcmSha256": "73e16cee19a380aff0da7741c04bbecc9161906785b87b8265d73b870617df79",
+      "candidatePcmSha256": "73e16cee19a380aff0da7741c04bbecc9161906785b87b8265d73b870617df79",
+      "passed": true
+    },
+    {
+      "fixture": "control-flac-44100-2.flac",
+      "inputSha256": "87d743a08cc528c944533515b64e914370c18109cd45eea87d93deedd10f73f1",
+      "referenceSamples": 89832,
+      "candidateSamples": 89832,
+      "referencePcmSha256": "360b850402ccdd50d17e59e8f495b24236c89e71d0ef43153110d21de03e46f2",
+      "candidatePcmSha256": "360b850402ccdd50d17e59e8f495b24236c89e71d0ef43153110d21de03e46f2",
+      "passed": true
+    },
+    {
+      "fixture": "control-libmp3lame-44100-2.mp3",
+      "inputSha256": "14d8aa799bed67952debcd3e8cafb7177d1d2c3d1e9efb490644fced1b5362c2",
+      "referenceSamples": 89832,
+      "candidateSamples": 89832,
+      "referencePcmSha256": "95991fdadbe6dfb6f6317af41ecf27f352722a0b6e4e9bfc36eff09f06005a3e",
+      "candidatePcmSha256": "95991fdadbe6dfb6f6317af41ecf27f352722a0b6e4e9bfc36eff09f06005a3e",
+      "passed": true
+    },
+    {
+      "fixture": "control-libmp3lame-48000-1.mp3",
+      "inputSha256": "a4c4b722194be2a8595f3b2fb01981a99d42a0772664011a293030f234a32bc4",
+      "referenceSamples": 89831,
+      "candidateSamples": 89831,
+      "referencePcmSha256": "7908e7d982714ae84ecf60bd5f83fca60bb7e5e1a528b3bbf6b48461fe78950f",
+      "candidatePcmSha256": "7908e7d982714ae84ecf60bd5f83fca60bb7e5e1a528b3bbf6b48461fe78950f",
+      "passed": true
+    },
+    {
+      "fixture": "control-libvorbis-44100-2.ogg",
+      "inputSha256": "25e8854af4df996d328f03627aa70c014511f4162545f369968d18966ae9be05",
+      "referenceSamples": 89920,
+      "candidateSamples": 89920,
+      "referencePcmSha256": "b48b482e469f5c69f5ec5e6f951076cc992a21b470f81342f9fc0fa058d89388",
+      "candidatePcmSha256": "b48b482e469f5c69f5ec5e6f951076cc992a21b470f81342f9fc0fa058d89388",
+      "passed": true
+    },
+    {
+      "fixture": "control-libvorbis-44100-2.webm",
+      "inputSha256": "47af2a2e91e530522fd0ac96b1747a488ecce5f2f0a7943688a478495e5679f4",
+      "referenceSamples": 89920,
+      "candidateSamples": 89920,
+      "referencePcmSha256": "b48b482e469f5c69f5ec5e6f951076cc992a21b470f81342f9fc0fa058d89388",
+      "candidatePcmSha256": "b48b482e469f5c69f5ec5e6f951076cc992a21b470f81342f9fc0fa058d89388",
+      "passed": true
+    },
+    {
+      "fixture": "control-libvorbis-48000-2.ogg",
+      "inputSha256": "3e296c2564590507ce79b9abe0b42a76a995306ad3127bc01c8a9bb85a0c4d46",
+      "referenceSamples": 90728,
+      "candidateSamples": 90728,
+      "referencePcmSha256": "3a7bde080bba2ea60fa5b72dc5194e200635b4375fe478963bead27903ced093",
+      "candidatePcmSha256": "3a7bde080bba2ea60fa5b72dc5194e200635b4375fe478963bead27903ced093",
+      "passed": true
+    },
+    {
+      "fixture": "control-vorbis-discard-padding.webm",
+      "inputSha256": "d52dbd19d5c15a607f8c92cfaa46b301e5234853b46f84e7203405982fdcbf44",
+      "referenceSamples": 89832,
+      "candidateSamples": 89832,
+      "referencePcmSha256": "b1041146b0e1ff54cea0f5b1f4be0138cd2262680b61122621581b75dd392c73",
+      "candidatePcmSha256": "b1041146b0e1ff54cea0f5b1f4be0138cd2262680b61122621581b75dd392c73",
+      "passed": true
+    },
+    {
+      "fixture": "loop-30.aif",
+      "inputSha256": "9c7af5e39503460e929d0fe157be430a3a06ed1bc78d351635d6b98c74e91938",
+      "referenceSamples": 1323000,
+      "candidateSamples": 1323000,
+      "referencePcmSha256": "f180afe1fcc5d80b687986253b645f8989840e714b45311ce607e706a5b2f672",
+      "candidatePcmSha256": "f180afe1fcc5d80b687986253b645f8989840e714b45311ce607e706a5b2f672",
+      "passed": true
+    },
+    {
+      "fixture": "loop-30.wav",
+      "inputSha256": "28699b3fbc2d7419ca43d9d5d62a037386276997f954c00ea64e29d5e4989201",
+      "referenceSamples": 1323000,
+      "candidateSamples": 1323000,
+      "referencePcmSha256": "f180afe1fcc5d80b687986253b645f8989840e714b45311ce607e706a5b2f672",
+      "candidatePcmSha256": "f180afe1fcc5d80b687986253b645f8989840e714b45311ce607e706a5b2f672",
+      "passed": true
+    },
+    {
+      "fixture": "mono-22050.wav",
+      "inputSha256": "b6663c237452386d08a5e53a9813f84307c8655b961d2f0fe3197206b53d869c",
+      "referenceSamples": 352799,
+      "candidateSamples": 352799,
+      "referencePcmSha256": "0c4c9ab6885b38912f35e917609ee49c7062921defb81a65091a81a9511806dd",
+      "candidatePcmSha256": "0c4c9ab6885b38912f35e917609ee49c7062921defb81a65091a81a9511806dd",
+      "passed": true
+    },
+    {
+      "fixture": "pulse-120-a4.aif",
+      "inputSha256": "9da168af7ad0b745ec04c8b2f5aff26b35697abfb075ff55ce7540466af59df6",
+      "referenceSamples": 308700,
+      "candidateSamples": 308700,
+      "referencePcmSha256": "1ff5c6e8f8f7c74f1d49eddf7259748ccdaa437780d8694a96d568882da297e8",
+      "candidatePcmSha256": "1ff5c6e8f8f7c74f1d49eddf7259748ccdaa437780d8694a96d568882da297e8",
+      "passed": true
+    },
+    {
+      "fixture": "pulse-120-a4.wav",
+      "inputSha256": "0c428fa97bcecdfcde7c15fab59ce9fd0ea0309a1d4b10cd794dc57231e82e1e",
+      "referenceSamples": 308700,
+      "candidateSamples": 308700,
+      "referencePcmSha256": "1ff5c6e8f8f7c74f1d49eddf7259748ccdaa437780d8694a96d568882da297e8",
+      "candidatePcmSha256": "1ff5c6e8f8f7c74f1d49eddf7259748ccdaa437780d8694a96d568882da297e8",
+      "passed": true
+    },
+    {
+      "fixture": "pulse-120.mp3",
+      "inputSha256": "72e164c5ed181c445ab00c5272bb16f29bb386477fbf66d090016862c1f0aa8c",
+      "referenceSamples": 308700,
+      "candidateSamples": 308700,
+      "referencePcmSha256": "796519e867c75d84803a4e038177c8cc5b0773c400ec37b3ae85f981e25df4e4",
+      "candidatePcmSha256": "796519e867c75d84803a4e038177c8cc5b0773c400ec37b3ae85f981e25df4e4",
+      "passed": true
+    },
+    {
+      "fixture": "rounding-edge.wav",
+      "inputSha256": "5b0988fa2eed6cc9fba93d6064d81ca9d461353a4ad9f98ed93882a70aa85f75",
+      "referenceSamples": 352800,
+      "candidateSamples": 352800,
+      "referencePcmSha256": "c3da8c60a91804f099eb897089f10d3f43b70fed5453cdf91a55166912bcd73b",
+      "candidatePcmSha256": "c3da8c60a91804f099eb897089f10d3f43b70fed5453cdf91a55166912bcd73b",
+      "passed": true
+    },
+    {
+      "fixture": "silence-8.wav",
+      "inputSha256": "d1478b62f6cde68fe22fab1558867e81a0c64d148ad6d8850dd0da7eae45ece1",
+      "referenceSamples": 352800,
+      "candidateSamples": 352800,
+      "referencePcmSha256": "7a9c38df5318a026bd6fe76ebcb52bc8b125a56579b4b6dd913818b19f920957",
+      "candidatePcmSha256": "7a9c38df5318a026bd6fe76ebcb52bc8b125a56579b4b6dd913818b19f920957",
+      "passed": true
+    },
+    {
+      "fixture": "stereo-48k.wav",
+      "inputSha256": "5833a89d1f6a7beb94c9dc6955b8efe813dd0cb09e278ecf4aa748ffff0970ef",
+      "referenceSamples": 352799,
+      "candidateSamples": 352799,
+      "referencePcmSha256": "2714452dffdbc55f61fa0d3fc5dff2e00bde274002593bfc51f2fac0409d2138",
+      "candidatePcmSha256": "2714452dffdbc55f61fa0d3fc5dff2e00bde274002593bfc51f2fac0409d2138",
+      "passed": true
+    },
+    {
+      "fixture": "stereo-vbr.mp3",
+      "inputSha256": "6f1172a8db744a4c7fa7b6e5003a1c82758957d667a8e2d1e1956fad94a0cbba",
+      "referenceSamples": 352799,
+      "candidateSamples": 352799,
+      "referencePcmSha256": "23c11f49d457ec201d607a3d88029dbdb0d4c7b656e155657c80abd16e22d5a7",
+      "candidatePcmSha256": "23c11f49d457ec201d607a3d88029dbdb0d4c7b656e155657c80abd16e22d5a7",
+      "passed": true
+    },
+    {
+      "fixture": "track-120.aif",
+      "inputSha256": "1a5cdccedd297afbc4f800d9759c9c861d1716f95527c677cdcfea1b4a5613c2",
+      "referenceSamples": 5292000,
+      "candidateSamples": 5292000,
+      "referencePcmSha256": "b15a7869a787cf151cb18155503dd7655d65c75eb95e2ae16c5f83f570b72dac",
+      "candidatePcmSha256": "b15a7869a787cf151cb18155503dd7655d65c75eb95e2ae16c5f83f570b72dac",
+      "passed": true
+    },
+    {
+      "fixture": "track-120.wav",
+      "inputSha256": "918818c6f2dbb9c66b3a466abe504dfb3fd4cc1ee4e21f8dfc3b8cc2b75648f7",
+      "referenceSamples": 5292000,
+      "candidateSamples": 5292000,
+      "referencePcmSha256": "b15a7869a787cf151cb18155503dd7655d65c75eb95e2ae16c5f83f570b72dac",
+      "candidatePcmSha256": "b15a7869a787cf151cb18155503dd7655d65c75eb95e2ae16c5f83f570b72dac",
+      "passed": true
+    },
+    {
+      "fixture": "triad-140-a-minor-24.wav",
+      "inputSha256": "bdf21be690c391c664ee73bcd02d898d697ffad43ac557a1d91a211b511cfd5c",
+      "referenceSamples": 264600,
+      "candidateSamples": 264600,
+      "referencePcmSha256": "af83b16906fcaf2fe67d15e0ce494e9c5d8240b6478755e28c4deee97cb3e07f",
+      "candidatePcmSha256": "af83b16906fcaf2fe67d15e0ce494e9c5d8240b6478755e28c4deee97cb3e07f",
+      "passed": true
+    },
+    {
+      "fixture": "triad-90-c-major.wav",
+      "inputSha256": "14a37bb021514dc5ab15bf56b3ba7d052587a80adbd164e2dc7ae200ce008b67",
+      "referenceSamples": 352800,
+      "candidateSamples": 352800,
+      "referencePcmSha256": "6303b3a468bf1fc297a19b30b4d1f22809b8562d67821f55ab916c580712cdeb",
+      "candidatePcmSha256": "6303b3a468bf1fc297a19b30b4d1f22809b8562d67821f55ab916c580712cdeb",
+      "passed": true
+    }
+  ],
+  "referenceImage": "sha256:12f83403b5165a4c926bc84051615b469922c62ea44761576ebfd606a6b5dfc2",
+  "candidateImage": "sha256:7b061baf7c1e9bcb77d9e4374d524248931873d27f85b4453752cbda923d7e5f",
+  "comparison": "float32 bytes, exact",
+  "sharedFft": false
+}

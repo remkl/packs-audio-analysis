@@ -323,6 +323,9 @@ fn encode(source: &Path, path: &Path) -> Result<Playback, Failure> {
             "file",
             "-format_whitelist",
             MEDIA_FORMATS,
+            // Automatic frame threads can exhaust the inherited memory limit.
+            "-threads",
+            "1",
             "-i",
         ])
         .arg(source)

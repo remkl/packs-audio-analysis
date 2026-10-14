@@ -1,0 +1,29 @@
+{
+  "sourceCommit": "ef69b73640d5cb3872ae00fb34f2d27a28f65f29",
+  "passed": true,
+  "command": "python3 service/rust/check.py --architecture amd64 --build-python",
+  "workingDirectory": "repository root",
+  "dockerBuildTargets": [
+    "Python reference",
+    "runtime",
+    "test"
+  ],
+  "images": {
+    "runtime": "sha256:025f0afb91e9efd421747ed68d44390bc611db143b9ac2098a8c7a04dfc9bb5b",
+    "probe": "sha256:7b061baf7c1e9bcb77d9e4374d524248931873d27f85b4453752cbda923d7e5f",
+    "python": "sha256:12f83403b5165a4c926bc84051615b469922c62ea44761576ebfd606a6b5dfc2"
+  },
+  "imagesMatchCanonicalGate": true,
+  "sourceHashesMatchCanonicalCommit": true,
+  "gateInputCount": 68,
+  "decoderPcmExactCases": 24,
+  "engineChecks": 56,
+  "httpAndConfigCases": 248,
+  "runtimeChecksPassed": true,
+  "sharedFft": false,
+  "cleanCloneModes": true,
+  "buildxCacheReuse": true,
+  "independentUncachedBuildClaimed": false,
+  "execution": "Linux AMD64 containers on ARM host; emulated correctness checks, not native performance measurements",
+  "manifestSha256": "f6c90b18636b516fd8586a594965a8d07b8a07f42f046dc4600ee013097036e3"
+}

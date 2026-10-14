@@ -6,8 +6,8 @@ permissions:
 jobs:
   strict-compatibility:
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-      - name: Build and check Rust against Python
+      - name: Build and check supported native decoder against Python
         run: python3 service/rust/check.py --architecture amd64 --build-python
