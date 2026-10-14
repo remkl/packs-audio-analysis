@@ -1,0 +1,106 @@
+# Build context: services/audio-analysis
+# Canonical Rust build. Dockerfile.python preserves the current Python oracle.
+# The public mirror serves Docker Official Images with the verified index digests.
+FROM mirror.gcr.io/library/rust:1.94.1-slim-bullseye@sha256:e95d62f31e39e3ed9d21452146525ee0c8d5f9991096bf02eefe2762e7c4d09b AS native-source
+ARG BUILD_JOBS=2
+RUN printf 'deb https://deb.debian.org/debian bullseye main\ndeb https://archive.debian.org/debian-security bullseye-security main\n' > /etc/apt/sources.list \
+    && apt-get update \
+    && apt-get upgrade -y --no-install-recommends \
+    && apt-get install -y --no-install-recommends build-essential python3 pkg-config curl autotools-dev \
+       libeigen3-dev=3.3.9-2 libfftw3-dev=3.3.8-2 \
+       libavcodec-dev=7:4.3.9-0+deb11u2 libavformat-dev=7:4.3.9-0+deb11u2 \
+       libavutil-dev=7:4.3.9-0+deb11u2 libswresample-dev=7:4.3.9-0+deb11u2 \
+    && rm -rf /var/lib/apt/lists/*
+COPY rust/native-build/fetch-sources.sh /tmp/fetch-sources.sh
+RUN sh /tmp/fetch-sources.sh
+WORKDIR /samplerate
+RUN cp /usr/share/misc/config.guess Cfg/config.guess \
+    && cp /usr/share/misc/config.sub Cfg/config.sub \
+    && CPPFLAGS=-fPIC CFLAGS='-O2 -ffp-contract=off' ./configure --prefix=/opt/pax-samplerate \
+       --disable-fftw --disable-sndfile --enable-shared --disable-static \
+    && make -j${BUILD_JOBS} && make install
+COPY codec_compatibility.py rust/native-build/patch_decoder.py rust/patch_configuration.py rust/patch_engine.py /tmp/
+WORKDIR /essentia
+RUN python3 /tmp/patch_decoder.py && python3 /tmp/patch_configuration.py
+ENV PKG_CONFIG_PATH=/opt/pax-samplerate/lib/pkgconfig LD_LIBRARY_PATH=/opt/pax-samplerate/lib:/usr/local/lib
+
+FROM native-source AS native-runtime-build
+RUN python3 /tmp/patch_engine.py \
+    && python3 waf configure --mode=release --std=c++11 --lightweight=libav,libsamplerate,fftw --prefix=/usr/local \
+    && python3 waf build -j${BUILD_JOBS} && python3 waf install
+
+FROM native-runtime-build AS native-bundle
+RUN apt-get update && apt-get install -y --no-install-recommends patchelf && rm -rf /var/lib/apt/lists/*
+COPY rust/native-build/bundle-libraries.sh /tmp/bundle-libraries.sh
+RUN sh /tmp/bundle-libraries.sh
+
+FROM native-bundle AS build
+RUN rustup component add rustfmt clippy
+WORKDIR /app
+COPY rust/Cargo.toml rust/Cargo.lock rust/build.rs rust/native.cpp ./
+COPY rust/src ./src
+RUN --mount=type=cache,id=pax-audio-analysis-cargo-registry,target=/usr/local/cargo/registry,sharing=locked \
+    cargo fmt -- --check && cargo build --release --locked && cargo test --release --locked \
+    && cargo clippy --all-targets --all-features --locked -- -D warnings
+
+# The comparison engine is not copied into runtime. It permits only baseline
+# and buffers, and rejects shared_fft. Runtime borrowing has no environment flag.
+FROM native-runtime-build AS engine-probe-build
+COPY --from=native-source /essentia/src/algorithms/rhythm/onsetdetectionglobal.h /essentia/src/algorithms/rhythm/onsetdetectionglobal.cpp /essentia/src/algorithms/rhythm/beattrackermultifeature.h /essentia/src/algorithms/rhythm/beattrackermultifeature.cpp /essentia/src/algorithms/rhythm/rhythmextractor2013.h /essentia/src/algorithms/rhythm/rhythmextractor2013.cpp /essentia/src/algorithms/rhythm/
+RUN python3 /tmp/patch_engine.py --probe \
+    && python3 waf build -j${BUILD_JOBS} && python3 waf install
+COPY rust/engine_probe.cpp /tmp/engine_probe.cpp
+COPY rust/native.cpp rust/native-build/bounded-decode-check.cpp /tmp/
+RUN g++ -std=c++11 -O2 -I/usr/local/include/essentia -I/usr/include/eigen3 \
+    -I/usr/local/include/essentia/streaming -I/usr/local/include/essentia/scheduler \
+    -I/usr/local/include/essentia/streaming/algorithms -I/essentia/src/algorithms/rhythm \
+    /tmp/engine_probe.cpp -L/usr/local/lib -lessentia -o /tmp/engine-probe \
+    && g++ -std=c++11 -O2 -I/usr/local/include/essentia -I/usr/include/eigen3 \
+       /tmp/bounded-decode-check.cpp -L/usr/local/lib -lessentia -o /tmp/bounded-decode-check
+
+FROM engine-probe-build AS engine-probe-bundle
+RUN apt-get update && apt-get install -y --no-install-recommends patchelf && rm -rf /var/lib/apt/lists/*
+COPY rust/native-build/bundle-libraries.sh /tmp/bundle-libraries.sh
+RUN sh /tmp/bundle-libraries.sh
+
+FROM mirror.gcr.io/library/debian:bookworm-slim@sha256:7c7b2c966bc9ee8cedfeef67e0e279108992c77681fa595db4a9d65c06ccc587 AS runtime-base
+COPY --from=native-source /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+RUN printf 'deb https://deb.debian.org/debian bookworm main\ndeb https://deb.debian.org/debian-security bookworm-security main\n' > /etc/apt/sources.list \
+    && rm -f /etc/apt/sources.list.d/debian.sources \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends ca-certificates libcap2-bin \
+       ffmpeg=7:5.1.9-0+deb12u1 perl-base=5.36.0-7+deb12u4 \
+    && rm -rf /var/lib/apt/lists/* \
+    && groupadd --system --gid 10001 app \
+    && useradd --system --uid 10001 --gid app --no-create-home --home-dir /nonexistent --shell /usr/sbin/nologin app
+COPY --from=native-source /opt/pax-samplerate/lib/libsamplerate.so* /opt/compat-lib/
+COPY --from=native-source /samplerate/COPYING /usr/share/doc/pax-audio-analysis/libsamplerate-COPYING
+COPY --from=native-source /essentia/COPYING.txt /usr/share/doc/pax-audio-analysis/essentia-COPYING.txt
+COPY --from=native-source /essentia/ACKNOWLEDGEMENTS /usr/share/doc/pax-audio-analysis/essentia-ACKNOWLEDGEMENTS
+ENV LD_LIBRARY_PATH=/usr/local/lib \
+    MALLOC_ARENA_MAX=1 MALLOC_MMAP_THRESHOLD_=131072 MALLOC_TRIM_THRESHOLD_=131072 PORT=80
+WORKDIR /app
+
+# Run with a read-only mount of the 14 valid fixtures: ... test /fixtures
+FROM runtime-base AS test
+COPY --from=engine-probe-bundle /usr/local/lib/libessentia.so /usr/local/lib/libessentia.so
+COPY --from=engine-probe-bundle /native-runtime /opt/control
+COPY --from=engine-probe-bundle /tmp/engine-probe /app/engine-probe
+COPY --from=engine-probe-bundle /tmp/bounded-decode-check /app/bounded-decode-check
+USER 10001:10001
+ENTRYPOINT ["/app/engine-probe"]
+
+FROM runtime-base AS runtime
+COPY --from=build /usr/local/lib/libessentia.so /usr/local/lib/libessentia.so
+COPY --from=native-bundle /native-runtime /opt/control
+COPY --from=native-bundle /native-runtime-notices /usr/share/doc/pax-audio-analysis/native-runtime
+COPY --from=build /app/target/release/pax-axum-audio-experiment /app/audio-analysis
+COPY rust/LICENSE rust/NOTICE.md /usr/share/doc/pax-audio-analysis/
+# Apply capabilities after COPY so no multi-stage copy can drop the xattr.
+RUN printf '/usr/local/lib\n' > /etc/ld.so.conf.d/00-pax-native.conf \
+    && ldconfig \
+    && setcap cap_net_bind_service=+ep /app/audio-analysis \
+    && test -n "$(getcap /app/audio-analysis)"
+USER 10001:10001
+EXPOSE 80
+CMD ["/app/audio-analysis"]

@@ -1,0 +1,45 @@
+{
+  "origin": "Frozen v5 fixture and Python/wheel reference corpus, copied without regeneration",
+  "archiveSha256": "863af2a8e73c8a90199ea9df7381c839b28c0593165c530dc707f1a11820d1b0",
+  "files": {
+    "fixtures/corrupt.wav": "46fe9582e8a6a1da615f5a1adc2843876100debbe106885e91d4c17233274f36",
+    "fixtures/empty.wav": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629",
+    "fixtures/loop-30.aif": "9c7af5e39503460e929d0fe157be430a3a06ed1bc78d351635d6b98c74e91938",
+    "fixtures/loop-30.wav": "28699b3fbc2d7419ca43d9d5d62a037386276997f954c00ea64e29d5e4989201",
+    "fixtures/mono-22050.wav": "b6663c237452386d08a5e53a9813f84307c8655b961d2f0fe3197206b53d869c",
+    "fixtures/overlong.wav": "e0948ef04dd5f13c45b8526867d464ce15db9f77109a03efa1f3ac092a5fb6bd",
+    "fixtures/pulse-120-a4.aif": "9da168af7ad0b745ec04c8b2f5aff26b35697abfb075ff55ce7540466af59df6",
+    "fixtures/pulse-120-a4.wav": "0c428fa97bcecdfcde7c15fab59ce9fd0ea0309a1d4b10cd794dc57231e82e1e",
+    "fixtures/pulse-120.mp3": "72e164c5ed181c445ab00c5272bb16f29bb386477fbf66d090016862c1f0aa8c",
+    "fixtures/rounding-edge.wav": "5b0988fa2eed6cc9fba93d6064d81ca9d461353a4ad9f98ed93882a70aa85f75",
+    "fixtures/silence-8.wav": "d1478b62f6cde68fe22fab1558867e81a0c64d148ad6d8850dd0da7eae45ece1",
+    "fixtures/stereo-48k.wav": "5833a89d1f6a7beb94c9dc6955b8efe813dd0cb09e278ecf4aa748ffff0970ef",
+    "fixtures/stereo-vbr.mp3": "6f1172a8db744a4c7fa7b6e5003a1c82758957d667a8e2d1e1956fad94a0cbba",
+    "fixtures/track-120.aif": "1a5cdccedd297afbc4f800d9759c9c861d1716f95527c677cdcfea1b4a5613c2",
+    "fixtures/track-120.wav": "918818c6f2dbb9c66b3a466abe504dfb3fd4cc1ee4e21f8dfc3b8cc2b75648f7",
+    "fixtures/triad-140-a-minor-24.wav": "bdf21be690c391c664ee73bcd02d898d697ffad43ac557a1d91a211b511cfd5c",
+    "fixtures/triad-90-c-major.wav": "14a37bb021514dc5ab15bf56b3ba7d052587a80adbd164e2dc7ae200ce008b67",
+    "goldens/native-golden.json": "0f4404d808121c7e77fc97d55b9c68febcf62936093d80a3102f2777d1c8e4bd",
+    "goldens/amd64-wheel-golden.json": "a69aa085d797635e3b61efba658a062353a150c1d2a05105e52312760073ee22",
+    "goldens/native-encoded/loop-30.aif.mp3": "ff3b45cfb26d50db4e3b4c972b20cd67908cc9f917e07face5e7efc628adfffd",
+    "goldens/native-encoded/pulse-120-a4.aif.mp3": "6704786093309dd7f691059391f6c33a247ed1b335ca00dbdc11b91c6a2f120b",
+    "goldens/native-encoded/track-120.aif.mp3": "80bd2cd9a422b668c98cfd065126c41255909ebeab1e1e2d2075d8730f4f03eb",
+    "goldens/amd64-encoded/loop-30.aif.mp3": "74895eeaaea9e2f74abae90371ea0b103342a0ec151be22a7aed7395b8a83c1d",
+    "goldens/amd64-encoded/pulse-120-a4.aif.mp3": "903a6b4b0f53ada542a7115a7c4206ea7dc42d6eca38aa162cb0be2f5c2eb7a4",
+    "goldens/amd64-encoded/track-120.aif.mp3": "8bc9a5871d4adc5f6102ff092babf969ceda46740376de83e926ee832d3e6b8a"
+  },
+  "confidenceAbsoluteTolerance": 1e-06,
+  "exactFields": [
+    "bpm",
+    "key_standard",
+    "key_camelot",
+    "duration",
+    "peaks",
+    "preview",
+    "playback"
+  ],
+  "architectures": {
+    "arm64": "native-golden.json",
+    "amd64": "amd64-wheel-golden.json"
+  }
+}

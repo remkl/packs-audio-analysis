@@ -1,0 +1,41 @@
+FROM python:3.12-slim-bookworm@sha256:392307d22300de8b5986851a12d9176dfc0fc073e65bf6523ebd7dcbeb23564e AS runtime
+WORKDIR /app
+
+ENV PYTHONUNBUFFERED=1
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ffmpeg libcap2-bin \
+       perl-base=5.36.0-7+deb12u4 libpcre2-8-0=10.42-1+deb12u2 \
+    && rm -rf /var/lib/apt/lists/*
+
+# The service runs as a non-root user; setcap lets python3 still bind port 80.
+RUN setcap cap_net_bind_service=+ep "$(readlink -f "$(command -v python3)")" \
+    && groupadd --system --gid 10001 app \
+    && useradd --system --uid 10001 --gid app --no-create-home --home-dir /nonexistent --shell /usr/sbin/nologin app
+
+# requirements.txt lists the top-level pins; requirements.lock is the hashed graph.
+COPY requirements.lock .
+RUN python3 -m pip install --no-cache-dir --no-compile --require-hashes -r requirements.lock
+
+COPY analyzer.py codec_compatibility.py main.py models.py ./
+
+FROM runtime AS test
+COPY requirements-dev.txt .
+COPY tests ./tests
+# Ruff 0.16 widened its default rules; select the classic default set (E4, E7,
+# E9, F). The wider set needs code changes beyond annotations.
+RUN python3 -m pip install --no-cache-dir --no-compile -r requirements-dev.txt \
+    && python3 -m ruff check --no-cache --target-version py312 --select E4,E7,E9,F analyzer.py codec_compatibility.py main.py models.py tests \
+    && python3 -m mypy --no-incremental --python-version 3.12 --ignore-missing-imports analyzer.py codec_compatibility.py main.py models.py \
+    && python3 -m pytest -q \
+    && python3 -c "import essentia.standard, h11, uvicorn" \
+    && ffmpeg -version \
+    && touch /tmp/audio-analysis-tests-passed
+
+FROM runtime AS final
+COPY --from=test /tmp/audio-analysis-tests-passed /tmp/audio-analysis-tests-passed
+
+USER 10001:10001
+EXPOSE 80
+
+CMD ["sh", "-c", "exec python3 -m uvicorn main:app --host 0.0.0.0 --port \"${PORT:-80}\" --no-access-log"]

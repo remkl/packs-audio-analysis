@@ -1,0 +1,13 @@
+.env*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage*
+.venv/
+venv/
+.vercel/
+*.egg-info/
+.DS_Store
+data/
+tmp/

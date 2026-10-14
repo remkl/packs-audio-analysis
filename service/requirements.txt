@@ -1,0 +1,10 @@
+fastapi==0.141.1
+uvicorn==0.53.0
+starlette==1.6.0
+pydantic==2.13.5
+numpy==1.26.4
+essentia==2.1b6.dev1389
+httpx==0.28.1
+h11==0.16.0
+six==1.17.0
+PyYAML==6.0.3

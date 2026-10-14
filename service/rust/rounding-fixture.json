@@ -1,0 +1,17 @@
+{
+  "file": "rounding-edge.wav",
+  "samples": 352800,
+  "sampleRate": 44100,
+  "pcm": "signed16 little endian",
+  "bucketMaxima": [
+    2469,
+    20000,
+    2471
+  ],
+  "expectedFirstPeaks": [
+    0.1235,
+    1.0,
+    0.1235
+  ],
+  "sha256": "5b0988fa2eed6cc9fba93d6064d81ca9d461353a4ad9f98ed93882a70aa85f75"
+}

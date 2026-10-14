@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "cases": 100005,
+  "seed": 4213,
+  "comparison": "Exact f64 bits against Python round; PCM16 normalized ratios and float32 BPM-like values; signed zero and subnormal cases"
+}

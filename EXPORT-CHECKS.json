@@ -1,0 +1,117 @@
+{
+  "sourceCommit": "435c4b2c829300a398f2ec83d7eb7592b742bfdb",
+  "trackedServiceFilesMatchCommit": 62,
+  "pythonFilesParse": 19,
+  "dockerCopySourcesExist": [
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/native-build/fetch-sources.sh"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "codec_compatibility.py"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/native-build/patch_decoder.py"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/patch_configuration.py"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/patch_engine.py"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/native-build/bundle-libraries.sh"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/Cargo.toml"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/Cargo.lock"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/build.rs"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/native.cpp"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/src"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/engine_probe.cpp"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/native.cpp"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/native-build/bounded-decode-check.cpp"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/native-build/bundle-libraries.sh"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/LICENSE"
+    },
+    {
+      "dockerfile": "Dockerfile.vercel",
+      "source": "rust/NOTICE.md"
+    },
+    {
+      "dockerfile": "Dockerfile.python",
+      "source": "requirements.lock"
+    },
+    {
+      "dockerfile": "Dockerfile.python",
+      "source": "analyzer.py"
+    },
+    {
+      "dockerfile": "Dockerfile.python",
+      "source": "codec_compatibility.py"
+    },
+    {
+      "dockerfile": "Dockerfile.python",
+      "source": "main.py"
+    },
+    {
+      "dockerfile": "Dockerfile.python",
+      "source": "models.py"
+    },
+    {
+      "dockerfile": "Dockerfile.python",
+      "source": "requirements-dev.txt"
+    },
+    {
+      "dockerfile": "Dockerfile.python",
+      "source": "tests"
+    }
+  ],
+  "nativeSourcePackagesComplete": 92,
+  "nativeSourceFilesVerified": 300,
+  "cargoCratesVerified": 156,
+  "gateCliHelp": "passed",
+  "privatePathAndPrivateKeyMarkerScan": "no matches in first-party text and corpus JSON",
+  "gitHistoryIncluded": false,
+  "environmentFiles": "Only tracked .env.example with empty password and invalid placeholder host",
+  "fullBuildForExport": "Not rerun by export script. Candidate gate evidence is owned by the parent task.",
+  "strictGate": {
+    "passed": true,
+    "verifiedExportMatches54GateInputHashes": true,
+    "evidence": "STRICT-GATE.json",
+    "rerunByExportScript": false
+  }
+}
